@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Robogoo_Cplusplus",
+			"Path": "C:\\Users\\Samje\\OneDrive\\Desktop\\RoboGooCPlusPlus\\Source\\Robogoo_Cplusplus.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Robogoo_CplusplusEditor",
+			"Path": "C:\\Users\\Samje\\OneDrive\\Desktop\\RoboGooCPlusPlus\\Source\\Robogoo_CplusplusEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
