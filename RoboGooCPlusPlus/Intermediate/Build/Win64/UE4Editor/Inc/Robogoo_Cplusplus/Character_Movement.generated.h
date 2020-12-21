@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ROBOGOO_CPLUSPLUS_Character_Movement_generated_h
 
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_SPARSE_DATA
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS_NO_PURE_DECLS
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execDisableActor);
+
+
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execDisableActor);
+
+
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACharacter_Movement(); \

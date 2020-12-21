@@ -28,8 +28,16 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UCameraComponent* FollowCamera;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+		UStaticMeshComponent* GooObject;
+
+	UFUNCTION(BlueprintCallable, Category = "Disable")
+	void DisableActor();
+
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
+
+	bool flip;
 
 protected:
 	// Called when the game starts or when spawned

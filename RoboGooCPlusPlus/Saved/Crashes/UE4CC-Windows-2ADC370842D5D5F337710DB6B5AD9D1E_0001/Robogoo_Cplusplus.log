@@ -1,0 +1,1412 @@
+﻿Log file open, 12/21/20 00:09:52
+LogInit: Display: Running engine for game: Robogoo_Cplusplus
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 20 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.185538
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin OculusVR
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin SteamVR
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i5-8600K CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1080
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: H:/Program Files/Epic games/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:046][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2020.12.21-00.09.53:046][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2020.12.21-00.09.53:047][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:047][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:056][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.21-00.09.53:056][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.12.21-00.09.53:057][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.12.21-00.09.53:057][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.21-00.09.53:057][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2020.12.21-00.09.53:058][  0]LogHAL: Display: Platform has ~ 16 GB [17103970304 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2020.12.21-00.09.53:058][  0]LogInit: Going up to parent DeviceProfile []
+[2020.12.21-00.09.53:058][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2020.12.21-00.09.53:058][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2020.12.21-00.09.53:059][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2020.12.21-00.09.53:059][  0]LogInit: Computer: JONDIVE
+[2020.12.21-00.09.53:059][  0]LogInit: User: Jondive
+[2020.12.21-00.09.53:059][  0]LogInit: CPU Page size=4096, Cores=6
+[2020.12.21-00.09.53:059][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2020.12.21-00.09.53:060][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2020.12.21-00.09.53:060][  0]LogMemory: Platform Memory Stats for Windows
+[2020.12.21-00.09.53:060][  0]LogMemory: Process Physical Memory: 115.64 MB used, 115.64 MB peak
+[2020.12.21-00.09.53:060][  0]LogMemory: Process Virtual Memory: 104.18 MB used, 104.18 MB peak
+[2020.12.21-00.09.53:060][  0]LogMemory: Physical Memory: 7890.98 MB used,  8420.64 MB free, 16311.62 MB total
+[2020.12.21-00.09.53:060][  0]LogMemory: Virtual Memory: 5147.16 MB used,  134212584.00 MB free, 134217728.00 MB total
+[2020.12.21-00.09.53:066][  0]LogWindows: WindowsPlatformFeatures enabled
+[2020.12.21-00.09.53:114][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2020.12.21-00.09.53:115][  0]LogInit: Using OS detected language (en-GB).
+[2020.12.21-00.09.53:115][  0]LogInit: Using OS detected locale (en-GB).
+[2020.12.21-00.09.53:117][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2020.12.21-00.09.53:282][  0]LogInit: Setting process to per monitor DPI aware
+[2020.12.21-00.09.53:317][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2020.12.21-00.09.53:317][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2020.12.21-00.09.53:544][  0]LogHMD: Failed to initialize OpenVR with code 126
+[2020.12.21-00.09.53:544][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2020.12.21-00.09.53:544][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2020.12.21-00.09.53:544][  0]LogD3D11RHI: D3D11 adapters:
+[2020.12.21-00.09.53:645][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080' (Feature Level 11_0)
+[2020.12.21-00.09.53:645][  0]LogD3D11RHI:       8079/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:3, VendorId:0x10de
+[2020.12.21-00.09.53:648][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2020.12.21-00.09.53:648][  0]LogD3D11RHI:       0/0/8155 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2020.12.21-00.09.53:648][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2020.12.21-00.09.53:654][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2020.12.21-00.09.53:654][  0]LogD3D11RHI:     GPU DeviceId: 0x1b80 (for the marketing name, search the web for "GPU Device Id")
+[2020.12.21-00.09.53:654][  0]LogWindows: EnumDisplayDevices:
+[2020.12.21-00.09.53:655][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080' (P:1 D:1)
+[2020.12.21-00.09.53:655][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080' (P:0 D:1)
+[2020.12.21-00.09.53:655][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080' (P:0 D:1)
+[2020.12.21-00.09.53:655][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080' (P:0 D:0)
+[2020.12.21-00.09.53:655][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2020.12.21-00.09.53:655][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080
+[2020.12.21-00.09.53:655][  0]LogD3D11RHI:   Driver Version: 460.89 (internal:27.21.14.6089, unified:460.89)
+[2020.12.21-00.09.53:655][  0]LogD3D11RHI:      Driver Date: 12-11-2020
+[2020.12.21-00.09.53:655][  0]LogRHI: Texture pool is 5655 MB (70% of 8079 MB)
+[2020.12.21-00.09.53:744][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2020.12.21-00.09.53:744][  0]LogD3D11RHI: Async texture creation enabled
+[2020.12.21-00.09.53:744][  0]LogD3D11RHI: Array index from any shader is supported
+[2020.12.21-00.09.53:771][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2020.12.21-00.09.54:118][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2020.12.21-00.09.54:139][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2020.12.21-00.09.54:160][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2020.12.21-00.09.54:160][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2020.12.21-00.09.54:172][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2020.12.21-00.09.54:181][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2020.12.21-00.09.54:190][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2020.12.21-00.09.54:199][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2020.12.21-00.09.54:208][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2020.12.21-00.09.54:216][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2020.12.21-00.09.54:224][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2020.12.21-00.09.54:248][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2020.12.21-00.09.54:248][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2020.12.21-00.09.54:263][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2020.12.21-00.09.54:263][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2020.12.21-00.09.54:271][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2020.12.21-00.09.54:279][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2020.12.21-00.09.54:288][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2020.12.21-00.09.54:296][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2020.12.21-00.09.54:297][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2020.12.21-00.09.54:304][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2020.12.21-00.09.54:361][  0]LogShaderCompilers: Guid format shader working directory is -21 characters bigger than the processId version (F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Intermediate/Shaders/WorkingDirectory/14752/).
+[2020.12.21-00.09.54:361][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Jondive/AppData/Local/Temp/UnrealShaderWorkingDir/251FA39C425D52B4B2DAD8944E8C4F14/'.
+[2020.12.21-00.09.54:361][  0]LogXGEController: Cleaning working directory: C:/Users/Jondive/AppData/Local/Temp/UnrealXGEWorkingDir/
+[2020.12.21-00.09.54:362][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2020.12.21-00.09.54:362][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2020.12.21-00.09.54:362][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2020.12.21-00.09.55:099][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: Loaded boot cache 0.06s 79MB C:/Users/Jondive/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Jondive/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.21-00.09.55:158][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2020.12.21-00.09.55:169][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2020.12.21-00.09.55:169][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2020.12.21-00.09.55:169][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2020.12.21-00.09.55:171][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Jondive/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2020.12.21-00.09.55:171][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2020.12.21-00.09.55:171][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2020.12.21-00.09.55:220][  0]LogSlate: Using FreeType 2.10.0
+[2020.12.21-00.09.55:221][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2020.12.21-00.09.55:257][  0]LogAssetRegistry: FAssetRegistry took 0.0027 seconds to start up
+[2020.12.21-00.09.55:532][  0]LogInit: Selected Device Profile: [Windows]
+[2020.12.21-00.09.55:656][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2020.12.21-00.09.55:656][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2020.12.21-00.09.55:656][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2020.12.21-00.09.55:656][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2020.12.21-00.09.55:656][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2020.12.21-00.09.55:681][  0]LogNetVersion: Robogoo_Cplusplus 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1371892769)
+[2020.12.21-00.09.56:235][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000024926189400), frame # 0
+[2020.12.21-00.09.56:235][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249260DDE40), frame # 0
+[2020.12.21-00.09.56:236][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002492612DE00), frame # 0
+[2020.12.21-00.09.56:286][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.044305 seconds
+[2020.12.21-00.09.56:291][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2020.12.21-00.09.56:291][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2020.12.21-00.09.56:291][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2020.12.21-00.09.56:616][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2020.12.21-00.09.56:621][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2020.12.21-00.09.56:828][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.56:828][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.56:831][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.56:834][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.56:843][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.57:081][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2020.12.21-00.09.57:099][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.12.21-00.09.57:099][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2020.12.21-00.09.57:143][  0]LogOcInput: OculusInput pre-init called
+[2020.12.21-00.09.57:152][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2020.12.21-00.09.57:152][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2020.12.21-00.09.57:207][  0]LogEngine: Initializing Engine...
+[2020.12.21-00.09.57:608][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2020.12.21-00.09.57:608][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2020.12.21-00.09.57:609][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2020.12.21-00.09.57:732][  0]LogInit: Initializing FReadOnlyCVARCache
+[2020.12.21-00.09.57:739][  0]LogAIModule: Creating AISystem for world Untitled
+[2020.12.21-00.09.57:739][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000024928F02400), frame # 0
+[2020.12.21-00.09.57:739][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000024928F2AE80), frame # 0
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-00.09.57:757][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-00.09.57:757][  0]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-00.09.57:757][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-00.09.57:773][  0]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-00.09.57:774][  0]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-00.09.57:821][  0]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-00.09.57:823][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-00.09.57:826][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-00.09.57:826][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-00.09.57:827][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-00.09.57:828][  0]LogInit: FAudioDevice initialized.
+[2020.12.21-00.09.57:828][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2020.12.21-00.09.57:914][  0]LogDerivedDataCache: Saved boot cache 0.09s 79MB C:/Users/Jondive/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2020.12.21-00.09.57:918][  0]LogInit: Texture streaming: Enabled
+[2020.12.21-00.09.57:932][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2020.12.21-00.09.57:932][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2020.12.21-00.09.57:934][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2020.12.21-00.09.57:985][  0]LogInit: Transaction tracking system initialized
+[2020.12.21-00.09.58:005][  0]BlueprintLog: New page: Editor Load
+[2020.12.21-00.09.58:070][  0]LocalizationService: Localization service is disabled
+[2020.12.21-00.09.58:213][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2020.12.21-00.09.58:213][  0]LogCook: Display: Mobile HDR setting 1
+[2020.12.21-00.09.58:228][  0]LogFileCache: Scanning file cache for directory 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/' took 0.00s
+[2020.12.21-00.09.58:579][  0]SourceControl: Source control is disabled
+[2020.12.21-00.09.58:579][  0]LogUnrealEdMisc: Loading editor; pre map load, took 7.573
+[2020.12.21-00.09.58:579][  0]Cmd: MAP LOAD FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2020.12.21-00.09.58:579][  0]LightingResults: New page: Lighting Build
+[2020.12.21-00.09.58:580][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-00.09.58:580][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-00.09.58:580][  0]MapCheck: New page: Map Check
+[2020.12.21-00.09.58:580][  0]LightingResults: New page: Lighting Build
+[2020.12.21-00.09.58:588][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000024928F02400), frame # 0
+[2020.12.21-00.09.58:588][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000024928F2AE80), frame # 0
+[2020.12.21-00.09.58:589][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.65ms
+[2020.12.21-00.09.58:651][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-00.09.58:651][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002491B8B1600), frame # 0
+[2020.12.21-00.09.58:651][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002492647D300), frame # 0
+[2020.12.21-00.09.58:665][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2020.12.21-00.09.58:677][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2020.12.21-00.09.58:678][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2020.12.21-00.09.58:678][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.114ms to complete.
+[2020.12.21-00.09.58:678][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 0.099
+[2020.12.21-00.09.58:680][  0]LogUnrealEdMisc: Total Editor Startup Time, took 7.674
+[2020.12.21-00.09.58:802][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-00.09.58:809][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-00.09.58:817][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-00.09.58:824][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-00.09.58:830][  0]LogCollectionManager: Loaded 0 collections in 0.000747 seconds
+[2020.12.21-00.09.58:843][  0]LogFileCache: Scanning file cache for directory 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Collections/' took 0.00s
+[2020.12.21-00.09.58:843][  0]LogFileCache: Scanning file cache for directory 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/Developers/Jondive/Collections/' took 0.00s
+[2020.12.21-00.09.58:843][  0]LogFileCache: Scanning file cache for directory 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/Collections/' took 0.00s
+[2020.12.21-00.09.58:843][  0]LogContentBrowser: Native class hierarchy populated in 0.0087 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-00.09.58:845][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.12.21-00.09.58:918][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2020.12.21-00.09.58:919][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
+[2020.12.21-00.09.58:944][  0]LogSlate: Took 0.000213 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2020.12.21-00.09.58:946][  0]LogSlate: Took 0.000189 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2020.12.21-00.09.58:949][  0]LogSlate: Took 0.000185 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2020.12.21-00.09.59:027][  0]LogRenderer: Reallocating scene render targets to support 1208x572 Format 10 NumSamples 1 (Frame:1).
+[2020.12.21-00.09.59:070][  0]LogSlate: Took 0.000185 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.21-00.09.59:112][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2020.12.21-00.09.59:112][  0]LogLoad: (Engine Initialization) Total time: 8.11 seconds
+[2020.12.21-00.09.59:112][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2020.12.21-00.09.59:150][  0]LogAssetRegistry: Asset discovery search completed in 3.8941 seconds
+[2020.12.21-00.09.59:153][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2020.12.21-00.09.59:155][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2020.12.21-00.10.04:038][262]LogSlate: Took 0.000181 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2020.12.21-00.10.04:052][262]LogAssetEditorSubsystem: Opening Asset editor for Class /Script/Robogoo_Cplusplus.Character_Movement
+[2020.12.21-02.05.52:049][614]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.05.52:165][614]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.05.52:261][614]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:05:52)
+[2020.12.21-02.05.52:289][614]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2020.12.21-02.05.52:301][614]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2020.12.21-02.05.52:325][614]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.05.52:402][614]LogPlayLevel: PIE: StaticDuplicateObject took: (0.076572s)
+[2020.12.21-02.05.52:453][614]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.05.52:453][614]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002493E2ABE00), frame # 21614
+[2020.12.21-02.05.52:453][614]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002493E292AC0), frame # 21614
+[2020.12.21-02.05.52:453][614]LogPlayLevel: PIE: World Init took: (0.050387s)
+[2020.12.21-02.05.52:453][614]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.127476s)
+[2020.12.21-02.05.52:462][614]LogUObjectHash: Compacting FUObjectHashTables data took   0.57ms
+[2020.12.21-02.05.52:464][614]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.05.52:465][614]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.05.52:465][614]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.05.52:465][614]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.05.52:470][614]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.05.52:470][614]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.05.52:488][614]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.05.52:488][614]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.05.52:488][614]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.05.52:488][614]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.05.52:489][614]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.05.52:501][614]LogInit: FAudioDevice initialized.
+[2020.12.21-02.05.52:922][614]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.05.53:039][614]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.05.53
+[2020.12.21-02.05.53:053][614]LogWorld: Bringing up level for play took: 0.015510
+[2020.12.21-02.05.53:054][614]LogOnline: OSS: Creating online subsystem instance for: :Context_1
+[2020.12.21-02.05.53:228][614]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 20 classes and 0 folders.
+[2020.12.21-02.05.53:229][614]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.05.53:229][614]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.05.53:229][614]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.05.53:412][614]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.05.53:418][614]PIE: Server logged in
+[2020.12.21-02.05.53:420][614]PIE: Play in editor total start time 1.346 seconds.
+[2020.12.21-02.05.56:532][947]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.05.56:532][947]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.05.56:533][947]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.05.56:533][947]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.05.56:538][947]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-02.05.56:546][947]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.05.56:571][947]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.05.56:572][947]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002493E2ABE00), frame # 21947
+[2020.12.21-02.05.56:572][947]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002493E292AC0), frame # 21947
+[2020.12.21-02.05.56:573][947]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2020.12.21-02.05.56:593][948]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2020.12.21-02.06.04:041][826]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.06.05:045][826]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 125 classes and 0 folders.
+[2020.12.21-02.06.10:035][106]LogSlate: Window 'CharactermovementBp' being destroyed
+[2020.12.21-02.06.10:052][106]LogWorld: UWorld::CleanupWorld for World_1, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.06.10:052][106]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.06.10:140][106]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.06.10:545][106]LogSlate: Took 0.019472 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2020.12.21-02.06.12:558][297]LogRenderer: Reallocating scene render targets to support 1208x692 Format 10 NumSamples 1 (Frame:1).
+[2020.12.21-02.06.12:840][324]LogSlate: Took 0.017385 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2020.12.21-02.06.30:328][338]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-02.06.30:446][338]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2020.12.21-02.06.30:492][338]LogSlate: Took 0.019062 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2020.12.21-02.06.31:041][388]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-02.06.31:166][388]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp1D8ED0D34144949A786BEFA1B25BD14D.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-02.06.31:191][388]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-02.06.31:191][388]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.07.47:690][859]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-02.07.47:722][859]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2020.12.21-02.07.48:122][902]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-02.07.48:161][902]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBpCB64210143C3D2673612678355E50066.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-02.07.48:173][902]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-02.07.48:173][902]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.11.48:883][296]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-02.11.48:915][296]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2020.12.21-02.11.49:333][341]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-02.11.49:376][341]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp3876842242EF25584448A089BFDF8FC2.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-02.11.49:389][341]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-02.11.49:389][341]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.11.50:574][476]LogSlate: Window 'CharactermovementBp' being destroyed
+[2020.12.21-02.11.50:578][476]LogSlate: Window 'CharactermovementBp' being destroyed
+[2020.12.21-02.11.50:589][476]LogWorld: UWorld::CleanupWorld for World_4, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.11.50:589][476]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.14.12:280][204]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.26.36:417][248]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.26.36:423][248]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.30.45:101][287]LogUObjectHash: Compacting FUObjectHashTables data took   2.98ms
+[2020.12.21-02.30.45:178][287]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap3AF0AAFD4FFD8FAC6EE96DBD0E082346.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2020.12.21-02.30.45:372][287]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_BuiltDataEEA38F7244758F5F3F92179F9F976B59.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2020.12.21-02.30.45:389][287]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.21-02.30.45:389][287]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2020.12.21-02.30.45:389][287]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2020.12.21-02.32.09:888][ 95]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.32.09:894][ 95]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.39.26:150][459]Candidate modules for hot reload:
+[2020.12.21-02.39.26:150][459]  Robogoo_Cplusplus
+[2020.12.21-02.39.26:151][459]Launching UnrealBuildTool... [H:/Program Files/Epic games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Robogoo_Cplusplus,5304 Robogoo_CplusplusEditor Win64 Development -Project="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject" "F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject"  -IgnoreJunk]
+[2020.12.21-02.39.26:152][459]Warning: Starting HotReload took  0.1s.
+[2020.12.21-02.39.32:884][228]CompilerResultsLog: New page: Compilation - 21 Dec 2020, 02:39:32
+[2020.12.21-02.39.32:884][228]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\old desktop\Games\My games\Robogoo group\RoboGoo).
+[2020.12.21-02.39.32:884][228]CompilerResultsLog: Parsing headers for Robogoo_CplusplusEditor
+[2020.12.21-02.39.32:884][228]CompilerResultsLog:   Running UnrealHeaderTool "F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Robogoo_Cplusplus.uproject" "F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\Robogoo_CplusplusEditor\Development\Robogoo_CplusplusEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Jondive\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.12.21-02.39.32:884][228]CompilerResultsLog: Error: F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Source/Robogoo_Cplusplus/Public/Character_Movement.h(35)  : Error: Unrecognized type 'void' - type must be a UCLASS, USTRUCT or UENUM
+[2020.12.21-02.39.32:884][228]LogMainFrame: MainFrame: Module compiling took 6.822 seconds
+[2020.12.21-02.39.32:884][228]Warning: HotReload failed, recompile failed
+[2020.12.21-02.43.02:325][418]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.43.02:330][418]LogSlate: Window 'Project Settings' being destroyed
+[2020.12.21-02.43.03:183][510]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2020.12.21-02.43.03:224][510]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap62A6A1C94DB2499435B2BBBCD20BF692.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2020.12.21-02.43.03:346][510]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_BuiltData903316F149E3753F6DFC41A8DC96F172.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2020.12.21-02.43.03:359][510]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.21-02.43.03:359][510]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2020.12.21-02.43.03:359][510]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2020.12.21-02.43.05:821][724]LogUObjectHash: Compacting FUObjectHashTables data took   2.13ms
+[2020.12.21-02.52.03:409][ 55]Candidate modules for hot reload:
+[2020.12.21-02.52.03:409][ 55]  Robogoo_Cplusplus
+[2020.12.21-02.52.03:409][ 55]Launching UnrealBuildTool... [H:/Program Files/Epic games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Robogoo_Cplusplus,7691 Robogoo_CplusplusEditor Win64 Development -Project="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject" "F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject"  -IgnoreJunk]
+[2020.12.21-02.52.03:410][ 55]Warning: Starting HotReload took  0.0s.
+[2020.12.21-02.52.10:784][617]CompilerResultsLog: New page: Compilation - 21 Dec 2020, 02:52:10
+[2020.12.21-02.52.10:784][617]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\old desktop\Games\My games\Robogoo group\RoboGoo).
+[2020.12.21-02.52.10:784][617]CompilerResultsLog: Parsing headers for Robogoo_CplusplusEditor
+[2020.12.21-02.52.10:784][617]CompilerResultsLog:   Running UnrealHeaderTool "F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Robogoo_Cplusplus.uproject" "F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\Robogoo_CplusplusEditor\Development\Robogoo_CplusplusEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Jondive\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+[2020.12.21-02.52.10:784][617]CompilerResultsLog: Error: F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Source/Robogoo_Cplusplus/Public/Character_Movement.h(35)  : Error: Unrecognized type 'void' - type must be a UCLASS, USTRUCT or UENUM
+[2020.12.21-02.52.10:784][617]LogMainFrame: MainFrame: Module compiling took 7.380 seconds
+[2020.12.21-02.52.10:784][617]Warning: HotReload failed, recompile failed
+[2020.12.21-02.52.19:121][ 76]LogSlate: Window 'Message Log' being destroyed
+[2020.12.21-02.52.19:125][ 76]LogSlate: Window 'Message Log' being destroyed
+[2020.12.21-02.55.25:446][856]Candidate modules for hot reload:
+[2020.12.21-02.55.25:447][856]  Robogoo_Cplusplus
+[2020.12.21-02.55.25:447][856]Launching UnrealBuildTool... [H:/Program Files/Epic games/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe  -ModuleWithSuffix=Robogoo_Cplusplus,1988 Robogoo_CplusplusEditor Win64 Development -Project="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject" "F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject"  -IgnoreJunk]
+[2020.12.21-02.55.25:448][856]Warning: Starting HotReload took  0.0s.
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: New page: Compilation - 21 Dec 2020, 02:55:27
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Using 'git status' to determine working set for adaptive non-unity build (F:\old desktop\Games\My games\Robogoo group\RoboGoo).
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Building Robogoo_CplusplusEditor...
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Using Visual Studio 2019 14.28.29333 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Building 3 actions with 6 processes...
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog:   [1/3] UE4Editor-Robogoo_Cplusplus-1988.lib
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog:      Creating library F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-1988.lib and object F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-1988.exp
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog:   [2/3] UE4Editor-Robogoo_Cplusplus-1988.dll
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog:      Creating library F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-1988.suppressed.lib and object F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-1988.suppressed.exp
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog:   [3/3] Robogoo_CplusplusEditor.target
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Total time in Parallel executor: 1.10 seconds
+[2020.12.21-02.55.27:557][ 65]CompilerResultsLog: Total execution time: 2.02 seconds
+[2020.12.21-02.55.27:557][ 65]LogMainFrame: MainFrame: Module compiling took 2.114 seconds
+[2020.12.21-02.55.27:601][ 65]LogClass: Could not find existing class Character_Movement in package /Script/Robogoo_Cplusplus for HotReload, assuming new class
+[2020.12.21-02.55.27:601][ 65]LogClass: Function DisableActor is new.
+[2020.12.21-02.55.27:611][ 65]LogHotReload: Re-instancing Character_Movement after hot-reload.
+[2020.12.21-02.55.27:682][ 65]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0005 seconds. Added 3 classes and 3 folders.
+[2020.12.21-02.55.27:685][ 65]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.12.21-02.55.28:155][ 65]LogContentBrowser: Native class hierarchy populated in 0.0109 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-02.55.28:187][ 65]Display: HotReload took  2.7s.
+[2020.12.21-02.55.30:165][260]MapCheck: New page: Map Check
+[2020.12.21-02.55.30:211][260]Cmd: MAP REBUILD ALLVISIBLE
+[2020.12.21-02.55.30:226][260]LogEditorServer: Rebuildmap Clear paths rebuilt
+[2020.12.21-02.55.30:348][260]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=false
+[2020.12.21-02.55.30:424][260]LogNavigationDataBuild: Display: UNavigationSystemV1::Build started...
+[2020.12.21-02.55.30:424][260]LogNavigationDataBuild: Display:    Building navigation data using PHYSICS_INTERFACE_PHYSX.
+[2020.12.21-02.55.30:424][260]LogNavigationDataBuild: Display:    Building navigation data using WITH_PHYSX.
+[2020.12.21-02.55.30:487][260]LogUObjectHash: Compacting FUObjectHashTables data took   3.33ms
+[2020.12.21-02.55.30:513][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.30:592][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.30:594][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.30:595][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.30:596][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.30:598][260]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 8
+[2020.12.21-02.55.30:598][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 7
+[2020.12.21-02.55.30:598][260]LogMaterial: Display: Missing cached shader map for material DebugViewMode MaterialTexCoordScale, compiling. 
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 10
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 9
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 8
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 7
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 6
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 5
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 4
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (1/3): shaders left to compile 3
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 2
+[2020.12.21-02.55.32:866][260]LogShaderCompilers: Display: Worker (2/3): shaders left to compile 1
+[2020.12.21-02.55.32:866][260]TextureStreamingBuild: Display: Compiling optional shaders took 2.378 seconds.
+[2020.12.21-02.55.32:915][260]LogLevel: Display: Export Material TexCoord Scales took 0.049 seconds.
+[2020.12.21-02.55.32:929][260]TextureStreamingBuild: Display: Build Texture Streaming took 0.013 seconds.
+[2020.12.21-02.55.32:964][260]LogUObjectHash: Compacting FUObjectHashTables data took   1.84ms
+[2020.12.21-02.55.32:980][260]LightingResults: New page: Lighting Build - 21 Dec 2020, 02:55:32
+[2020.12.21-02.55.33:132][260]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2020.12.21-02.55.33:430][260]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2020.12.21-02.55.33:443][260]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2020.12.21-02.55.34:475][260]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2020.12.21-02.55.34:475][260]LogSwarmInterface: [TryOpenConnection] Local Process ID is 14752
+[2020.12.21-02.55.41:054][260]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2020.12.21-02.55.41:054][260]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2020.12.21-02.55.41:054][260]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2020.12.21-02.55.41:054][260]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2020.12.21-02.55.41:054][260]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2020.12.21-02.55.41:232][260]Cmd: MAP CHECK DONTDISPLAYDIALOG
+[2020.12.21-02.55.41:232][260]MapCheck: New page: ThirdPersonExampleMap - 21 Dec 2020, 02:55:41
+[2020.12.21-02.55.41:292][260]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 60.465ms to complete.
+[2020.12.21-02.55.41:305][260]LogEditorBuildUtils: Build time 0:11
+[2020.12.21-02.55.41:794][263]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
+[2020.12.21-02.55.44:707][474]LogUObjectHash: Compacting FUObjectHashTables data took   1.69ms
+[2020.12.21-02.55.44:748][474]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_Auto185A9F8FC4A0282CEDEC8BCA09D7964BB.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2020.12.21-02.55.44:750][474]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.063
+[2020.12.21-02.55.44:750][474]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.063
+[2020.12.21-02.55.44:750][474]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/CharactermovementBp] ([1] browsable assets)...
+[2020.12.21-02.55.44:757][474]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/CharactermovementBp.CharactermovementBp]
+[2020.12.21-02.55.44:758][474]OBJ SavePackage: Finished generating thumbnails for package [/Game/CharactermovementBp]
+[2020.12.21-02.55.44:780][474]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp_Auto1BA2405EE44C4461540B773B5E9B3F6D3.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/CharactermovementBp_Auto1.uasset'
+[2020.12.21-02.55.44:781][474]LogFileHelpers: Auto-saving content packages took 0.031
+[2020.12.21-02.55.45:004][491]Job is a success!
+[2020.12.21-02.55.45:130][492]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.029s
+[2020.12.21-02.55.45:130][492]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:      BrickData (all levels) 0.2Mb
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:      Bricks at depth
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:          0: 3.1% covering 100.0% of volume
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:          1: 12.5% covering 6.2% of volume
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:          2: 84.4% covering 0.7% of volume
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:      Bricks in each level
+[2020.12.21-02.55.45:131][492]LogVolumetricLightmapImport:          ThirdPersonExampleMap 			 32 bricks 	 100.0% (Persistent Level)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: SkyOcclusion1_1 (AutoDXT, 1024X512)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: SkyOcclusion1_2 (AutoDXT, 64X32)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 64X64)
+[2020.12.21-02.55.45:460][492]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 64X64)
+[2020.12.21-02.55.45:579][492]LogTexture: Display: Building textures: ShadowMapTexture2D_3 (G8, 32X32)
+[2020.12.21-02.55.45:580][492]LogTexture: Display: Building textures: ShadowMapTexture2D_2 (G8, 1024X512)
+[2020.12.21-02.55.45:580][492]Lightmass on JONDIVE: 3.11 sec total, 206 ms importing, 15 ms setup, 698 ms photons, 2.11 sec processing, 0 ms extra exporting [9/9 mappings]. Threads: 10.5 sec total, 2.59 sec processing.
+[2020.12.21-02.55.45:580][492]LogStaticLightingSystem: ThirdPersonExampleMap_BuiltData storing lightmap data for 9 meshes in 2 LightmapResourceClusters (4.5 Meshes per cluster).
+[2020.12.21-02.55.45:601][492]LogUObjectHash: Compacting FUObjectHashTables data took   1.81ms
+[2020.12.21-02.55.45:622][492]LogStaticLightingSystem: Illumination: 12.6 sec (305 ms encoding lightmaps, 83 ms encoding shadowmaps)
+[2020.12.21-02.55.45:623][492]LogStaticLightingSystem: Lightmap texture memory:  2.7 MB (2.7 MB streaming, 0.0 MB non-streaming), 4 textures
+[2020.12.21-02.55.45:623][492]LogStaticLightingSystem: Shadowmap texture memory: 0.7 MB (0.7 MB streaming, 0.0 MB non-streaming), 2 textures
+[2020.12.21-02.55.46:030][492]DumpUnbuiltLightIteractions
+[2020.12.21-02.55.46:030][492]Lights with unbuilt interactions: 0
+[2020.12.21-02.55.46:030][492]
+[2020.12.21-02.55.46:030][492]Primitives with unbuilt interactions: 0
+[2020.12.21-02.55.46:101][493]Cmd: MAP CHECK NOTIFYRESULTS
+[2020.12.21-02.55.46:101][493]MapCheck: New page: ThirdPersonExampleMap - 21 Dec 2020, 02:55:46
+[2020.12.21-02.55.46:101][493]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.304ms to complete.
+[2020.12.21-02.55.49:396][879]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-02.55.49:440][879]LogUObjectHash: Compacting FUObjectHashTables data took   1.91ms
+[2020.12.21-02.55.49:870][920]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-02.55.49:886][920]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp774F40B54732A7D9334F1589AD3175A4.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-02.55.49:901][920]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-02.55.49:901][920]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.56.16:293][833]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-02.56.16:340][833]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
+[2020.12.21-02.56.17:210][927]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-02.56.18:041][927]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBpB11304E1436D3564E4B097A11906C4ED.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-02.56.18:062][927]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-02.56.18:062][927]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-02.56.20:030][155]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.56.20:068][155]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.56.20:068][155]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:56:20)
+[2020.12.21-02.56.20:068][155]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.56.20:078][155]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009794s)
+[2020.12.21-02.56.20:079][155]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.56.20:079][155]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002493E1AE200), frame # 61155
+[2020.12.21-02.56.20:079][155]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002494B6B2340), frame # 61155
+[2020.12.21-02.56.20:079][155]LogPlayLevel: PIE: World Init took: (0.001204s)
+[2020.12.21-02.56.20:079][155]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.011135s)
+[2020.12.21-02.56.20:102][155]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.56.20:104][155]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.56.20:104][155]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.56.20:104][155]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.56.20:108][155]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.56.20:108][155]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.56.20:133][155]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.56.20:134][155]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.56.20:134][155]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.56.20:134][155]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.56.20:134][155]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.56.20:148][155]LogInit: FAudioDevice initialized.
+[2020.12.21-02.56.20:155][155]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.56.20:156][155]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.56.20
+[2020.12.21-02.56.20:156][155]LogWorld: Bringing up level for play took: 0.000665
+[2020.12.21-02.56.20:157][155]LogOnline: OSS: Creating online subsystem instance for: :Context_9
+[2020.12.21-02.56.20:158][155]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.56.20:158][155]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.56.20:158][155]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.56.20:159][155]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.56.20:159][155]PIE: Server logged in
+[2020.12.21-02.56.20:160][155]PIE: Play in editor total start time 0.118 seconds.
+[2020.12.21-02.56.28:893][177]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.56.28:893][177]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.56.28:893][177]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.56.28:893][177]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.56.28:900][177]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-02.56.28:903][177]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.56.28:938][177]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.56.28:939][177]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002494B6B2340), frame # 62177
+[2020.12.21-02.56.28:939][177]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002493E1AE200), frame # 62177
+[2020.12.21-02.56.28:941][177]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
+[2020.12.21-02.56.28:984][178]LogPlayLevel: Display: Destroying online subsystem :Context_9
+[2020.12.21-02.56.32:384][571]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.56.32:396][571]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.56.32:397][571]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:56:32)
+[2020.12.21-02.56.32:397][571]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.56.32:405][571]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008713s)
+[2020.12.21-02.56.32:406][571]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.56.32:406][571]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000249929BF200), frame # 62571
+[2020.12.21-02.56.32:423][571]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002497FC00A40), frame # 62571
+[2020.12.21-02.56.32:423][571]LogPlayLevel: PIE: World Init took: (0.017862s)
+[2020.12.21-02.56.32:423][571]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.026698s)
+[2020.12.21-02.56.32:444][571]LogUObjectHash: Compacting FUObjectHashTables data took   2.02ms
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.56.32:446][571]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.56.32:446][571]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.56.32:446][571]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.56.32:449][571]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.56.32:450][571]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.56.32:465][571]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.56.32:465][571]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.56.32:466][571]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.56.32:466][571]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.56.32:466][571]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.56.32:479][571]LogInit: FAudioDevice initialized.
+[2020.12.21-02.56.32:489][571]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.56.32:490][571]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.56.32
+[2020.12.21-02.56.32:490][571]LogWorld: Bringing up level for play took: 0.000632
+[2020.12.21-02.56.32:491][571]LogOnline: OSS: Creating online subsystem instance for: :Context_10
+[2020.12.21-02.56.32:492][571]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.56.32:492][571]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.56.32:492][571]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.56.32:493][571]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.56.32:493][571]PIE: Server logged in
+[2020.12.21-02.56.32:494][571]PIE: Play in editor total start time 0.098 seconds.
+[2020.12.21-02.57.00:124][496]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.57.00:124][496]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.57.00:124][496]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.57.00:124][496]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.57.00:131][496]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-02.57.00:135][496]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.57.00:154][496]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.57.00:172][496]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002497FC00A40), frame # 65496
+[2020.12.21-02.57.00:172][496]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000249929BF200), frame # 65496
+[2020.12.21-02.57.00:174][496]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2020.12.21-02.57.00:205][497]LogPlayLevel: Display: Destroying online subsystem :Context_10
+[2020.12.21-02.57.11:948][679]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.57.11:961][679]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.57.11:961][679]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:57:11)
+[2020.12.21-02.57.11:961][679]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.57.11:970][679]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008835s)
+[2020.12.21-02.57.11:971][679]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.57.11:971][679]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000249B3346E00), frame # 65679
+[2020.12.21-02.57.11:971][679]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249B09E65C0), frame # 65679
+[2020.12.21-02.57.11:971][679]LogPlayLevel: PIE: World Init took: (0.001206s)
+[2020.12.21-02.57.11:971][679]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010160s)
+[2020.12.21-02.57.11:993][679]LogUObjectHash: Compacting FUObjectHashTables data took   1.89ms
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.57.11:995][679]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.57.11:995][679]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.57.11:996][679]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.57.11:996][679]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.57.11:998][679]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.57.11:998][679]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.57.12:014][679]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.57.12:015][679]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.57.12:015][679]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.57.12:015][679]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.57.12:015][679]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.57.12:028][679]LogInit: FAudioDevice initialized.
+[2020.12.21-02.57.12:039][679]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.57.12:040][679]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.57.12
+[2020.12.21-02.57.12:040][679]LogWorld: Bringing up level for play took: 0.000651
+[2020.12.21-02.57.12:041][679]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2020.12.21-02.57.12:042][679]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.57.12:042][679]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.57.12:042][679]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.57.12:043][679]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.57.12:043][679]PIE: Server logged in
+[2020.12.21-02.57.12:044][679]PIE: Play in editor total start time 0.083 seconds.
+[2020.12.21-02.57.19:116][392]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.57.19:116][392]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.57.19:116][392]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.57.19:116][392]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.57.19:125][392]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-02.57.19:128][392]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.57.19:147][392]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.57.19:163][392]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000249B09E65C0), frame # 66392
+[2020.12.21-02.57.19:163][392]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000249B3346E00), frame # 66392
+[2020.12.21-02.57.19:165][392]LogUObjectHash: Compacting FUObjectHashTables data took   2.00ms
+[2020.12.21-02.57.19:198][393]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2020.12.21-02.59.53:314][115]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.59.53:326][115]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.59.53:326][115]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:59:53)
+[2020.12.21-02.59.53:326][115]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.59.53:337][115]LogPlayLevel: PIE: StaticDuplicateObject took: (0.010466s)
+[2020.12.21-02.59.53:338][115]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.59.53:338][115]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002498253D200), frame # 67115
+[2020.12.21-02.59.53:338][115]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249B208D940), frame # 67115
+[2020.12.21-02.59.53:338][115]LogPlayLevel: PIE: World Init took: (0.001282s)
+[2020.12.21-02.59.53:338][115]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.011922s)
+[2020.12.21-02.59.53:363][115]LogUObjectHash: Compacting FUObjectHashTables data took   2.21ms
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.59.53:365][115]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.59.53:365][115]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.59.53:365][115]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.59.53:369][115]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.59.53:369][115]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.59.53:389][115]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.59.53:389][115]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.59.53:390][115]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.59.53:390][115]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.59.53:390][115]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.59.53:404][115]LogInit: FAudioDevice initialized.
+[2020.12.21-02.59.53:411][115]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.59.53:412][115]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.59.53
+[2020.12.21-02.59.53:412][115]LogWorld: Bringing up level for play took: 0.000734
+[2020.12.21-02.59.53:413][115]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2020.12.21-02.59.53:414][115]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.59.53:414][115]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.59.53:414][115]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.59.53:415][115]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.59.53:415][115]PIE: Server logged in
+[2020.12.21-02.59.53:416][115]PIE: Play in editor total start time 0.091 seconds.
+[2020.12.21-02.59.56:109][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.59.56:109][430]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.59.56:109][430]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-02.59.56:109][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.59.56:118][430]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-02.59.56:121][430]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-02.59.56:140][430]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-02.59.56:156][430]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000249B208D940), frame # 67430
+[2020.12.21-02.59.56:156][430]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002498253D200), frame # 67430
+[2020.12.21-02.59.56:158][430]LogUObjectHash: Compacting FUObjectHashTables data took   2.05ms
+[2020.12.21-02.59.56:188][431]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2020.12.21-02.59.57:134][539]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-02.59.57:148][539]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-02.59.57:148][539]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 02:59:57)
+[2020.12.21-02.59.57:148][539]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-02.59.57:158][539]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009563s)
+[2020.12.21-02.59.57:159][539]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-02.59.57:159][539]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000249929BEA00), frame # 67539
+[2020.12.21-02.59.57:159][539]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249B09E5440), frame # 67539
+[2020.12.21-02.59.57:159][539]LogPlayLevel: PIE: World Init took: (0.001125s)
+[2020.12.21-02.59.57:159][539]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010820s)
+[2020.12.21-02.59.57:180][539]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-02.59.57:181][539]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-02.59.57:181][539]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-02.59.57:182][539]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-02.59.57:182][539]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-02.59.57:185][539]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-02.59.57:185][539]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-02.59.57:201][539]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-02.59.57:201][539]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-02.59.57:201][539]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-02.59.57:201][539]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-02.59.57:201][539]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-02.59.57:214][539]LogInit: FAudioDevice initialized.
+[2020.12.21-02.59.57:224][539]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-02.59.57:225][539]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-02.59.57
+[2020.12.21-02.59.57:225][539]LogWorld: Bringing up level for play took: 0.000628
+[2020.12.21-02.59.57:225][539]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2020.12.21-02.59.57:226][539]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.59.57:226][539]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-02.59.57:226][539]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.59.57:227][539]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-02.59.57:227][539]PIE: Server logged in
+[2020.12.21-02.59.57:228][539]PIE: Play in editor total start time 0.081 seconds.
+[2020.12.21-03.00.07:820][514]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.00.07:820][514]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.00.07:820][514]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-03.00.07:821][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.00.07:828][514]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-03.00.07:831][514]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.00.07:851][514]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.00.07:868][514]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000249B09E5440), frame # 68514
+[2020.12.21-03.00.07:868][514]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000249929BEA00), frame # 68514
+[2020.12.21-03.00.07:870][514]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2020.12.21-03.00.07:911][515]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2020.12.21-03.00.08:987][635]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-03.00.09:144][635]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-03.00.09:144][635]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 03:00:09)
+[2020.12.21-03.00.09:179][635]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.00.09:188][635]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009037s)
+[2020.12.21-03.00.09:189][635]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-03.00.09:189][635]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000249B3347E00), frame # 68635
+[2020.12.21-03.00.09:189][635]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249B208D800), frame # 68635
+[2020.12.21-03.00.09:189][635]LogPlayLevel: PIE: World Init took: (0.001187s)
+[2020.12.21-03.00.09:189][635]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010397s)
+[2020.12.21-03.00.09:212][635]LogUObjectHash: Compacting FUObjectHashTables data took   1.87ms
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-03.00.09:214][635]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-03.00.09:214][635]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-03.00.09:214][635]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-03.00.09:218][635]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-03.00.09:218][635]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-03.00.09:235][635]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-03.00.09:236][635]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-03.00.09:236][635]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-03.00.09:236][635]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-03.00.09:236][635]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-03.00.09:250][635]LogInit: FAudioDevice initialized.
+[2020.12.21-03.00.09:256][635]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-03.00.09:257][635]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-03.00.09
+[2020.12.21-03.00.09:257][635]LogWorld: Bringing up level for play took: 0.000732
+[2020.12.21-03.00.09:257][635]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2020.12.21-03.00.09:259][635]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.00.09:259][635]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.00.09:259][635]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.00.09:260][635]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.00.09:260][635]PIE: Server logged in
+[2020.12.21-03.00.09:260][635]PIE: Play in editor total start time 0.117 seconds.
+[2020.12.21-03.00.17:941][520]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.00.17:941][520]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.00.17:941][520]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-03.00.17:941][520]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.00.17:951][520]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-03.00.17:955][520]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.00.17:976][520]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.00.17:993][520]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000249B208D800), frame # 69520
+[2020.12.21-03.00.17:993][520]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000249B3347E00), frame # 69520
+[2020.12.21-03.00.17:995][520]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2020.12.21-03.00.18:037][521]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2020.12.21-03.02.04:782][ 91]LogHotReload: New module detected: UE4Editor-Robogoo_Cplusplus-0004.dll
+[2020.12.21-03.02.05:474][ 94]LogHotReload: Starting Hot-Reload from IDE
+[2020.12.21-03.02.05:513][ 94]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0004 seconds. Added 3 classes and 3 folders.
+[2020.12.21-03.02.05:517][ 94]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2020.12.21-03.02.05:610][ 94]LogContentBrowser: Native class hierarchy populated in 0.0082 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-03.02.05:612][ 94]Display: HotReload took  0.1s.
+[2020.12.21-03.02.07:776][100]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-03.02.07:792][100]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-03.02.07:792][100]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 03:02:07)
+[2020.12.21-03.02.07:792][100]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.02.07:802][100]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009388s)
+[2020.12.21-03.02.07:803][100]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-03.02.07:803][100]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000024996A32800), frame # 70100
+[2020.12.21-03.02.07:803][100]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000024996A607C0), frame # 70100
+[2020.12.21-03.02.07:803][100]LogPlayLevel: PIE: World Init took: (0.001173s)
+[2020.12.21-03.02.07:803][100]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010688s)
+[2020.12.21-03.02.07:860][100]LogUObjectHash: Compacting FUObjectHashTables data took   3.19ms
+[2020.12.21-03.02.07:862][100]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-03.02.07:863][100]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-03.02.07:863][100]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-03.02.07:863][100]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-03.02.07:866][100]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-03.02.07:866][100]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-03.02.07:883][100]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-03.02.07:883][100]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-03.02.07:884][100]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-03.02.07:884][100]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-03.02.07:884][100]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-03.02.07:897][100]LogInit: FAudioDevice initialized.
+[2020.12.21-03.02.07:905][100]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-03.02.07:906][100]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-03.02.07
+[2020.12.21-03.02.07:906][100]LogWorld: Bringing up level for play took: 0.000611
+[2020.12.21-03.02.07:906][100]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2020.12.21-03.02.07:908][100]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.02.07:908][100]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.02.07:908][100]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.02.07:909][100]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.02.07:909][100]PIE: Server logged in
+[2020.12.21-03.02.07:909][100]PIE: Play in editor total start time 0.121 seconds.
+[2020.12.21-03.02.20:201][552]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.02.20:202][552]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.02.20:202][552]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-03.02.20:202][552]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.02.20:211][552]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-03.02.20:214][552]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.02.20:248][552]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.02.20:248][552]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000024996A607C0), frame # 71552
+[2020.12.21-03.02.20:249][552]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000024996A32800), frame # 71552
+[2020.12.21-03.02.20:251][552]LogUObjectHash: Compacting FUObjectHashTables data took   2.42ms
+[2020.12.21-03.02.20:287][553]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2020.12.21-03.06.42:078][458]LogUObjectHash: Compacting FUObjectHashTables data took   2.54ms
+[2020.12.21-03.06.42:202][458]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap5FC365A048AB4CE8D00D70BD20D72C5B.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2020.12.21-03.06.42:282][458]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_BuiltDataA55885484629907B1EDB6793C04AD345.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2020.12.21-03.06.42:297][458]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.21-03.06.42:297][458]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2020.12.21-03.06.42:297][458]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2020.12.21-03.06.42:795][510]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2020.12.21-03.06.42:815][510]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap008348F243B6BA60CC7717BE91E93D00.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2020.12.21-03.06.42:884][510]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_BuiltData81A4B2134CF69EE0ABC8498C5418195A.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2020.12.21-03.06.42:897][510]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.21-03.06.42:897][510]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2020.12.21-03.06.42:897][510]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2020.12.21-03.12.04:199][612]LogHotReload: New module detected: UE4Editor-Robogoo_Cplusplus-0005.dll
+[2020.12.21-03.12.04:899][615]LogHotReload: Starting Hot-Reload from IDE
+[2020.12.21-03.12.04:936][615]LogClass: Could not find existing class Character_Movement in package /Script/Robogoo_Cplusplus for HotReload, assuming new class
+[2020.12.21-03.12.04:937][615]LogClass: Function DisableActor is new.
+[2020.12.21-03.12.04:948][615]LogHotReload: Re-instancing Character_Movement after hot-reload.
+[2020.12.21-03.12.05:025][615]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0004 seconds. Added 3 classes and 3 folders.
+[2020.12.21-03.12.05:030][615]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.12.21-03.12.05:158][615]LogContentBrowser: Native class hierarchy populated in 0.0144 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-03.12.05:163][615]Display: HotReload took  0.3s.
+[2020.12.21-03.12.18:963][936]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-03.12.18:978][936]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-03.12.18:978][936]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 03:12:18)
+[2020.12.21-03.12.19:014][936]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.12.19:023][936]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009510s)
+[2020.12.21-03.12.19:025][936]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-03.12.19:025][936]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000249CE42FE00), frame # 74936
+[2020.12.21-03.12.19:025][936]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249CE46C540), frame # 74936
+[2020.12.21-03.12.19:025][936]LogPlayLevel: PIE: World Init took: (0.001277s)
+[2020.12.21-03.12.19:025][936]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010992s)
+[2020.12.21-03.12.19:085][936]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2020.12.21-03.12.19:087][936]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-03.12.19:088][936]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-03.12.19:088][936]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-03.12.19:088][936]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-03.12.19:093][936]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-03.12.19:093][936]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-03.12.19:113][936]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-03.12.19:113][936]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-03.12.19:113][936]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-03.12.19:113][936]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-03.12.19:113][936]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-03.12.19:126][936]LogInit: FAudioDevice initialized.
+[2020.12.21-03.12.19:132][936]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-03.12.19:133][936]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-03.12.19
+[2020.12.21-03.12.19:133][936]LogWorld: Bringing up level for play took: 0.000668
+[2020.12.21-03.12.19:133][936]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2020.12.21-03.12.19:135][936]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.12.19:135][936]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.12.19:135][936]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.12.19:152][936]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.12.19:152][936]PIE: Server logged in
+[2020.12.21-03.12.19:153][936]PIE: Play in editor total start time 0.178 seconds.
+[2020.12.21-03.12.32:996][485]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.12.32:996][485]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.12.32:996][485]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2020.12.21-03.12.32:996][485]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.12.33:006][485]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2020.12.21-03.12.33:010][485]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2020.12.21-03.12.33:051][485]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2020.12.21-03.12.33:066][485]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000249CE42FE00), frame # 76485
+[2020.12.21-03.12.33:066][485]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000249CE46C540), frame # 76485
+[2020.12.21-03.12.33:069][485]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
+[2020.12.21-03.12.33:105][486]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2020.12.21-03.16.46:317][183]LogHotReload: New module detected: UE4Editor-Robogoo_Cplusplus-0006.dll
+[2020.12.21-03.16.47:339][187]LogHotReload: Starting Hot-Reload from IDE
+[2020.12.21-03.16.47:383][187]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0004 seconds. Added 3 classes and 3 folders.
+[2020.12.21-03.16.47:386][187]Display: HotReload successful (1 functions remapped  0 scriptstructs remapped)
+[2020.12.21-03.16.47:483][187]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-03.16.47:487][187]Display: HotReload took  0.1s.
+[2020.12.21-03.17.51:908][979]LogUObjectHash: Compacting FUObjectHashTables data took   3.57ms
+[2020.12.21-03.17.51:910][979]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.060
+[2020.12.21-03.17.51:910][979]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/CharactermovementBp] ([1] browsable assets)...
+[2020.12.21-03.17.51:918][979]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/CharactermovementBp.CharactermovementBp]
+[2020.12.21-03.17.51:918][979]OBJ SavePackage: Finished generating thumbnails for package [/Game/CharactermovementBp]
+[2020.12.21-03.17.51:966][979]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp_Auto2D15C7ACF45C5F4582F2B9C98947F12F8.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/CharactermovementBp_Auto2.uasset'
+[2020.12.21-03.17.51:967][979]LogFileHelpers: Auto-saving content packages took 0.057
+[2020.12.21-03.20.57:745][626]BlueprintLog: New page: Compile CharactermovementBp
+[2020.12.21-03.20.57:813][626]LogUObjectHash: Compacting FUObjectHashTables data took   3.04ms
+[2020.12.21-03.21.08:147][757]LogHotReload: New module detected: UE4Editor-Robogoo_Cplusplus-0007.dll
+[2020.12.21-03.21.08:829][760]LogHotReload: Starting Hot-Reload from IDE
+[2020.12.21-03.21.08:859][760]LogClass: Could not find existing class Character_Movement in package /Script/Robogoo_Cplusplus for HotReload, assuming new class
+[2020.12.21-03.21.08:859][760]LogClass: Function DisableActor is new.
+[2020.12.21-03.21.08:869][760]LogHotReload: Re-instancing Character_Movement after hot-reload.
+[2020.12.21-03.21.08:890][760]LogProperty: Warning: Serialized Class /Script/Engine.SphereComponent for a property of Class /Script/Engine.StaticMeshComponent. Reference will be nullptred.
+    Property = ObjectProperty /Script/Robogoo_Cplusplus.Character_Movement:GooObject
+    Item = SphereComponent /Engine/Transient.CharactermovementBp_C_6:GooObject
+[2020.12.21-03.21.08:892][760]LogProperty: Warning: Serialized Class /Script/Engine.SphereComponent for a property of Class /Script/Engine.StaticMeshComponent. Reference will be nullptred.
+    Property = ObjectProperty /Script/Robogoo_Cplusplus.Character_Movement:GooObject
+    Item = SphereComponent /Engine/Transient.World_6:PersistentLevel.REINST_CharactermovementBp_C_1.GooObject
+[2020.12.21-03.21.08:894][760]LogProperty: Warning: Serialized Class /Script/Engine.SphereComponent for a property of Class /Script/Engine.StaticMeshComponent. Reference will be nullptred.
+    Property = ObjectProperty /Script/Robogoo_Cplusplus.Character_Movement:GooObject
+    Item = SphereComponent /Engine/Transient.World_0:PersistentLevel.REINST_CharactermovementBp_C_1.GooObject
+[2020.12.21-03.21.08:929][760]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0004 seconds. Added 3 classes and 3 folders.
+[2020.12.21-03.21.08:932][760]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2020.12.21-03.21.09:027][760]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 3430 classes and 824 folders.
+[2020.12.21-03.21.09:031][760]Display: HotReload took  0.2s.
+[2020.12.21-03.21.16:394][445]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/CharactermovementBp" FILE="F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset" SILENT=true
+[2020.12.21-03.21.16:414][445]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp9270F08B482DD90CB22588AC5FA7B59F.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/CharactermovementBp.uasset'
+[2020.12.21-03.21.16:424][445]AssetCheck: New page: Asset Save: CharactermovementBp
+[2020.12.21-03.21.16:424][445]LogContentValidation: Display: Validating Blueprint /Game/CharactermovementBp.CharactermovementBp
+[2020.12.21-03.21.18:136][630]LogUObjectHash: Compacting FUObjectHashTables data took   3.51ms
+[2020.12.21-03.21.18:236][630]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap8EA5190B4CCFCCFF0E343BA84D45F7FE.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap'
+[2020.12.21-03.21.18:316][630]LogSavePackage: Moving 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_BuiltDataE92112A449CAC6BD113F57B4CACE0128.tmp' to 'F:/old desktop/Games/My games/Robogoo group/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.uasset'
+[2020.12.21-03.21.18:335][630]AssetCheck: New page: Asset Save: multiple assets
+[2020.12.21-03.21.18:335][630]LogContentValidation: Display: Validating World /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap
+[2020.12.21-03.21.18:335][630]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData
+[2020.12.21-03.21.19:074][709]LogTemp: Repeating last play command: Selected Viewport
+[2020.12.21-03.21.19:089][709]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2020.12.21-03.21.19:089][709]PIE: New page: PIE session: ThirdPersonExampleMap (21 Dec 2020, 03:21:19)
+[2020.12.21-03.21.19:110][709]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2020.12.21-03.21.19:119][709]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008633s)
+[2020.12.21-03.21.19:120][709]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2020.12.21-03.21.19:120][709]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002498DA0CE00), frame # 83709
+[2020.12.21-03.21.19:120][709]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000249A694BD80), frame # 83709
+[2020.12.21-03.21.19:120][709]LogPlayLevel: PIE: World Init took: (0.001190s)
+[2020.12.21-03.21.19:121][709]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.010006s)
+[2020.12.21-03.21.19:160][709]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2020.12.21-03.21.19:161][709]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2020.12.21-03.21.19:161][709]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2020.12.21-03.21.19:162][709]LogAudio: Display: AudioDevice MaxSources: 32
+[2020.12.21-03.21.19:162][709]LogAudio: Display: Using built-in audio occlusion.
+[2020.12.21-03.21.19:162][709]LogAudioMixer: Display: Initializing audio mixer.
+[2020.12.21-03.21.19:167][709]LogAudioMixer: Display: 0: FrontLeft
+[2020.12.21-03.21.19:167][709]LogAudioMixer: Display: 1: FrontRight
+[2020.12.21-03.21.19:185][709]LogAudioMixer: Display: Using Audio Device Headset Earphone (HyperX Virtual Surround Sound)
+[2020.12.21-03.21.19:185][709]LogAudioMixer: Display: Initializing Sound Submixes...
+[2020.12.21-03.21.19:185][709]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2020.12.21-03.21.19:185][709]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2020.12.21-03.21.19:185][709]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2020.12.21-03.21.19:198][709]LogInit: FAudioDevice initialized.
+[2020.12.21-03.21.19:203][709]LogLoad: Game class is 'New_Gamemode_C'
+[2020.12.21-03.21.19:204][709]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2020.12.21-03.21.19
+[2020.12.21-03.21.19:204][709]LogWorld: Bringing up level for play took: 0.000651
+[2020.12.21-03.21.19:204][709]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2020.12.21-03.21.19:206][709]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.21.19:206][709]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2020.12.21-03.21.19:206][709]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.21.19:207][709]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2020.12.21-03.21.19:207][709]PIE: Server logged in
+[2020.12.21-03.21.19:207][709]PIE: Play in editor total start time 0.121 seconds.
