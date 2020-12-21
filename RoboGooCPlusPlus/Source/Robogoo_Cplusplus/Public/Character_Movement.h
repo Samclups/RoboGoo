@@ -29,7 +29,7 @@ public:
 		UCameraComponent* FollowCamera;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* GooObject;
+		UStaticMeshComponent* GooSphere;
 
 	UFUNCTION(BlueprintCallable, Category = "Disable")
 	void DisableActor();

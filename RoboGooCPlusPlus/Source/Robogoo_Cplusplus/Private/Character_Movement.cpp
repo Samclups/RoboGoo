@@ -29,12 +29,15 @@ ACharacter_Movement::ACharacter_Movement()
 
 	FollowCamera->bUsePawnControlRotation = false;
 
-	GooObject = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooObject"));
-	GooObject->SetupAttachment(RootComponent);
+	GooSphere = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooObject"));
+	GooSphere->SetupAttachment(RootComponent);
+
+
+
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
-	GooObject->SetStaticMesh(SphereMeshAsset.Object);
+	GooSphere->SetStaticMesh(SphereMeshAsset.Object);
 	static ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));
-	GooObject->GetStaticMesh()->SetMaterial(0, plane_material.Object);
+	GooSphere->GetStaticMesh()->SetMaterial(0, plane_material.Object);
 }
 
 // Called when the game starts or when spawned
@@ -64,7 +67,7 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacter_Movement::MoveRight);
 
 	PlayerInputComponent->BindAction("GooTrigger", IE_Pressed, this, &ACharacter_Movement::DisableActor);
-	PlayerInputComponent->BindAction("GooTrigger", IE_Released, this, &ACharacter_Movement::DisableActor);
+	//PlayerInputComponent->BindAction("GooTrigger", IE_Released, this, &ACharacter_Movement::DisableActor);
 }
 
 void ACharacter_Movement::MoveForward(float Axis)
@@ -87,27 +90,7 @@ void ACharacter_Movement::MoveRight(float Axis)
 
 void ACharacter_Movement::DisableActor()
 {
-	if (flip)
-	{
-		flip = false;
-	}
-	else
-	{
-		flip = true;
-	}
+	flip = flip ? false : true;
 
-	if (flip)
-	{
-		//GooObject->IsActive = false;
-		//USceneComponent* node = Cast<USceneComponent>(GooObject);		// All methods crash the game
-		//node->ToggleVisibility(true);
-		//GooObject->SetHiddenInGame(true);
-	}
-	else
-	{
-		//GooObject->IsActive = true;
-		//USceneComponent* node = Cast<USceneComponent>(GooObject);		// All methods crash the game
-		//node->ToggleVisibility(false);
-		//GooObject->SetHiddenInGame(false);
-	}
+	GooSphere->ToggleVisibility(flip);
 }
