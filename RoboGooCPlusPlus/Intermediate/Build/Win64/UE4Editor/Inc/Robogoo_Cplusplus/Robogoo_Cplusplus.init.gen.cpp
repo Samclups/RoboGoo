@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeRobogoo_Cplusplus_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0x5E31E75C,
-				0xE46F91EF,
+				0x3DD6E64C,
+				0xFE9853CA,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

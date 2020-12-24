@@ -2,6 +2,7 @@
 
 
 #include "Character_Movement.h"
+#include "Bullet.h"
 
 // Sets default values
 ACharacter_Movement::ACharacter_Movement()
@@ -32,12 +33,13 @@ ACharacter_Movement::ACharacter_Movement()
 	GooSphere = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooObject"));
 	GooSphere->SetupAttachment(RootComponent);
 
-
-
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
 	GooSphere->SetStaticMesh(SphereMeshAsset.Object);
 	static ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));
 	GooSphere->GetStaticMesh()->SetMaterial(0, plane_material.Object);
+
+	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
+	shootpoint->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -67,7 +69,8 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacter_Movement::MoveRight);
 
 	PlayerInputComponent->BindAction("GooTrigger", IE_Pressed, this, &ACharacter_Movement::DisableActor);
-	//PlayerInputComponent->BindAction("GooTrigger", IE_Released, this, &ACharacter_Movement::DisableActor);
+
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACharacter_Movement::OnFire);
 }
 
 void ACharacter_Movement::MoveForward(float Axis)
@@ -93,4 +96,25 @@ void ACharacter_Movement::DisableActor()
 	flip = flip ? false : true;
 
 	GooSphere->ToggleVisibility(flip);
+}
+
+void ACharacter_Movement::OnFire()
+{
+	if (ProjectileClass != NULL)
+	{
+		UWorld* const World = GetWorld();
+
+		const FRotator SpawnRotation = GetControlRotation();
+
+		const FVector SpawnLocation = ((shootpoint != nullptr) ? shootpoint->GetComponentLocation() : GetActorLocation());
+
+		if (World != NULL)
+		{
+			ABullet* Bullet = World->SpawnActor<ABullet>(ProjectileClass, SpawnLocation, SpawnRotation);
+
+			FVector NewVelocity = GetActorForwardVector() * 5000.f;
+
+			Bullet->Velocity = FVector(NewVelocity);
+		}
+	}
 }

@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 
+#include "Engine.h"
+#include "Bullet.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -31,13 +33,23 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* GooSphere;
 
-	UFUNCTION(BlueprintCallable, Category = "Disable")
+	UFUNCTION(BlueprintCallable, Category = Disable)
 	void DisableActor();
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
 	bool flip;
+
+	UPROPERTY(EditDefaultsOnly, Category = Projectile)
+		TSubclassOf<class ABullet> ProjectileClass;
+
+	UFUNCTION(BlueprintCallable, Category = Disable)
+		void OnFire();
+
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+		UStaticMeshComponent* shootpoint;
 
 protected:
 	// Called when the game starts or when spawned
