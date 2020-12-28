@@ -40,6 +40,7 @@ public:
 	void MoveRight(float Axis);
 
 	bool flip;
+	bool aim;
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
@@ -47,6 +48,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void OnFire();
 
+	UFUNCTION(BlueprintCallable, Category = Disable)
+		void Aiming();
+
+	UFUNCTION(BlueprintCallable, Category = Disable)
+		void AimReset();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* shootpoint;

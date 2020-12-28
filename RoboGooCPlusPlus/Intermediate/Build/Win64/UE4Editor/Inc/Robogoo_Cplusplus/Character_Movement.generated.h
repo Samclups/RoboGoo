@@ -16,12 +16,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_SPARSE_DATA
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execAimReset); \
+	DECLARE_FUNCTION(execAiming); \
 	DECLARE_FUNCTION(execOnFire); \
 	DECLARE_FUNCTION(execDisableActor);
 
 
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execAimReset); \
+	DECLARE_FUNCTION(execAiming); \
 	DECLARE_FUNCTION(execOnFire); \
 	DECLARE_FUNCTION(execDisableActor);
 

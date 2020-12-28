@@ -52,6 +52,17 @@ void ACharacter_Movement::BeginPlay()
 void ACharacter_Movement::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (aim)
+	{
+		CameraBoom->TargetArmLength = 100.0f;
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 0.f, 70.f), 0.5f));
+	}
+	else
+	{
+		CameraBoom->TargetArmLength = 300.0f;
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 0.f, 0.f), 0.5f));
+	}
 }
 
 // Called to bind functionality to input
@@ -71,6 +82,9 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("GooTrigger", IE_Pressed, this, &ACharacter_Movement::DisableActor);
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACharacter_Movement::OnFire);
+	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ACharacter_Movement::Aiming);
+	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ACharacter_Movement::AimReset);
+
 }
 
 void ACharacter_Movement::MoveForward(float Axis)
@@ -106,7 +120,7 @@ void ACharacter_Movement::OnFire()
 
 		const FRotator SpawnRotation = GetControlRotation();
 
-		const FVector SpawnLocation = ((shootpoint != nullptr) ? shootpoint->GetComponentLocation() : GetActorLocation());
+		const FVector SpawnLocation = ((shootpoint != nullptr && aim == true) ? shootpoint->GetComponentLocation() : GetActorLocation() + FVector(70.f, 0.f, 0.f));
 
 		if (World != NULL)
 		{
@@ -117,4 +131,18 @@ void ACharacter_Movement::OnFire()
 			Bullet->Velocity = FVector(NewVelocity);
 		}
 	}
+}
+
+void ACharacter_Movement::Aiming()
+{
+	aim = true;
+
+	//cam move
+}
+
+void ACharacter_Movement::AimReset()
+{
+	aim = false;
+
+	//cam move
 }

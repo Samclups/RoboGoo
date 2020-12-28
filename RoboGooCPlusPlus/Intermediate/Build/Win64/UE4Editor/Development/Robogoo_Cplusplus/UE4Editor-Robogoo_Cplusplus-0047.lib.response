@@ -1,0 +1,23 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Robogoo_Cplusplus-0047.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\Robogoo_CplusplusEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Bullet.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Character_Movement.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_Cplusplus.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_CplusplusCharacter.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_CplusplusGameMode.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\test.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Bullet.gen.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Character_Movement.gen.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_Cplusplus.init.gen.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_CplusplusCharacter.gen.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Robogoo_CplusplusGameMode.gen.cpp.obj"
+"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\Default.rc2.res"
+/OUT:"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-0047.lib"
+/INCLUDE:IMPLEMENT_MODULE_Robogoo_Cplusplus

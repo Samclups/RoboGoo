@@ -12,6 +12,13 @@ ABullet::ABullet()
 	RootComp = CreateDefaultSubobject<USceneComponent>(TEXT("RootComp"));
 	RootComponent = RootComp;
 
+	body = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("body"));
+	body->SetupAttachment(RootComponent);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+	body->SetStaticMesh(SphereMeshAsset.Object);
+	static ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));
+	body->GetStaticMesh()->SetMaterial(0, plane_material.Object);
 }
 
 // Called when the game starts or when spawned
@@ -46,10 +53,10 @@ void ABullet::Tick(float DeltaTime)
 			{
 				Mesh->GetDestructibleComponent()->ApplyRadiusDamage(10.f, HitResult.ImpactPoint, 32.f, 10.f, false);
 			}
-			else
-			{
-				GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Could not get mesh. Type is : %s"), *HitResult.GetActor()->StaticClass()->GetFName().ToString()));
-			}
+			//else
+			//{
+			//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Could not get mesh. Type is : %s"), *HitResult.GetActor()->StaticClass()->GetFName().ToString()));
+			//}
 		}
 
 		Destroy();

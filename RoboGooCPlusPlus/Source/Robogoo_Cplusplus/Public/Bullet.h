@@ -30,6 +30,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = speed)
 		FVector Velocity = FVector(100.f);
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+		UStaticMeshComponent* body;
 
 	float Bulletlife = 0;
 };

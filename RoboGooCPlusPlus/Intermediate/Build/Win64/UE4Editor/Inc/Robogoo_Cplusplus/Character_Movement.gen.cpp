@@ -23,6 +23,20 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ACharacter_Movement::execAimReset)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->AimReset();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACharacter_Movement::execAiming)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->Aiming();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACharacter_Movement::execOnFire)
 	{
 		P_FINISH;
@@ -41,10 +55,58 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	{
 		UClass* Class = ACharacter_Movement::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "Aiming", &ACharacter_Movement::execAiming },
+			{ "AimReset", &ACharacter_Movement::execAimReset },
 			{ "DisableActor", &ACharacter_Movement::execDisableActor },
 			{ "OnFire", &ACharacter_Movement::execOnFire },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Disable" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "Aiming", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_Aiming()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_Aiming_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Disable" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "AimReset", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_AimReset()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ACharacter_Movement_DisableActor_Statics
 	{
@@ -132,6 +194,8 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Robogoo_Cplusplus,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACharacter_Movement_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACharacter_Movement_Aiming, "Aiming" }, // 2556246629
+		{ &Z_Construct_UFunction_ACharacter_Movement_AimReset, "AimReset" }, // 3450979478
 		{ &Z_Construct_UFunction_ACharacter_Movement_DisableActor, "DisableActor" }, // 1592554990
 		{ &Z_Construct_UFunction_ACharacter_Movement_OnFire, "OnFire" }, // 1900509976
 	};
@@ -215,7 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACharacter_Movement, 94398025);
+	IMPLEMENT_CLASS(ACharacter_Movement, 2165300489);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ACharacter_Movement>()
 	{
 		return ACharacter_Movement::StaticClass();
