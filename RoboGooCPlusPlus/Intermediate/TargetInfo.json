@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Robogoo_Cplusplus",
-			"Path": "F:\\old desktop\\Games\\My games\\Robogoo group\\RoboGoo\\RoboGooCPlusPlus\\Source\\Robogoo_Cplusplus.Target.cs",
+			"Path": "C:\\Users\\Samje\\Documents\\Unreal Projects\\RoboGoopGitFun\\RoboGoo\\RoboGooCPlusPlus\\Source\\Robogoo_Cplusplus.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "Robogoo_CplusplusEditor",
-			"Path": "F:\\old desktop\\Games\\My games\\Robogoo group\\RoboGoo\\RoboGooCPlusPlus\\Source\\Robogoo_CplusplusEditor.Target.cs",
+			"Path": "C:\\Users\\Samje\\Documents\\Unreal Projects\\RoboGoopGitFun\\RoboGoo\\RoboGooCPlusPlus\\Source\\Robogoo_CplusplusEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
