@@ -17,8 +17,10 @@ ABullet::ABullet()
 
 	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
 	body->SetStaticMesh(SphereMeshAsset.Object);
-	static ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));
+
+	static ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// standard material
 	body->GetStaticMesh()->SetMaterial(0, plane_material.Object);
+
 }
 
 // Called when the game starts or when spawned
@@ -26,6 +28,8 @@ void ABullet::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	body->SetWorldScale3D(FVector(0.2f, 0.1f, 0.1f));
+
 }
 
 // Called every frame
@@ -46,7 +50,7 @@ void ABullet::Tick(float DeltaTime)
 	{
 		if (HitResult.GetActor())
 		{
-			DrawDebugSolidBox(GetWorld(), HitResult.ImpactPoint, FVector(10.f), FColor::Blue, true);
+			//DrawDebugSolidBox(GetWorld(), HitResult.ImpactPoint, FVector(10.f), FColor::Blue, true);
 			ADestructibleActor* Mesh = Cast<ADestructibleActor>(HitResult.GetActor());
 
 			if (Mesh)
@@ -67,7 +71,7 @@ void ABullet::Tick(float DeltaTime)
 
 		//DrawDebugline(GetWorld(), StartTrace, EndTrace, FColor(0.f, -Bulletlife * 80.f, 100.f), true);
 
-		DrawDebugLine(GetWorld(), StartTrace, EndTrace, FColor::Emerald, true);
+		//DrawDebugLine(GetWorld(), StartTrace, EndTrace, FColor::Emerald, true);
 
 		SetActorLocation(EndTrace);
 
@@ -79,4 +83,3 @@ void ABullet::Tick(float DeltaTime)
 		Destroy();
 	}
 }
-

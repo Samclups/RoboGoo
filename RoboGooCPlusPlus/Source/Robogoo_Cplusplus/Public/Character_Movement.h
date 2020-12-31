@@ -33,14 +33,20 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* GooSphere;
 
+	UPROPERTY(EditAnywhere)
+		UMaterialInterface* Material;
+
 	UFUNCTION(BlueprintCallable, Category = Disable)
 	void DisableActor();
 
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
-	bool flip;
-	bool aim;
+	void Jumpglide();
+	void Stopglide();
+
+	bool flip, aim, landed;
+	int glidenum;
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
@@ -68,4 +74,5 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void Landed(const FHitResult& Hit) override;
 };
