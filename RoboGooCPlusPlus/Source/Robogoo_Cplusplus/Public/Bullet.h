@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -35,4 +33,5 @@ public:
 		UStaticMeshComponent* body;
 
 	float Bulletlife = 0;
+	bool aimlong;
 };

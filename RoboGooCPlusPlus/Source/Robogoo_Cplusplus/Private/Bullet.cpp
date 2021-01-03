@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Bullet.h"
 
 // Sets default values
@@ -50,17 +47,12 @@ void ABullet::Tick(float DeltaTime)
 	{
 		if (HitResult.GetActor())
 		{
-			//DrawDebugSolidBox(GetWorld(), HitResult.ImpactPoint, FVector(10.f), FColor::Blue, true);
 			ADestructibleActor* Mesh = Cast<ADestructibleActor>(HitResult.GetActor());
 
 			if (Mesh)
 			{
 				Mesh->GetDestructibleComponent()->ApplyRadiusDamage(10.f, HitResult.ImpactPoint, 32.f, 10.f, false);
 			}
-			//else
-			//{
-			//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::Printf(TEXT("Could not get mesh. Type is : %s"), *HitResult.GetActor()->StaticClass()->GetFName().ToString()));
-			//}
 		}
 
 		Destroy();
@@ -69,8 +61,6 @@ void ABullet::Tick(float DeltaTime)
 	{
 		Bulletlife += DeltaTime;
 
-		//DrawDebugline(GetWorld(), StartTrace, EndTrace, FColor(0.f, -Bulletlife * 80.f, 100.f), true);
-
 		//DrawDebugLine(GetWorld(), StartTrace, EndTrace, FColor::Emerald, true);
 
 		SetActorLocation(EndTrace);
@@ -78,7 +68,12 @@ void ABullet::Tick(float DeltaTime)
 		Velocity += FVector(0.f, 0.f, -200.f) * DeltaTime;
 	}
 
-	if (Bulletlife > 3)
+	if (!aimlong && Bulletlife > 0.1f)
+	{
+		Destroy();
+	}
+
+	if (aimlong && Bulletlife > 0.2f)
 	{
 		Destroy();
 	}

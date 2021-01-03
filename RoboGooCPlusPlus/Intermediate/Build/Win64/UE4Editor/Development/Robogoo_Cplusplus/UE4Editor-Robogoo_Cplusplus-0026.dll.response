@@ -75,6 +75,7 @@
 "H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\CoreUObject\UE4Editor-CoreUObject.lib"
 "H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\InputCore\UE4Editor-InputCore.lib"
 "H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Development\HeadMountedDisplay\UE4Editor-HeadMountedDisplay.lib"
+"H:\Program Files\Epic games\UE_4.25\Engine\Plugins\Runtime\ApexDestruction\Intermediate\Build\Win64\UE4Editor\Development\ApexDestruction\UE4Editor-ApexDestruction.lib"
 /OUT:"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Binaries\Win64\UE4Editor-Robogoo_Cplusplus-0026.dll"
 /IMPLIB:"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus-0026.suppressed.lib"
 /PDB:"F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Binaries\Win64\UE4Editor-Robogoo_Cplusplus-0026.pdb"

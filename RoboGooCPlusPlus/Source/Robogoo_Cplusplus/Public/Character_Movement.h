@@ -1,5 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
 #pragma once
 
 #include "CoreMinimal.h"
@@ -47,6 +45,9 @@ public:
 
 	bool flip, aim, landed;
 	int glidenum;
+
+	int PlayerHealth;
+	float height, damagedist, heightoffset;
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;

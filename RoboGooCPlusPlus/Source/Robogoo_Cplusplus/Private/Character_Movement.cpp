@@ -1,6 +1,3 @@
-// Fill out your copyright notice in the Description page of Project Settings.
-
-
 #include "Character_Movement.h"
 #include "Bullet.h"
 
@@ -42,6 +39,9 @@ ACharacter_Movement::ACharacter_Movement()
 
 	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
 	shootpoint->SetupAttachment(RootComponent);
+
+	damagedist = 200;
+	PlayerHealth = 100;
 }
 
 // Called when the game starts or when spawned
@@ -61,6 +61,8 @@ void ACharacter_Movement::BeginPlay()
 void ACharacter_Movement::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	height = GetActorLocation().X;
 
 	if (aim)
 	{
@@ -166,6 +168,11 @@ void ACharacter_Movement::OnFire()
 			FVector NewVelocity = GetActorForwardVector() * 5000.f;
 
 			Bullet->Velocity = FVector(NewVelocity);
+
+			if (aim == true)
+			{
+				Bullet->aimlong = true;
+			}
 		}
 	}
 }
@@ -198,11 +205,40 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 		GetCharacterMovement()->GravityScale = 2.f;
 	}
 
+	if (height - (damagedist + heightoffset))
+	{
+		float damage = ((height - (damagedist + heightoffset)));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::SanitizeFloat(damage));
+
+		if (((height - (damagedist + heightoffset)) > 101.f) && ((height - (damagedist + heightoffset))) < 200.f) PlayerHealth -= 1.f;
+
+		if (((height - (damagedist + heightoffset)) > 201.f) && ((height - (damagedist + heightoffset))) < 500.f)
+		{
+			float tempdamage = ((height - (damagedist + heightoffset)) * 0.1f);
+			int damageint = std::round(tempdamage);
+
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
+
+			PlayerHealth -= damageint;
+		}
+
+		if ((height - (damagedist + heightoffset)) > 501.f) PlayerHealth -= 100.f;
+
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(PlayerHealth));
+	}
+
+	if (PlayerHealth <= 0)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("DEATH"));
+	}
+
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, TEXT("landed"));
 }
 
 void ACharacter_Movement::Jumpglide()
 {
+	heightoffset = GetActorLocation().X;
+
 	if (flip)
 	{
 		landed = false;
