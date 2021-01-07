@@ -31,6 +31,9 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* GooSphere;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+		UStaticMeshComponent* GooShield;
+
 	UPROPERTY(EditAnywhere)
 		UMaterialInterface* Material;
 
@@ -43,7 +46,7 @@ public:
 	void Jumpglide();
 	void Stopglide();
 
-	bool flip, aim, landed;
+	bool flip, aim, landed, block;
 	int glidenum;
 
 	int PlayerHealth;
@@ -60,6 +63,12 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void AimReset();
+
+	UFUNCTION(BlueprintCallable, Category = Disable)
+		void Blocking();
+
+	UFUNCTION(BlueprintCallable, Category = Disable)
+		void BlockReset();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* shootpoint;

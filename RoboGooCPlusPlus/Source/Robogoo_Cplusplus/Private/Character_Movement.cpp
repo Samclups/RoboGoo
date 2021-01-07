@@ -28,6 +28,7 @@ ACharacter_Movement::ACharacter_Movement()
 
 	FollowCamera->bUsePawnControlRotation = false;
 
+
 	GooSphere = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooObject"));
 	GooSphere->SetupAttachment(RootComponent);
 
@@ -36,6 +37,17 @@ ACharacter_Movement::ACharacter_Movement()
 
 	ConstructorHelpers::FObjectFinder<UMaterial> plane_material(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
 	GooSphere->GetStaticMesh()->SetMaterial(0, plane_material.Object);
+
+
+	GooShield = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooShield"));
+	GooShield->SetupAttachment(RootComponent);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset1(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+	GooShield->SetStaticMesh(SphereMeshAsset1.Object);
+
+	ConstructorHelpers::FObjectFinder<UMaterial> plane_material1(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
+	GooShield->GetStaticMesh()->SetMaterial(0, plane_material1.Object);
+
 
 	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
 	shootpoint->SetupAttachment(RootComponent);
@@ -50,8 +62,11 @@ void ACharacter_Movement::BeginPlay()
 	Super::BeginPlay();
 
 	GooSphere->SetWorldScale3D(FVector(0.75f, 0.75f, 0.75f));
-
 	GooSphere->ToggleVisibility(false);
+
+	GooShield->SetWorldScale3D(FVector(0.2f, 1.f, 1.f));
+	GooShield->SetRelativeLocation(FVector(40.f, 0.f, 30.f));
+	GooShield->ToggleVisibility(false);
 
 	landed = true;
 	glidenum = 0;
@@ -106,6 +121,9 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ACharacter_Movement::Aiming);
 	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ACharacter_Movement::AimReset);
 
+	PlayerInputComponent->BindAction("Block", IE_Pressed, this, &ACharacter_Movement::Blocking);
+	PlayerInputComponent->BindAction("Block", IE_Released, this, &ACharacter_Movement::BlockReset);
+
 }
 
 void ACharacter_Movement::MoveForward(float Axis)
@@ -153,7 +171,7 @@ void ACharacter_Movement::DisableActor()
 
 void ACharacter_Movement::OnFire()
 {
-	if (ProjectileClass != NULL)
+	if (ProjectileClass != NULL && block == false)
 	{
 		UWorld* const World = GetWorld();
 
@@ -185,6 +203,18 @@ void ACharacter_Movement::Aiming()
 void ACharacter_Movement::AimReset()
 {
 	aim = false;
+}
+
+void ACharacter_Movement::Blocking()
+{
+	aim = true;
+	GooShield->ToggleVisibility(true);
+}
+
+void ACharacter_Movement::BlockReset()
+{
+	aim = false;
+	GooShield->ToggleVisibility(false);
 }
 
 void ACharacter_Movement::Landed(const FHitResult& Hit)

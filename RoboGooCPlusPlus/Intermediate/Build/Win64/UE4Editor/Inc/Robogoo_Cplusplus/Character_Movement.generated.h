@@ -16,6 +16,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_SPARSE_DATA
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execBlockReset); \
+	DECLARE_FUNCTION(execBlocking); \
 	DECLARE_FUNCTION(execAimReset); \
 	DECLARE_FUNCTION(execAiming); \
 	DECLARE_FUNCTION(execOnFire); \
@@ -24,6 +26,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_19_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execBlockReset); \
+	DECLARE_FUNCTION(execBlocking); \
 	DECLARE_FUNCTION(execAimReset); \
 	DECLARE_FUNCTION(execAiming); \
 	DECLARE_FUNCTION(execOnFire); \
