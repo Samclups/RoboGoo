@@ -207,13 +207,13 @@ void ACharacter_Movement::AimReset()
 
 void ACharacter_Movement::Blocking()
 {
-	aim = true;
+	//aim = true;
 	GooShield->ToggleVisibility(true);
 }
 
 void ACharacter_Movement::BlockReset()
 {
-	aim = false;
+	//aim = false;
 	GooShield->ToggleVisibility(false);
 }
 
