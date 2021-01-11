@@ -34,15 +34,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* GooShield;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* SoloMelee;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* CombinedMelee;
-
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* CombinedMeleeChild;
-
 	UPROPERTY(EditAnywhere)
 		UMaterialInterface* Material;
 
@@ -55,20 +46,17 @@ public:
 	void Jumpglide();
 	void Stopglide();
 
-	bool flip, aim, landed, block, smeleeonce, commeleeonce, sweep;
+	bool flip, aim, landed, block;
 	int glidenum;
 
 	int PlayerHealth;
-	float height, damagedist, heightoffset, smeleemaxtime, commeleemaxtime;
+	float height, damagedist, heightoffset;
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
 
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void OnFire();
-
-	UFUNCTION(BlueprintCallable, Category = Disable)
-		void OnMelee();
 
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void Aiming();
@@ -84,16 +72,6 @@ public:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* shootpoint;
-
-
-	UFUNCTION()
-		void smallmelee();
-
-	UFUNCTION()
-		void combinedmelee();
-
-	FTimerHandle smeleetimer, commeleetimer;
-
 
 protected:
 	// Called when the game starts or when spawned
