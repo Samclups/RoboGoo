@@ -29,6 +29,7 @@ ACharacter_Movement::ACharacter_Movement()
 	FollowCamera->bUsePawnControlRotation = false;
 
 
+
 	GooSphere = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("GooObject"));
 	GooSphere->SetupAttachment(RootComponent);
 
@@ -47,6 +48,37 @@ ACharacter_Movement::ACharacter_Movement()
 
 	ConstructorHelpers::FObjectFinder<UMaterial> plane_material1(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
 	GooShield->GetStaticMesh()->SetMaterial(0, plane_material1.Object);
+
+
+	SoloMelee = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("SoloMelee"));
+	SoloMelee->SetupAttachment(RootComponent);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset2(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+	SoloMelee->SetStaticMesh(SphereMeshAsset2.Object);
+
+	ConstructorHelpers::FObjectFinder<UMaterial> plane_material2(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
+	SoloMelee->GetStaticMesh()->SetMaterial(0, plane_material2.Object);
+
+
+	CombinedMelee = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CombinedMelee"));
+	CombinedMelee->SetupAttachment(RootComponent);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>SphereMeshAsset4(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'"));
+	CombinedMelee->SetStaticMesh(SphereMeshAsset4.Object);
+
+	ConstructorHelpers::FObjectFinder<UMaterial> plane_material4(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
+	CombinedMelee->GetStaticMesh()->SetMaterial(0, plane_material4.Object);
+
+
+	CombinedMeleeChild = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("CombinedMeleeChild"));
+	CombinedMeleeChild->SetupAttachment(CombinedMelee);
+
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>CubeMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Cube.Cube'"));
+	CombinedMeleeChild->SetStaticMesh(CubeMeshAsset.Object);
+
+	ConstructorHelpers::FObjectFinder<UMaterial> plane_material3(TEXT("Material'/Engine/BasicShapes/BasicShapeMaterial'"));		// Standard material
+	CombinedMeleeChild->GetStaticMesh()->SetMaterial(0, plane_material3.Object);
+
 
 
 	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
@@ -68,8 +100,21 @@ void ACharacter_Movement::BeginPlay()
 	GooShield->SetRelativeLocation(FVector(40.f, 0.f, 30.f));
 	GooShield->ToggleVisibility(false);
 
+	SoloMelee->SetWorldScale3D(FVector(3.f, 3.f, 1.f));
+	SoloMelee->ToggleVisibility(false);
+
+	CombinedMeleeChild->SetWorldScale3D(FVector(3.f, 1.f, 1.f));
+	CombinedMeleeChild->SetRelativeLocation(FVector(125.f, 0.f, 0.f));
+	CombinedMelee->SetRelativeRotation(FRotator(0.f, 50.f, 0.f));
+	CombinedMeleeChild->ToggleVisibility(false);
+
 	landed = true;
 	glidenum = 0;
+	block = false;
+	aim = false;
+
+	smeleemaxtime = 1.f;
+	commeleemaxtime = 0.25f;
 }
 
 // Called every frame
@@ -95,6 +140,11 @@ void ACharacter_Movement::Tick(float DeltaTime)
 		bUseControllerRotationRoll = false;
 		bUseControllerRotationYaw = false;
 	}
+
+	if (sweep)
+	{	
+		CombinedMelee->AddRelativeRotation(FRotator(0.f, -3.f, 0.f));
+	}
 }
 
 // Called to bind functionality to input
@@ -115,8 +165,8 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("MoveRight", this, &ACharacter_Movement::MoveRight);
 
 	PlayerInputComponent->BindAction("GooTrigger", IE_Pressed, this, &ACharacter_Movement::DisableActor);
-
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACharacter_Movement::OnFire);
+	PlayerInputComponent->BindAction("Melee", IE_Pressed, this, &ACharacter_Movement::OnMelee);
 
 	PlayerInputComponent->BindAction("Aim", IE_Pressed, this, &ACharacter_Movement::Aiming);
 	PlayerInputComponent->BindAction("Aim", IE_Released, this, &ACharacter_Movement::AimReset);
@@ -195,6 +245,33 @@ void ACharacter_Movement::OnFire()
 	}
 }
 
+void ACharacter_Movement::OnMelee()
+{
+	if (flip)
+	{
+		if (!commeleeonce)
+		{
+			commeleeonce = true;
+
+			CombinedMeleeChild->ToggleVisibility(true);
+			sweep = true;
+
+			GetWorld()->GetTimerManager().SetTimer(commeleetimer, this, &ACharacter_Movement::combinedmelee, commeleemaxtime, false);
+		}
+	}
+	else
+	{
+		if (!smeleeonce)
+		{
+			smeleeonce = true;
+
+			SoloMelee->ToggleVisibility(true);
+
+			GetWorld()->GetTimerManager().SetTimer(smeleetimer, this, &ACharacter_Movement::smallmelee, smeleemaxtime, false);
+		}
+	}
+}
+
 void ACharacter_Movement::Aiming()
 {
 	aim = true;
@@ -207,14 +284,22 @@ void ACharacter_Movement::AimReset()
 
 void ACharacter_Movement::Blocking()
 {
-	//aim = true;
-	GooShield->ToggleVisibility(true);
+	if (flip)
+	{
+		//aim = true;
+		block = true;
+		GooShield->ToggleVisibility(true);
+	}
 }
 
 void ACharacter_Movement::BlockReset()
 {
-	//aim = false;
-	GooShield->ToggleVisibility(false);
+	if (flip)
+	{
+		//aim = false;
+		block = false;
+		GooShield->ToggleVisibility(false);
+	}
 }
 
 void ACharacter_Movement::Landed(const FHitResult& Hit)
@@ -292,4 +377,22 @@ void ACharacter_Movement::Stopglide()
 	{
 		GetCharacterMovement()->GravityScale = 0.8f;
 	}
+}
+
+void ACharacter_Movement::smallmelee()
+{
+	smeleeonce = false;
+	SoloMelee->ToggleVisibility(false);
+
+	GetWorld()->GetTimerManager().ClearTimer(smeleetimer);
+}
+
+void ACharacter_Movement::combinedmelee()
+{
+	sweep = false;
+	commeleeonce = false;
+	CombinedMelee->SetRelativeRotation(FRotator(0.f, 50.f, 0.f));
+	CombinedMeleeChild->ToggleVisibility(false);
+
+	GetWorld()->GetTimerManager().ClearTimer(commeleetimer);
 }

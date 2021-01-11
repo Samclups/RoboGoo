@@ -24,6 +24,20 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ACharacter_Movement::execcombinedmelee)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->combinedmelee();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACharacter_Movement::execsmallmelee)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->smallmelee();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACharacter_Movement::execBlockReset)
 	{
 		P_FINISH;
@@ -52,6 +66,13 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		P_THIS->Aiming();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ACharacter_Movement::execOnMelee)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnMelee();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACharacter_Movement::execOnFire)
 	{
 		P_FINISH;
@@ -74,8 +95,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 			{ "AimReset", &ACharacter_Movement::execAimReset },
 			{ "Blocking", &ACharacter_Movement::execBlocking },
 			{ "BlockReset", &ACharacter_Movement::execBlockReset },
+			{ "combinedmelee", &ACharacter_Movement::execcombinedmelee },
 			{ "DisableActor", &ACharacter_Movement::execDisableActor },
 			{ "OnFire", &ACharacter_Movement::execOnFire },
+			{ "OnMelee", &ACharacter_Movement::execOnMelee },
+			{ "smallmelee", &ACharacter_Movement::execsmallmelee },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -171,6 +195,28 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "combinedmelee", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_combinedmelee()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ACharacter_Movement_DisableActor_Statics
 	{
 #if WITH_METADATA
@@ -217,6 +263,51 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Disable" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "OnMelee", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_OnMelee()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_OnMelee_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "smallmelee", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_smallmelee()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_smallmelee_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ACharacter_Movement_NoRegister()
 	{
 		return ACharacter_Movement::StaticClass();
@@ -240,6 +331,18 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Material_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Material;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CombinedMeleeChild_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CombinedMeleeChild;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CombinedMelee_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CombinedMelee;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SoloMelee_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_SoloMelee;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_GooShield_MetaData[];
 #endif
@@ -269,8 +372,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		{ &Z_Construct_UFunction_ACharacter_Movement_AimReset, "AimReset" }, // 3450979478
 		{ &Z_Construct_UFunction_ACharacter_Movement_Blocking, "Blocking" }, // 1103664692
 		{ &Z_Construct_UFunction_ACharacter_Movement_BlockReset, "BlockReset" }, // 2706789684
+		{ &Z_Construct_UFunction_ACharacter_Movement_combinedmelee, "combinedmelee" }, // 2172572332
 		{ &Z_Construct_UFunction_ACharacter_Movement_DisableActor, "DisableActor" }, // 1592554990
 		{ &Z_Construct_UFunction_ACharacter_Movement_OnFire, "OnFire" }, // 1900509976
+		{ &Z_Construct_UFunction_ACharacter_Movement_OnMelee, "OnMelee" }, // 2177070749
+		{ &Z_Construct_UFunction_ACharacter_Movement_smallmelee, "smallmelee" }, // 3795011985
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::Class_MetaDataParams[] = {
@@ -301,6 +407,30 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild_MetaData[] = {
+		{ "Category", "Sphere" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild = { "CombinedMeleeChild", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, CombinedMeleeChild), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee_MetaData[] = {
+		{ "Category", "Sphere" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee = { "CombinedMelee", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, CombinedMelee), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee_MetaData[] = {
+		{ "Category", "Sphere" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee = { "SoloMelee", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, SoloMelee), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_GooShield_MetaData[] = {
 		{ "Category", "Sphere" },
@@ -337,6 +467,9 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_shootpoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_GooShield,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_GooSphere,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_FollowCamera,
@@ -369,7 +502,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACharacter_Movement, 3661179878);
+	IMPLEMENT_CLASS(ACharacter_Movement, 714113733);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ACharacter_Movement>()
 	{
 		return ACharacter_Movement::StaticClass();
