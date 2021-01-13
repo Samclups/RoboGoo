@@ -17,13 +17,35 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	ROBOGOO_CPLUSPLUS_API UClass* Z_Construct_UClass_ACharacter_Movement();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Robogoo_Cplusplus();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ROBOGOO_CPLUSPLUS_API UClass* Z_Construct_UClass_ABullet_NoRegister();
-	ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(ACharacter_Movement::execdamage)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->damage();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACharacter_Movement::execBeginOverlap)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
+		P_GET_UBOOL(Z_Param_bFromSweep);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->BeginOverlap(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACharacter_Movement::execcombinedmelee)
 	{
 		P_FINISH;
@@ -93,9 +115,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Aiming", &ACharacter_Movement::execAiming },
 			{ "AimReset", &ACharacter_Movement::execAimReset },
+			{ "BeginOverlap", &ACharacter_Movement::execBeginOverlap },
 			{ "Blocking", &ACharacter_Movement::execBlocking },
 			{ "BlockReset", &ACharacter_Movement::execBlockReset },
 			{ "combinedmelee", &ACharacter_Movement::execcombinedmelee },
+			{ "damage", &ACharacter_Movement::execdamage },
 			{ "DisableActor", &ACharacter_Movement::execDisableActor },
 			{ "OnFire", &ACharacter_Movement::execOnFire },
 			{ "OnMelee", &ACharacter_Movement::execOnMelee },
@@ -146,6 +170,87 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_AimReset_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics
+	{
+		struct Character_Movement_eventBeginOverlap_Parms
+		{
+			UPrimitiveComponent* OverlappedComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			int32 OtherBodyIndex;
+			bool bFromSweep;
+			FHitResult SweepResult;
+		};
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_SweepResult_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_SweepResult;
+		static void NewProp_bFromSweep_SetBit(void* Obj);
+		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_bFromSweep;
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverlappedComponent_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_SweepResult_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Character_Movement_eventBeginOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_SweepResult_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_SweepResult_MetaData)) };
+	void Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_bFromSweep_SetBit(void* Obj)
+	{
+		((Character_Movement_eventBeginOverlap_Parms*)Obj)->bFromSweep = 1;
+	}
+	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(Character_Movement_eventBeginOverlap_Parms), &Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherBodyIndex = { "OtherBodyIndex", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Character_Movement_eventBeginOverlap_Parms, OtherBodyIndex), METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Character_Movement_eventBeginOverlap_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherComp_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Character_Movement_eventBeginOverlap_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OverlappedComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OverlappedComponent = { "OverlappedComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Character_Movement_eventBeginOverlap_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OverlappedComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OverlappedComponent_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_SweepResult,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_bFromSweep,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherBodyIndex,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherComp,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OtherActor,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::NewProp_OverlappedComponent,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "BeginOverlap", nullptr, nullptr, sizeof(Character_Movement_eventBeginOverlap_Parms), Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00420401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_BeginOverlap()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_BeginOverlap_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -214,6 +319,28 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_combinedmelee_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACharacter_Movement_damage_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACharacter_Movement_damage_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACharacter_Movement_damage_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACharacter_Movement, nullptr, "damage", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACharacter_Movement_damage_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACharacter_Movement_damage_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACharacter_Movement_damage()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACharacter_Movement_damage_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -328,9 +455,17 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Material_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_commeleemaxtime_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Material;
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_commeleemaxtime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_smeleemaxtime_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_smeleemaxtime;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PlayerHealth_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_PlayerHealth;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CombinedMeleeChild_MetaData[];
 #endif
@@ -370,9 +505,11 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACharacter_Movement_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ACharacter_Movement_Aiming, "Aiming" }, // 2556246629
 		{ &Z_Construct_UFunction_ACharacter_Movement_AimReset, "AimReset" }, // 3450979478
+		{ &Z_Construct_UFunction_ACharacter_Movement_BeginOverlap, "BeginOverlap" }, // 4117159846
 		{ &Z_Construct_UFunction_ACharacter_Movement_Blocking, "Blocking" }, // 1103664692
 		{ &Z_Construct_UFunction_ACharacter_Movement_BlockReset, "BlockReset" }, // 2706789684
 		{ &Z_Construct_UFunction_ACharacter_Movement_combinedmelee, "combinedmelee" }, // 2172572332
+		{ &Z_Construct_UFunction_ACharacter_Movement_damage, "damage" }, // 848701986
 		{ &Z_Construct_UFunction_ACharacter_Movement_DisableActor, "DisableActor" }, // 1592554990
 		{ &Z_Construct_UFunction_ACharacter_Movement_OnFire, "OnFire" }, // 1900509976
 		{ &Z_Construct_UFunction_ACharacter_Movement_OnMelee, "OnMelee" }, // 2177070749
@@ -401,12 +538,26 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, ProjectileClass), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_commeleemaxtime_MetaData[] = {
 		{ "Category", "Character_Movement" },
 		{ "ModuleRelativePath", "Public/Character_Movement.h" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material_MetaData)) };
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_commeleemaxtime = { "commeleemaxtime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, commeleemaxtime), METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_commeleemaxtime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_commeleemaxtime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_smeleemaxtime_MetaData[] = {
+		{ "Category", "Character_Movement" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_smeleemaxtime = { "smeleemaxtime", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, smeleemaxtime), METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_smeleemaxtime_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_smeleemaxtime_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_PlayerHealth_MetaData[] = {
+		{ "Category", "Character_Movement" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_PlayerHealth = { "PlayerHealth", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, PlayerHealth), METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_PlayerHealth_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_PlayerHealth_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild_MetaData[] = {
 		{ "Category", "Sphere" },
@@ -466,7 +617,9 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACharacter_Movement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_shootpoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Material,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_commeleemaxtime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_smeleemaxtime,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_PlayerHealth,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMeleeChild,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_CombinedMelee,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_SoloMelee,
@@ -502,7 +655,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACharacter_Movement, 714113733);
+	IMPLEMENT_CLASS(ACharacter_Movement, 3378491608);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ACharacter_Movement>()
 	{
 		return ACharacter_Movement::StaticClass();
