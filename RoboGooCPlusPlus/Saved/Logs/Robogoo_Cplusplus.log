@@ -886,3 +886,28 @@ Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPe
 [2021.01.14-15.12.44:651][990]AssetCheck: New page: Asset Save: multiple assets
 [2021.01.14-15.12.44:651][990]LogContentValidation: Display: Validating StaticMesh /Engine/BasicShapes/Sphere.Sphere
 [2021.01.14-15.12.44:651][990]LogContentValidation: Display: Validating StaticMesh /Engine/BasicShapes/Cube.Cube
+[2021.01.14-15.18.21:970][100]LogHotReload: New module detected: UE4Editor-Robogoo_Cplusplus-0037.dll
+[2021.01.14-15.18.22:658][103]LogHotReload: Starting Hot-Reload from IDE
+[2021.01.14-15.18.22:691][103]LogClass: Could not find existing class Character_Movement in package /Script/Robogoo_Cplusplus for HotReload, assuming new class
+[2021.01.14-15.18.22:691][103]LogClass: Function Aiming is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function AimReset is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function BeginOverlap is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function Blocking is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function BlockReset is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function combinedmelee is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function damage is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function DisableActor is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function OnFire is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function OnMelee is new.
+[2021.01.14-15.18.22:691][103]LogClass: Function smallmelee is new.
+[2021.01.14-15.18.22:768][103]LogHotReload: Re-instancing Character_Movement after hot-reload.
+[2021.01.14-15.18.23:002][103]Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+[2021.01.14-15.18.23:016][103]LogContentBrowser: Native class hierarchy updated for 'Robogoo_Cplusplus' in 0.0004 seconds. Added 5 classes and 3 folders.
+[2021.01.14-15.18.23:016][103]Warning: Some classes could not be reloaded:
+Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+
+[2021.01.14-15.18.23:019][103]Display: HotReload successful (0 functions remapped  0 scriptstructs remapped)
+[2021.01.14-15.18.23:092][103]LogContentBrowser: Native class hierarchy populated in 0.0091 seconds. Added 3421 classes and 813 folders.
+[2021.01.14-15.18.23:096][103]Display: HotReload took  0.4s.

@@ -340,7 +340,7 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 
 		if (((height - (damagedist + heightoffset)) > 201.f) && ((height - (damagedist + heightoffset))) < 500.f)
 		{
-			float tempdamage = ((height - (damagedist + heightoffset)) * 0.1f);
+			float tempdamage = ((height - (damagedist + heightoffset)) * damagemultiplier);
 			int damageint = std::round(tempdamage);
 
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
@@ -348,7 +348,7 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 			PlayerHealth -= damageint;
 		}
 
-		if ((height - (damagedist + heightoffset)) > 501.f) Health -= 100.f;
+		if ((height - (damagedist + heightoffset)) > Maxfallheight) Health -= 100.f;
 
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(Health));
 	}

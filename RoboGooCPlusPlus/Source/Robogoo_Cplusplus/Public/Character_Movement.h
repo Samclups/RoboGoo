@@ -85,10 +85,7 @@ public:
 
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float googravity = 0.8f;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		float googravity = 0.8f;
+		float damagemultiplier = 0.1f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Maxfallheight = 501.f;
