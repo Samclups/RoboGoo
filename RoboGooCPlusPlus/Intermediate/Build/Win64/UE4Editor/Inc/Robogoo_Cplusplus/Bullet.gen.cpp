@@ -34,6 +34,14 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_aimlife_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_aimlife;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_nonaimlife_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_nonaimlife;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_body_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_body;
@@ -56,6 +64,20 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 	};
 #endif
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABullet_Statics::NewProp_aimlife_MetaData[] = {
+		{ "Category", "Bullet" },
+		{ "ModuleRelativePath", "Public/Bullet.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABullet_Statics::NewProp_aimlife = { "aimlife", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABullet, aimlife), METADATA_PARAMS(Z_Construct_UClass_ABullet_Statics::NewProp_aimlife_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABullet_Statics::NewProp_aimlife_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABullet_Statics::NewProp_nonaimlife_MetaData[] = {
+		{ "Category", "Bullet" },
+		{ "ModuleRelativePath", "Public/Bullet.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ABullet_Statics::NewProp_nonaimlife = { "nonaimlife", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABullet, nonaimlife), METADATA_PARAMS(Z_Construct_UClass_ABullet_Statics::NewProp_nonaimlife_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABullet_Statics::NewProp_nonaimlife_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ABullet_Statics::NewProp_body_MetaData[] = {
 		{ "Category", "Sphere" },
 		{ "EditInline", "true" },
@@ -71,6 +93,8 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ABullet_Statics::NewProp_Velocity = { "Velocity", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ABullet, Velocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(Z_Construct_UClass_ABullet_Statics::NewProp_Velocity_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ABullet_Statics::NewProp_Velocity_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABullet_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABullet_Statics::NewProp_aimlife,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABullet_Statics::NewProp_nonaimlife,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABullet_Statics::NewProp_body,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABullet_Statics::NewProp_Velocity,
 	};
@@ -101,7 +125,7 @@ void EmptyLinkFunctionForGeneratedCodeBullet() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ABullet, 3141482378);
+	IMPLEMENT_CLASS(ABullet, 2647349322);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ABullet>()
 	{
 		return ABullet::StaticClass();

@@ -68,12 +68,12 @@ void ABullet::Tick(float DeltaTime)
 		Velocity += FVector(0.f, 0.f, -200.f) * DeltaTime;
 	}
 
-	if (!aimlong && Bulletlife > 0.1f)
+	if (!aimlong && Bulletlife > nonaimlife)
 	{
 		Destroy();
 	}
 
-	if (aimlong && Bulletlife > 0.2f)
+	if (aimlong && Bulletlife > aimlife)
 	{
 		Destroy();
 	}

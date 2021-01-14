@@ -216,15 +216,15 @@ void ACharacter_Movement::DisableActor()
 
 	if (flip)
 	{
-		GetCharacterMovement()->JumpZVelocity = 700.0f;
-		GetCharacterMovement()->GravityScale = 0.8f;
+		GetCharacterMovement()->JumpZVelocity = goojump;
+		GetCharacterMovement()->GravityScale = googravity;
 
 		landed = false;
 	}
 	else
 	{
-		GetCharacterMovement()->JumpZVelocity = 800.0f;
-		GetCharacterMovement()->GravityScale = 2.f;
+		GetCharacterMovement()->JumpZVelocity = nongoojump;
+		GetCharacterMovement()->GravityScale = nongoogravity;
 	}
 
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("Bool: %s"), flip ? TEXT("true") : TEXT("false")));
@@ -244,7 +244,7 @@ void ACharacter_Movement::OnFire()
 		{
 			ABullet* Bullet = World->SpawnActor<ABullet>(ProjectileClass, SpawnLocation, SpawnRotation);
 
-			FVector NewVelocity = GetActorForwardVector() * 5000.f;
+			FVector NewVelocity = GetActorForwardVector() * bulletspeed;
 
 			Bullet->Velocity = FVector(NewVelocity);
 
@@ -322,13 +322,13 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 
 	if (flip)
 	{
-		GetCharacterMovement()->JumpZVelocity = 700.0f;
-		GetCharacterMovement()->GravityScale = 0.8f;
+		GetCharacterMovement()->JumpZVelocity = goojump;
+		GetCharacterMovement()->GravityScale = googravity;
 	}
 	else
 	{
-		GetCharacterMovement()->JumpZVelocity = 800.0f;
-		GetCharacterMovement()->GravityScale = 2.f;
+		GetCharacterMovement()->JumpZVelocity = nongoojump;
+		GetCharacterMovement()->GravityScale = nongoogravity;
 	}
 
 	if (height - (damagedist + heightoffset))

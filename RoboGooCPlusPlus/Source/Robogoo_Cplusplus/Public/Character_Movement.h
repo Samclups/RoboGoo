@@ -56,6 +56,7 @@ public:
 	bool flip, aim, landed, block, smeleeonce, commeleeonce, sweep;
 	int glidenum, Health;
 
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int PlayerHealth = 100;
 
@@ -66,6 +67,32 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float commeleemaxtime = 0.25f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int bulletspeed = 5000;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int nongoojump = 800;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float nongoogravity = 2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int goojump = 700;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float googravity = 0.8f;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float googravity = 0.8f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float googravity = 0.8f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Maxfallheight = 501.f;
+
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
