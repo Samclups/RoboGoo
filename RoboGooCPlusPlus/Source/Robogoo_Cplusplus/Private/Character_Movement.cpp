@@ -112,8 +112,6 @@ void ACharacter_Movement::BeginPlay()
 	block = false;
 	aim = false;
 
-	//GooSphere->SetSimulatePhysics(true);
-
 	CombinedMeleeChild->OnComponentBeginOverlap.AddDynamic(this, &ACharacter_Movement::BeginOverlap);
 	SoloMelee->OnComponentBeginOverlap.AddDynamic(this, &ACharacter_Movement::BeginOverlap);
 

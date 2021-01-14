@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Robogoo_Cplusplus.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{78F5A9EC-5DE8-4B96-97E5-A12E481F7B0A}</UniqueIdentifier>
+      <UniqueIdentifier>{8DB887C5-CE2F-41FC-B7E3-EFACEFCB564C}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Robogoo_Cplusplus.Target.cs">
       <Filter>Source</Filter>
@@ -11,8 +11,9 @@
     <None Include="..\..\Source\Robogoo_CplusplusEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\Robogoo_Cplusplus.png" />
     <Filter Include="Config">
-      <UniqueIdentifier>{1ED013C7-810F-436B-A98F-D5ABD07F016D}</UniqueIdentifier>
+      <UniqueIdentifier>{0E133B9E-C0B5-435E-BA8C-9A9BC8DF0161}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +31,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Robogoo_Cplusplus">
-      <UniqueIdentifier>{A8DD36AF-BA2E-4534-82AA-3648BC5797E0}</UniqueIdentifier>
+      <UniqueIdentifier>{DEE68DB1-8919-42F6-9057-C18EE58D99EF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Robogoo_Cplusplus\Robogoo_Cplusplus.Build.cs">
       <Filter>Source\Robogoo_Cplusplus</Filter>
@@ -60,8 +61,11 @@
       <Filter>Source\Robogoo_Cplusplus</Filter>
     </ClInclude>
     <Filter Include="Source\Robogoo_Cplusplus\Private">
-      <UniqueIdentifier>{879B31F6-8855-462E-9E46-9B923A4FE92A}</UniqueIdentifier>
+      <UniqueIdentifier>{388DB523-E9BE-4001-9124-D5F5AD9F0338}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Robogoo_Cplusplus\Private\ballmovement.cpp">
+      <Filter>Source\Robogoo_Cplusplus\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Robogoo_Cplusplus\Private\Bullet.cpp">
       <Filter>Source\Robogoo_Cplusplus\Private</Filter>
     </ClCompile>
@@ -72,8 +76,11 @@
       <Filter>Source\Robogoo_Cplusplus\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Robogoo_Cplusplus\Public">
-      <UniqueIdentifier>{63EE8127-8A60-4102-BCFD-F1E6524ED9CB}</UniqueIdentifier>
+      <UniqueIdentifier>{0C026B9F-F869-4900-A41C-4C4509440539}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\Robogoo_Cplusplus\Public\ballmovement.h">
+      <Filter>Source\Robogoo_Cplusplus\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Robogoo_Cplusplus\Public\Bullet.h">
       <Filter>Source\Robogoo_Cplusplus\Public</Filter>
     </ClInclude>
