@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Robogoo_Cplusplus.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{9F797879-899E-4607-9220-5AC9CB83ACA7}</UniqueIdentifier>
+      <UniqueIdentifier>{78F5A9EC-5DE8-4B96-97E5-A12E481F7B0A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Robogoo_Cplusplus.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{E21EEA97-2E13-4F00-BDF6-456445C2F150}</UniqueIdentifier>
+      <UniqueIdentifier>{1ED013C7-810F-436B-A98F-D5ABD07F016D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Robogoo_Cplusplus">
-      <UniqueIdentifier>{F9A5CEC6-D3F0-4BA4-8AFE-A948675DCB07}</UniqueIdentifier>
+      <UniqueIdentifier>{A8DD36AF-BA2E-4534-82AA-3648BC5797E0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Robogoo_Cplusplus\Robogoo_Cplusplus.Build.cs">
       <Filter>Source\Robogoo_Cplusplus</Filter>
@@ -60,7 +60,7 @@
       <Filter>Source\Robogoo_Cplusplus</Filter>
     </ClInclude>
     <Filter Include="Source\Robogoo_Cplusplus\Private">
-      <UniqueIdentifier>{F6698164-0D73-40D2-B866-26AD649A13F4}</UniqueIdentifier>
+      <UniqueIdentifier>{879B31F6-8855-462E-9E46-9B923A4FE92A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Robogoo_Cplusplus\Private\Bullet.cpp">
       <Filter>Source\Robogoo_Cplusplus\Private</Filter>
@@ -68,13 +68,19 @@
     <ClCompile Include="..\..\Source\Robogoo_Cplusplus\Private\Character_Movement.cpp">
       <Filter>Source\Robogoo_Cplusplus\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Robogoo_Cplusplus\Private\Test_Enemy.cpp">
+      <Filter>Source\Robogoo_Cplusplus\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Robogoo_Cplusplus\Public">
-      <UniqueIdentifier>{91EA3938-B1FB-498E-8979-7C95A846860E}</UniqueIdentifier>
+      <UniqueIdentifier>{63EE8127-8A60-4102-BCFD-F1E6524ED9CB}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Robogoo_Cplusplus\Public\Bullet.h">
       <Filter>Source\Robogoo_Cplusplus\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Robogoo_Cplusplus\Public\Character_Movement.h">
+      <Filter>Source\Robogoo_Cplusplus\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Robogoo_Cplusplus\Public\Test_Enemy.h">
       <Filter>Source\Robogoo_Cplusplus\Public</Filter>
     </ClInclude>
   </ItemGroup>

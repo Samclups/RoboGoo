@@ -1,5 +1,6 @@
 #include "Character_Movement.h"
 #include "Bullet.h"
+#include "Test_Enemy.h"
 
 // Sets default values
 ACharacter_Movement::ACharacter_Movement()
@@ -83,9 +84,6 @@ ACharacter_Movement::ACharacter_Movement()
 
 	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
 	shootpoint->SetupAttachment(RootComponent);
-
-	damagedist = 200;
-	PlayerHealth = 100;
 }
 
 // Called when the game starts or when spawned
@@ -100,7 +98,8 @@ void ACharacter_Movement::BeginPlay()
 	GooShield->SetRelativeLocation(FVector(40.f, 0.f, 30.f));
 	GooShield->ToggleVisibility(false);
 
-	SoloMelee->SetWorldScale3D(FVector(3.f, 3.f, 1.f));
+	SoloMelee->SetWorldScale3D(FVector(1.f, 2.f, 1.f));
+	SoloMelee->SetRelativeLocation(FVector(40.f, 0.f, 0.f));
 	SoloMelee->ToggleVisibility(false);
 
 	CombinedMeleeChild->SetWorldScale3D(FVector(3.f, 1.f, 1.f));
@@ -113,8 +112,13 @@ void ACharacter_Movement::BeginPlay()
 	block = false;
 	aim = false;
 
-	smeleemaxtime = 1.f;
-	commeleemaxtime = 0.25f;
+	//GooSphere->SetSimulatePhysics(true);
+
+	CombinedMeleeChild->OnComponentBeginOverlap.AddDynamic(this, &ACharacter_Movement::BeginOverlap);
+	SoloMelee->OnComponentBeginOverlap.AddDynamic(this, &ACharacter_Movement::BeginOverlap);
+
+	startposition = GetActorLocation();
+
 }
 
 // Called every frame
@@ -144,6 +148,13 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	if (sweep)
 	{	
 		CombinedMelee->AddRelativeRotation(FRotator(0.f, -3.f, 0.f));
+	}
+
+	if (Health <= 0)
+	{
+		flip = false;
+		Health = PlayerHealth;
+		SetActorLocation(startposition);
 	}
 }
 
@@ -205,15 +216,15 @@ void ACharacter_Movement::DisableActor()
 
 	if (flip)
 	{
-		GetCharacterMovement()->JumpZVelocity = 700.0f;
-		GetCharacterMovement()->GravityScale = 0.8f;
+		GetCharacterMovement()->JumpZVelocity = goojump;
+		GetCharacterMovement()->GravityScale = googravity;
 
 		landed = false;
 	}
 	else
 	{
-		GetCharacterMovement()->JumpZVelocity = 800.0f;
-		GetCharacterMovement()->GravityScale = 2.f;
+		GetCharacterMovement()->JumpZVelocity = nongoojump;
+		GetCharacterMovement()->GravityScale = nongoogravity;
 	}
 
 	//GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("Bool: %s"), flip ? TEXT("true") : TEXT("false")));
@@ -233,7 +244,7 @@ void ACharacter_Movement::OnFire()
 		{
 			ABullet* Bullet = World->SpawnActor<ABullet>(ProjectileClass, SpawnLocation, SpawnRotation);
 
-			FVector NewVelocity = GetActorForwardVector() * 5000.f;
+			FVector NewVelocity = GetActorForwardVector() * bulletspeed;
 
 			Bullet->Velocity = FVector(NewVelocity);
 
@@ -311,13 +322,13 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 
 	if (flip)
 	{
-		GetCharacterMovement()->JumpZVelocity = 700.0f;
-		GetCharacterMovement()->GravityScale = 0.8f;
+		GetCharacterMovement()->JumpZVelocity = goojump;
+		GetCharacterMovement()->GravityScale = googravity;
 	}
 	else
 	{
-		GetCharacterMovement()->JumpZVelocity = 800.0f;
-		GetCharacterMovement()->GravityScale = 2.f;
+		GetCharacterMovement()->JumpZVelocity = nongoojump;
+		GetCharacterMovement()->GravityScale = nongoogravity;
 	}
 
 	if (height - (damagedist + heightoffset))
@@ -325,11 +336,11 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 		float damage = ((height - (damagedist + heightoffset)));
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::SanitizeFloat(damage));
 
-		if (((height - (damagedist + heightoffset)) > 101.f) && ((height - (damagedist + heightoffset))) < 200.f) PlayerHealth -= 1.f;
+		if (((height - (damagedist + heightoffset)) > 101.f) && ((height - (damagedist + heightoffset))) < 200.f) Health -= 1.f;
 
 		if (((height - (damagedist + heightoffset)) > 201.f) && ((height - (damagedist + heightoffset))) < 500.f)
 		{
-			float tempdamage = ((height - (damagedist + heightoffset)) * 0.1f);
+			float tempdamage = ((height - (damagedist + heightoffset)) * damagemultiplier);
 			int damageint = std::round(tempdamage);
 
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
@@ -337,12 +348,12 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 			PlayerHealth -= damageint;
 		}
 
-		if ((height - (damagedist + heightoffset)) > 501.f) PlayerHealth -= 100.f;
+		if ((height - (damagedist + heightoffset)) > Maxfallheight) Health -= 100.f;
 
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(PlayerHealth));
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(Health));
 	}
 
-	if (PlayerHealth <= 0)
+	if (Health <= 0)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("DEATH"));
 	}
@@ -395,4 +406,30 @@ void ACharacter_Movement::combinedmelee()
 	CombinedMeleeChild->ToggleVisibility(false);
 
 	GetWorld()->GetTimerManager().ClearTimer(commeleetimer);
+}
+
+void ACharacter_Movement::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	// Overlap
+
+	if (OtherActor->IsA(ATest_Enemy::StaticClass()))
+	{
+		if (smeleeonce)
+		{
+			GetWorld()->GetTimerManager().SetTimer(damage_tick, this, &ACharacter_Movement::damage, smeleemaxtime, false);
+			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("smallhit")));
+
+		}
+		else if(commeleeonce)
+		{
+			GetWorld()->GetTimerManager().SetTimer(damage_tick, this, &ACharacter_Movement::damage, commeleemaxtime, false);
+			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("combohit")));
+
+		}
+	}
+}
+
+void ACharacter_Movement::damage()
+{
+	GetWorld()->GetTimerManager().ClearTimer(damage_tick);
 }

@@ -5,6 +5,7 @@
 
 #include "Engine.h"
 #include "Bullet.h"
+#include "Test_Enemy.h"
 #include "Components/InputComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/CharacterMovementComponent.h"
@@ -43,9 +44,6 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* CombinedMeleeChild;
 
-	UPROPERTY(EditAnywhere)
-		UMaterialInterface* Material;
-
 	UFUNCTION(BlueprintCallable, Category = Disable)
 	void DisableActor();
 
@@ -56,10 +54,42 @@ public:
 	void Stopglide();
 
 	bool flip, aim, landed, block, smeleeonce, commeleeonce, sweep;
-	int glidenum;
+	int glidenum, Health;
 
-	int PlayerHealth;
-	float height, damagedist, heightoffset, smeleemaxtime, commeleemaxtime;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int PlayerHealth = 100;
+
+	float height, damagedist = 200, heightoffset;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float smeleemaxtime = 1.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float commeleemaxtime = 0.25f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int bulletspeed = 5000;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int nongoojump = 800;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float nongoogravity = 2;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int goojump = 700;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float googravity = 0.8f;
+
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float damagemultiplier = 0.1f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float Maxfallheight = 501.f;
+
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
@@ -92,8 +122,15 @@ public:
 	UFUNCTION()
 		void combinedmelee();
 
-	FTimerHandle smeleetimer, commeleetimer;
+	UFUNCTION()
+		void BeginOverlap(UPrimitiveComponent* OverlappedComponent,	AActor* OtherActor,	UPrimitiveComponent* OtherComp,	int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+	UFUNCTION()
+		void damage();
+
+	FTimerHandle smeleetimer, commeleetimer, damage_tick;
+
+	FVector startposition;
 
 protected:
 	// Called when the game starts or when spawned

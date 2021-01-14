@@ -32,6 +32,12 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* body;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float nonaimlife = 0.1f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float aimlife = 0.2f;
+
 	float Bulletlife = 0;
 	bool aimlong;
 };
