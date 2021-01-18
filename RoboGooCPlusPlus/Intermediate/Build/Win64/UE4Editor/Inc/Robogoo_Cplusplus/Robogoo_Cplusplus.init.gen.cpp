@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeRobogoo_Cplusplus_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xC51B1D6E,
+				0xF61AAD8F,
 				0x4CB54468,
 				METADATA_PARAMS(nullptr, 0)
 			};

@@ -88,6 +88,9 @@ public:
 		float damagemultiplier = 0.1f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float minimumdropdist = 101.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Maxfallheight = 501.f;
 
 

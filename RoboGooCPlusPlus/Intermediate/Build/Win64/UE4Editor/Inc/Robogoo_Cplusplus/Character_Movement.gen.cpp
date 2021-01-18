@@ -459,6 +459,10 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_Maxfallheight;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_minimumdropdist_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_minimumdropdist;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_damagemultiplier_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_damagemultiplier;
@@ -572,6 +576,13 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Maxfallheight = { "Maxfallheight", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, Maxfallheight), METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Maxfallheight_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Maxfallheight_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist_MetaData[] = {
+		{ "Category", "Character_Movement" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist = { "minimumdropdist", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, minimumdropdist), METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_damagemultiplier_MetaData[] = {
 		{ "Category", "Character_Movement" },
@@ -695,6 +706,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_shootpoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Maxfallheight,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_damagemultiplier,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_googravity,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_goojump,
@@ -739,7 +751,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACharacter_Movement, 1860705050);
+	IMPLEMENT_CLASS(ACharacter_Movement, 3455692496);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ACharacter_Movement>()
 	{
 		return ACharacter_Movement::StaticClass();

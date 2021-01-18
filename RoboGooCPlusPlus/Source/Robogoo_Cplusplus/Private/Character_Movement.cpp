@@ -117,6 +117,8 @@ void ACharacter_Movement::BeginPlay()
 
 	startposition = GetActorLocation();
 
+	Health = PlayerHealth;
+
 }
 
 // Called every frame
@@ -125,6 +127,16 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	height = GetActorLocation().X;
+
+	if (Health <= 0)
+	{
+		flip = false;
+		GooSphere->ToggleVisibility(flip);
+		SetActorLocation(startposition);
+		Health = PlayerHealth;
+		GetCharacterMovement()->JumpZVelocity = nongoojump;
+		GetCharacterMovement()->GravityScale = nongoogravity;
+	}
 
 	if (aim)
 	{
@@ -146,13 +158,6 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	if (sweep)
 	{	
 		CombinedMelee->AddRelativeRotation(FRotator(0.f, -3.f, 0.f));
-	}
-
-	if (Health <= 0)
-	{
-		flip = false;
-		Health = PlayerHealth;
-		SetActorLocation(startposition);
 	}
 }
 
@@ -236,7 +241,7 @@ void ACharacter_Movement::OnFire()
 
 		const FRotator SpawnRotation = ((shootpoint != nullptr && aim == true) ? GetControlRotation() : GetActorRotation());
 
-		const FVector SpawnLocation = ((shootpoint != nullptr && aim == true) ? shootpoint->GetComponentLocation() : GetActorLocation() + (GetActorForwardVector() * 60));
+		const FVector SpawnLocation = ((shootpoint != nullptr && aim == true) ? shootpoint->GetComponentLocation() : GetActorLocation() + (GetActorForwardVector() * 70));
 
 		if (World != NULL)
 		{
@@ -334,16 +339,16 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 		float damage = ((height - (damagedist + heightoffset)));
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::SanitizeFloat(damage));
 
-		if (((height - (damagedist + heightoffset)) > 101.f) && ((height - (damagedist + heightoffset))) < 200.f) Health -= 1.f;
+		if (((height - (damagedist + heightoffset)) > minimumdropdist) && ((height - (damagedist + heightoffset))) < (minimumdropdist + (minimumdropdist / 2)) ) Health -= 1.f;
 
-		if (((height - (damagedist + heightoffset)) > 201.f) && ((height - (damagedist + heightoffset))) < 500.f)
+		if (((height - (damagedist + heightoffset)) > minimumdropdist + (minimumdropdist / 2) + 1) && ((height - (damagedist + heightoffset))) < (Maxfallheight - 1))
 		{
 			float tempdamage = ((height - (damagedist + heightoffset)) * damagemultiplier);
 			int damageint = std::round(tempdamage);
 
 			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
 
-			PlayerHealth -= damageint;
+			Health -= damageint;
 		}
 
 		if ((height - (damagedist + heightoffset)) > Maxfallheight) Health -= 100.f;
