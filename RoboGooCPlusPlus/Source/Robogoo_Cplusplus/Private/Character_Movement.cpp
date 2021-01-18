@@ -82,8 +82,11 @@ ACharacter_Movement::ACharacter_Movement()
 
 
 
-	shootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("shootpoint"));
-	shootpoint->SetupAttachment(RootComponent);
+	aimshootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("aimshootpoint"));
+	aimshootpoint->SetupAttachment(RootComponent);
+
+	nonaimshootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("nonaimshootpoint"));
+	nonaimshootpoint->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -222,7 +225,7 @@ void ACharacter_Movement::DisableActor()
 		GetCharacterMovement()->JumpZVelocity = goojump;
 		GetCharacterMovement()->GravityScale = googravity;
 
-		landed = false;
+		//landed = false;
 	}
 	else
 	{
@@ -239,9 +242,9 @@ void ACharacter_Movement::OnFire()
 	{
 		UWorld* const World = GetWorld();
 
-		const FRotator SpawnRotation = ((shootpoint != nullptr && aim == true) ? GetControlRotation() : GetActorRotation());
+		const FRotator SpawnRotation = ((aimshootpoint != nullptr && aim == true) ? GetControlRotation() : GetActorRotation());
 
-		const FVector SpawnLocation = ((shootpoint != nullptr && aim == true) ? shootpoint->GetComponentLocation() : GetActorLocation() + (GetActorForwardVector() * 70));
+		const FVector SpawnLocation = ((aimshootpoint != nullptr && aim == true) ? aimshootpoint->GetComponentLocation() : nonaimshootpoint->GetComponentLocation());
 
 		if (World != NULL)
 		{
@@ -323,43 +326,43 @@ void ACharacter_Movement::Landed(const FHitResult& Hit)
 	landed = true;
 	glidenum = 0;
 
-	if (flip)
-	{
-		GetCharacterMovement()->JumpZVelocity = goojump;
-		GetCharacterMovement()->GravityScale = googravity;
-	}
-	else
-	{
-		GetCharacterMovement()->JumpZVelocity = nongoojump;
-		GetCharacterMovement()->GravityScale = nongoogravity;
-	}
+	//if (flip)
+	//{
+	//	GetCharacterMovement()->JumpZVelocity = goojump;
+	//	GetCharacterMovement()->GravityScale = googravity;
+	//}
+	//else
+	//{
+	//	GetCharacterMovement()->JumpZVelocity = nongoojump;
+	//	GetCharacterMovement()->GravityScale = nongoogravity;
+	//}
 
-	if (height - (damagedist + heightoffset))
-	{
-		float damage = ((height - (damagedist + heightoffset)));
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::SanitizeFloat(damage));
+	//if (height - (damagedist + heightoffset))
+	//{
+	//	float damage = ((height - (damagedist + heightoffset)));
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::White, FString::SanitizeFloat(damage));
 
-		if (((height - (damagedist + heightoffset)) > minimumdropdist) && ((height - (damagedist + heightoffset))) < (minimumdropdist + (minimumdropdist / 2)) ) Health -= 1.f;
+	//	if (((height - (damagedist + heightoffset)) > minimumdropdist) && ((height - (damagedist + heightoffset))) < (minimumdropdist + (minimumdropdist / 2)) ) Health -= 1.f;
 
-		if (((height - (damagedist + heightoffset)) > minimumdropdist + (minimumdropdist / 2) + 1) && ((height - (damagedist + heightoffset))) < (Maxfallheight - 1))
-		{
-			float tempdamage = ((height - (damagedist + heightoffset)) * damagemultiplier);
-			int damageint = std::round(tempdamage);
+	//	if (((height - (damagedist + heightoffset)) > minimumdropdist + (minimumdropdist / 2) + 1) && ((height - (damagedist + heightoffset))) < (Maxfallheight - 1))
+	//	{
+	//		float tempdamage = ((height - (damagedist + heightoffset)) * damagemultiplier);
+	//		int damageint = std::round(tempdamage);
 
-			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
+	//		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Green, FString::SanitizeFloat(damageint));
 
-			Health -= damageint;
-		}
+	//		Health -= damageint;
+	//	}
 
-		if ((height - (damagedist + heightoffset)) > Maxfallheight) Health -= 100.f;
+	//	if ((height - (damagedist + heightoffset)) > Maxfallheight) Health -= 100.f;
 
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(Health));
-	}
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, FString::SanitizeFloat(Health));
+	//}
 
-	if (Health <= 0)
-	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("DEATH"));
-	}
+	//if (Health <= 0)
+	//{
+	//	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("DEATH"));
+	//}
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Cyan, TEXT("landed"));
 }

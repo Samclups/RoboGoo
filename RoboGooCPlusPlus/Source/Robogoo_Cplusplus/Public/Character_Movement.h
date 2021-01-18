@@ -53,9 +53,8 @@ public:
 	void Jumpglide();
 	void Stopglide();
 
-	bool flip, aim, landed, block, smeleeonce, commeleeonce, sweep;
-	int glidenum, Health;
-
+	bool flip, aim, block, smeleeonce, commeleeonce, sweep, landed;
+	int Health, glidenum;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int PlayerHealth = 100;
@@ -116,8 +115,10 @@ public:
 		void BlockReset();
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* shootpoint;
+		UStaticMeshComponent* aimshootpoint;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+		UStaticMeshComponent* nonaimshootpoint;
 
 	UFUNCTION()
 		void smallmelee();
