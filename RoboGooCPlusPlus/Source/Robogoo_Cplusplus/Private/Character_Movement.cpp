@@ -1,6 +1,9 @@
 #include "Character_Movement.h"
 #include "Bullet.h"
 #include "Test_Enemy.h"
+#include "Test_NPC.h"
+#include "Blueprint/UserWidget.h"
+
 
 // Sets default values
 ACharacter_Movement::ACharacter_Movement()
@@ -87,6 +90,9 @@ ACharacter_Movement::ACharacter_Movement()
 
 	nonaimshootpoint = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("nonaimshootpoint"));
 	nonaimshootpoint->SetupAttachment(RootComponent);
+
+	Cutsceneposition = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cutsceneposition"));
+	Cutsceneposition->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -141,6 +147,25 @@ void ACharacter_Movement::Tick(float DeltaTime)
 		GetCharacterMovement()->GravityScale = nongoogravity;
 	}
 
+	if (cutscene && !aim)
+	{
+		CameraBoom->bUsePawnControlRotation = false;
+		FollowCamera->bUsePawnControlRotation = false;
+
+		CameraBoom->TargetArmLength = 100.0f;
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), Cutsceneposition->GetRelativeLocation(), 0.1f));
+		CameraBoom->SetRelativeRotation(FMath::Lerp(CameraBoom->GetRelativeRotation(), Cutsceneposition->GetRelativeRotation(), 0.1f));
+	}
+	else
+	{
+		CameraBoom->TargetArmLength = 300.0f;
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 0.f, 0.f), 0.5f));
+		CameraBoom->SetRelativeRotation(FMath::Lerp(CameraBoom->GetRelativeRotation(), FRotator(0.f, 0.f, 0.f), 0.5f));
+
+		CameraBoom->bUsePawnControlRotation = true;
+		FollowCamera->bUsePawnControlRotation = true;
+	}
+
 	if (aim)
 	{
 		CameraBoom->TargetArmLength = 100.0f;
@@ -172,7 +197,7 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);		
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter_Movement::Jumpglide);
 
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
@@ -190,25 +215,30 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 
 	PlayerInputComponent->BindAction("Block", IE_Pressed, this, &ACharacter_Movement::Blocking);
 	PlayerInputComponent->BindAction("Block", IE_Released, this, &ACharacter_Movement::BlockReset);
-
 }
 
 void ACharacter_Movement::MoveForward(float Axis)
 {
-	FRotator Rotation = Controller->GetControlRotation();
-	FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
+	if (!cutscene)
+	{
+		FRotator Rotation = Controller->GetControlRotation();
+		FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
 
-	FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
-	AddMovementInput(Direction, Axis);
+		FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		AddMovementInput(Direction, Axis);
+	}
 }
 
 void ACharacter_Movement::MoveRight(float Axis)
 {
-	FRotator Rotation = Controller->GetControlRotation();
-	FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
+	if (!cutscene)
+	{
+		FRotator Rotation = Controller->GetControlRotation();
+		FRotator YawRotation(0.0f, Rotation.Yaw, 0.0f);
 
-	FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
-	AddMovementInput(Direction, Axis);
+		FVector Direction = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
+		AddMovementInput(Direction, Axis);
+	}
 }
 
 void ACharacter_Movement::DisableActor()
@@ -238,7 +268,7 @@ void ACharacter_Movement::DisableActor()
 
 void ACharacter_Movement::OnFire()
 {
-	if (ProjectileClass != NULL && block == false)
+	if (ProjectileClass != NULL && block == false && !cutscene)
 	{
 		UWorld* const World = GetWorld();
 
@@ -264,7 +294,7 @@ void ACharacter_Movement::OnFire()
 
 void ACharacter_Movement::OnMelee()
 {
-	if (flip)
+	if (flip && !cutscene)
 	{
 		if (!commeleeonce)
 		{
@@ -276,7 +306,7 @@ void ACharacter_Movement::OnMelee()
 			GetWorld()->GetTimerManager().SetTimer(commeleetimer, this, &ACharacter_Movement::combinedmelee, commeleemaxtime, false);
 		}
 	}
-	else
+	else if(!cutscene)
 	{
 		if (!smeleeonce)
 		{
@@ -291,17 +321,23 @@ void ACharacter_Movement::OnMelee()
 
 void ACharacter_Movement::Aiming()
 {
-	aim = true;
+	if (!cutscene)
+	{
+		aim = true;
+	}
 }
 
 void ACharacter_Movement::AimReset()
 {
-	aim = false;
+	if (!cutscene)
+	{
+		aim = false;
+	}
 }
 
 void ACharacter_Movement::Blocking()
 {
-	if (flip)
+	if (flip && !cutscene)
 	{
 		//aim = true;
 		block = true;
@@ -371,7 +407,7 @@ void ACharacter_Movement::Jumpglide()
 {
 	heightoffset = GetActorLocation().X;
 
-	if (flip)
+	if (flip && !cutscene)
 	{
 		landed = false;
 		glidenum++;
@@ -390,7 +426,7 @@ void ACharacter_Movement::Jumpglide()
 
 void ACharacter_Movement::Stopglide()
 {
-	if (glidenum >= 3)
+	if (glidenum >= 3 && !cutscene)
 	{
 		GetCharacterMovement()->GravityScale = 0.8f;
 	}
@@ -398,20 +434,26 @@ void ACharacter_Movement::Stopglide()
 
 void ACharacter_Movement::smallmelee()
 {
-	smeleeonce = false;
-	SoloMelee->ToggleVisibility(false);
+	if (!cutscene)
+	{
+		smeleeonce = false;
+		SoloMelee->ToggleVisibility(false);
 
-	GetWorld()->GetTimerManager().ClearTimer(smeleetimer);
+		GetWorld()->GetTimerManager().ClearTimer(smeleetimer);
+	}
 }
 
 void ACharacter_Movement::combinedmelee()
 {
-	sweep = false;
-	commeleeonce = false;
-	CombinedMelee->SetRelativeRotation(FRotator(0.f, 50.f, 0.f));
-	CombinedMeleeChild->ToggleVisibility(false);
+	if (!cutscene)
+	{
+		sweep = false;
+		commeleeonce = false;
+		CombinedMelee->SetRelativeRotation(FRotator(0.f, 50.f, 0.f));
+		CombinedMeleeChild->ToggleVisibility(false);
 
-	GetWorld()->GetTimerManager().ClearTimer(commeleetimer);
+		GetWorld()->GetTimerManager().ClearTimer(commeleetimer);
+	}
 }
 
 void ACharacter_Movement::BeginOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
@@ -432,6 +474,19 @@ void ACharacter_Movement::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
 			GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("combohit")));
 
 		}
+	}
+
+	if (OtherActor->IsA(ATest_NPC::StaticClass()))
+	{
+		/*FVector Forward = OtherActor->GetActorLocation() - Cutsceneposition->GetRelativeLocation();
+		FRotator Rot = UKismetMathLibrary::MakeRotFromXZ(Forward, FVector::UpVector);
+		Cutsceneposition->SetRelativeRotation(Rot, true);*/
+
+		FRotator PlayerRot = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation() + cutscenepositionofset, OtherActor->GetActorLocation());
+		PlayerRot = PlayerRot + FRotator(0.f,0.f,0.f);
+		Cutsceneposition->SetRelativeRotation(PlayerRot, true);
+
+		cutscene = true;
 	}
 }
 

@@ -678,4 +678,7 @@ H:\Program Files\Epic games\UE_4.25\Engine\Plugins\Runtime\ApexDestruction\Inter
 F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Inc\Robogoo_Cplusplus\Bullet.generated.h
 F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Source\Robogoo_Cplusplus\Public\Test_Enemy.h
 F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Inc\Robogoo_Cplusplus\Test_Enemy.generated.h
+H:\Program Files\Epic games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
+H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
+H:\Program Files\Epic games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet\KismetMathLibrary.inl
 F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Inc\Robogoo_Cplusplus\Character_Movement.generated.h

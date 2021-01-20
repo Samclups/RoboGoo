@@ -10,6 +10,7 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/SpringArmComponent.h"
 
 #include "Character_Movement.generated.h"
@@ -92,6 +93,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Maxfallheight = 501.f;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FVector cutscenepositionofset = FVector(0.f,0.f,0.f);
+
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
 		TSubclassOf<class ABullet> ProjectileClass;
@@ -114,11 +118,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void BlockReset();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
 		UStaticMeshComponent* aimshootpoint;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
 		UStaticMeshComponent* nonaimshootpoint;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+		UStaticMeshComponent* Cutsceneposition;
 
 	UFUNCTION()
 		void smallmelee();
@@ -135,6 +142,9 @@ public:
 	FTimerHandle smeleetimer, commeleetimer, damage_tick;
 
 	FVector startposition;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool cutscene;
 
 protected:
 	// Called when the game starts or when spawned
