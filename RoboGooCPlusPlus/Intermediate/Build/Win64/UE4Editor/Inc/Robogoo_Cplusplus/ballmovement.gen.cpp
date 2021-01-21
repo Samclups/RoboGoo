@@ -39,6 +39,10 @@ void EmptyLinkFunctionForGeneratedCodeballmovement() {}
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_body;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_JumpImpulse_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_JumpImpulse;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FollowCamera_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_FollowCamera;
@@ -46,6 +50,10 @@ void EmptyLinkFunctionForGeneratedCodeballmovement() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CameraBoom_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CameraBoom;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Ball_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Ball;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -70,6 +78,13 @@ void EmptyLinkFunctionForGeneratedCodeballmovement() {}
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Aballmovement_Statics::NewProp_body = { "body", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Aballmovement, body), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Aballmovement_Statics::NewProp_body_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Aballmovement_Statics::NewProp_body_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Aballmovement_Statics::NewProp_JumpImpulse_MetaData[] = {
+		{ "Category", "Ball" },
+		{ "ModuleRelativePath", "Public/ballmovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_Aballmovement_Statics::NewProp_JumpImpulse = { "JumpImpulse", nullptr, (EPropertyFlags)0x0010000000000001, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Aballmovement, JumpImpulse), METADATA_PARAMS(Z_Construct_UClass_Aballmovement_Statics::NewProp_JumpImpulse_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Aballmovement_Statics::NewProp_JumpImpulse_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Aballmovement_Statics::NewProp_FollowCamera_MetaData[] = {
 		{ "Category", "Camera" },
 		{ "EditInline", "true" },
@@ -85,10 +100,21 @@ void EmptyLinkFunctionForGeneratedCodeballmovement() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Aballmovement_Statics::NewProp_CameraBoom = { "CameraBoom", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Aballmovement, CameraBoom), Z_Construct_UClass_USpringArmComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Aballmovement_Statics::NewProp_CameraBoom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Aballmovement_Statics::NewProp_CameraBoom_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_Aballmovement_Statics::NewProp_Ball_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Ball" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/ballmovement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_Aballmovement_Statics::NewProp_Ball = { "Ball", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Aballmovement, Ball), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_Aballmovement_Statics::NewProp_Ball_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_Aballmovement_Statics::NewProp_Ball_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_Aballmovement_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Aballmovement_Statics::NewProp_body,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Aballmovement_Statics::NewProp_JumpImpulse,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Aballmovement_Statics::NewProp_FollowCamera,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Aballmovement_Statics::NewProp_CameraBoom,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_Aballmovement_Statics::NewProp_Ball,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_Aballmovement_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<Aballmovement>::IsAbstract,
@@ -117,7 +143,7 @@ void EmptyLinkFunctionForGeneratedCodeballmovement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(Aballmovement, 4266044665);
+	IMPLEMENT_CLASS(Aballmovement, 4274594577);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<Aballmovement>()
 	{
 		return Aballmovement::StaticClass();

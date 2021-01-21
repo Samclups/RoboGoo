@@ -23,3 +23,5 @@ H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\In
 H:\Program Files\Epic games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/SpringArmComponent.h
 H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SpringArmComponent.generated.h
 F:\old desktop\Games\My games\Robogoo group\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Inc\Robogoo_Cplusplus\ballmovement.generated.h
+H:\Program Files\Epic games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+H:\Program Files\Epic games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h

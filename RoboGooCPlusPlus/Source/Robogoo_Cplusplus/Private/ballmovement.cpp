@@ -2,11 +2,13 @@
 
 
 #include "ballmovement.h"
+#include "Engine/CollisionProfile.h"
+#include "Engine/StaticMesh.h"
 
 // Sets default values
 Aballmovement::Aballmovement()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	RootComp = CreateDefaultSubobject<USceneComponent>(TEXT("RootComp"));
@@ -31,6 +33,9 @@ Aballmovement::Aballmovement()
 	FollowCamera->SetupAttachment(CameraBoom, USpringArmComponent::SocketName);
 
 	FollowCamera->bUsePawnControlRotation = false;
+
+	JumpImpulse = 150000.0f;
+	bCanJump = true;
 
 }
 
@@ -57,6 +62,7 @@ void Aballmovement::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &Aballmovement::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &Aballmovement::MoveRight);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &Aballmovement::Jump);
 
 }
 
@@ -70,4 +76,21 @@ void Aballmovement::MoveRight(float Axis)
 {
 	const FVector Torque = FVector(-1.f * Axis * 500000, 0.f, 0.f);
 	body->AddTorqueInRadians(Torque);
+}
+
+void Aballmovement::Jump()
+{
+	if (bCanJump)
+	{
+		const FVector Impulse = FVector(0.f, 0.f, JumpImpulse);
+		body->AddImpulse(Impulse);
+		bCanJump = false;
+	}
+}
+
+void Aballmovement::NotifyHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit)
+{
+	Super::NotifyHit(MyComp, Other, OtherComp, bSelfMoved, HitLocation, HitNormal, NormalImpulse, Hit);
+
+	bCanJump = true;
 }

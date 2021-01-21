@@ -22,6 +22,9 @@ public:
 	// Sets default values for this pawn's properties
 	Aballmovement();
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Ball, meta = (AllowPrivateAccess = "true"))
+		class UStaticMeshComponent* Ball;
+
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		USpringArmComponent* CameraBoom;
 
@@ -32,21 +35,31 @@ public:
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
+	UPROPERTY(EditAnywhere, Category = Ball)
+		float JumpImpulse;
+	bool bCanJump;
+
 
 	USceneComponent* RootComp;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
 		UStaticMeshComponent* body;
 
+	void Jump();
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	FORCEINLINE class UStaticMeshComponent* GetBall() const { return Ball; }
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	virtual void NotifyHit(class UPrimitiveComponent* MyComp, class AActor* Other, class UPrimitiveComponent* OtherComp, bool bSelfMoved, FVector HitLocation, FVector HitNormal, FVector NormalImpulse, const FHitResult& Hit) override;
 };
