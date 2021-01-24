@@ -10,6 +10,7 @@
 #include "GameFramework/Controller.h"
 #include "GameFramework/CharacterMovementComponent.h"
 #include "Camera/CameraComponent.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "GameFramework/SpringArmComponent.h"
 
 #include "Character_Movement.generated.h"
@@ -53,9 +54,8 @@ public:
 	void Jumpglide();
 	void Stopglide();
 
-	bool flip, aim, landed, block, smeleeonce, commeleeonce, sweep;
-	int glidenum, Health;
-
+	bool flip, aim, block, smeleeonce, commeleeonce, sweep, landed;
+	int Health, glidenum;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int PlayerHealth = 100;
@@ -88,7 +88,13 @@ public:
 		float damagemultiplier = 0.1f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		float minimumdropdist = 101.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		float Maxfallheight = 501.f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FVector cutscenepositionofset = FVector(0.f,0.f,0.f);
 
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
@@ -112,9 +118,14 @@ public:
 	UFUNCTION(BlueprintCallable, Category = Disable)
 		void BlockReset();
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Sphere)
-		UStaticMeshComponent* shootpoint;
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+		UStaticMeshComponent* aimshootpoint;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+		UStaticMeshComponent* nonaimshootpoint;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+		UStaticMeshComponent* Cutsceneposition;
 
 	UFUNCTION()
 		void smallmelee();
@@ -131,6 +142,9 @@ public:
 	FTimerHandle smeleetimer, commeleetimer, damage_tick;
 
 	FVector startposition;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool cutscene;
 
 protected:
 	// Called when the game starts or when spawned

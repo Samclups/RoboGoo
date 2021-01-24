@@ -16,8 +16,8 @@ struct FHitResult;
 #endif
 #define ROBOGOO_CPLUSPLUS_Character_Movement_generated_h
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_SPARSE_DATA
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_RPC_WRAPPERS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_SPARSE_DATA
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execdamage); \
 	DECLARE_FUNCTION(execBeginOverlap); \
@@ -32,7 +32,7 @@ struct FHitResult;
 	DECLARE_FUNCTION(execDisableActor);
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execdamage); \
 	DECLARE_FUNCTION(execBeginOverlap); \
@@ -47,7 +47,7 @@ struct FHitResult;
 	DECLARE_FUNCTION(execDisableActor);
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_INCLASS_NO_PURE_DECLS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACharacter_Movement(); \
 	friend struct Z_Construct_UClass_ACharacter_Movement_Statics; \
@@ -56,7 +56,7 @@ public: \
 	DECLARE_SERIALIZER(ACharacter_Movement)
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_INCLASS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesACharacter_Movement(); \
 	friend struct Z_Construct_UClass_ACharacter_Movement_Statics; \
@@ -65,7 +65,7 @@ public: \
 	DECLARE_SERIALIZER(ACharacter_Movement)
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_STANDARD_CONSTRUCTORS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACharacter_Movement(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACharacter_Movement) \
@@ -78,7 +78,7 @@ private: \
 public:
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_ENHANCED_CONSTRUCTORS \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACharacter_Movement(ACharacter_Movement&&); \
@@ -89,28 +89,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACharacter_Movement); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACharacter_Movement)
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_PRIVATE_PROPERTY_OFFSET
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_17_PROLOG
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_GENERATED_BODY_LEGACY \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_PRIVATE_PROPERTY_OFFSET
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_18_PROLOG
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_PRIVATE_PROPERTY_OFFSET \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_SPARSE_DATA \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_RPC_WRAPPERS \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_INCLASS \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_STANDARD_CONSTRUCTORS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_PRIVATE_PROPERTY_OFFSET \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_SPARSE_DATA \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_INCLASS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_GENERATED_BODY \
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_PRIVATE_PROPERTY_OFFSET \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_SPARSE_DATA \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_INCLASS_NO_PURE_DECLS \
-	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_20_ENHANCED_CONSTRUCTORS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_PRIVATE_PROPERTY_OFFSET \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_SPARSE_DATA \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_INCLASS_NO_PURE_DECLS \
+	RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Character_Movement_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
