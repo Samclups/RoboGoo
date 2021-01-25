@@ -51,6 +51,8 @@ public:
 	void MoveForward(float Axis);
 	void MoveRight(float Axis);
 
+	void JonJump();
+
 	void Jumpglide();
 	void Stopglide();
 
@@ -94,7 +96,10 @@ public:
 		float Maxfallheight = 501.f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		FVector cutscenepositionofset = FVector(0.f,0.f,0.f);
+		FVector cutscenepositionofset = FVector(0.f, 0.f, 0.f);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FRotator cutscenerotationofset = FRotator(0.f,0.f,0.f);
 
 
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
@@ -124,8 +129,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
 		UStaticMeshComponent* nonaimshootpoint;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UStaticMeshComponent* Cutsceneposition;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
+		UStaticMeshComponent* Aimcamposition;
 
 	UFUNCTION()
 		void smallmelee();
@@ -141,7 +149,7 @@ public:
 
 	FTimerHandle smeleetimer, commeleetimer, damage_tick;
 
-	FVector startposition;
+	FVector startposition, camstartpos;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool cutscene;
