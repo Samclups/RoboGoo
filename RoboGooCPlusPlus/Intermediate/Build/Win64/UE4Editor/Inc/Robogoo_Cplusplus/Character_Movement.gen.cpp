@@ -23,6 +23,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ROBOGOO_CPLUSPLUS_API UClass* Z_Construct_UClass_ABullet_NoRegister();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
@@ -469,6 +470,10 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_ProjectileClass;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cutscenerotationofset_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStructPropertyParams NewProp_cutscenerotationofset;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_cutscenepositionofset_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FStructPropertyParams NewProp_cutscenepositionofset;
@@ -615,6 +620,13 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass = { "ProjectileClass", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, ProjectileClass), Z_Construct_UClass_ABullet_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenerotationofset_MetaData[] = {
+		{ "Category", "Character_Movement" },
+		{ "ModuleRelativePath", "Public/Character_Movement.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenerotationofset = { "cutscenerotationofset", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACharacter_Movement, cutscenerotationofset), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenerotationofset_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenerotationofset_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenepositionofset_MetaData[] = {
 		{ "Category", "Character_Movement" },
 		{ "ModuleRelativePath", "Public/Character_Movement.h" },
@@ -760,6 +772,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_nonaimshootpoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_aimshootpoint,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_ProjectileClass,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenerotationofset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_cutscenepositionofset,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_Maxfallheight,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACharacter_Movement_Statics::NewProp_minimumdropdist,
@@ -807,7 +820,7 @@ void EmptyLinkFunctionForGeneratedCodeCharacter_Movement() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACharacter_Movement, 2569753392);
+	IMPLEMENT_CLASS(ACharacter_Movement, 2496184132);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ACharacter_Movement>()
 	{
 		return ACharacter_Movement::StaticClass();
