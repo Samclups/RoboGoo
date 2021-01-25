@@ -93,9 +93,6 @@ ACharacter_Movement::ACharacter_Movement()
 
 	Cutsceneposition = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cutsceneposition"));
 	Cutsceneposition->SetupAttachment(RootComponent);
-
-	Aimcamposition = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Aimcamposition"));
-	Aimcamposition->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -130,8 +127,6 @@ void ACharacter_Movement::BeginPlay()
 	startposition = GetActorLocation();
 
 	Health = PlayerHealth;
-
-	camstartpos = CameraBoom->GetRelativeLocation();
 
 }
 
@@ -174,7 +169,7 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	if (aim)
 	{
 		CameraBoom->TargetArmLength = 100.0f;
-		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), Aimcamposition->GetRelativeLocation(), 0.5f));
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 30.f, 70.f), 0.5f));
 
 		bUseControllerRotationRoll = true;
 		bUseControllerRotationYaw = true;
@@ -182,7 +177,7 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	else
 	{
 		CameraBoom->TargetArmLength = 300.0f;
-		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), camstartpos, 0.5f));
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 0.f, 0.f), 0.5f));
 
 		bUseControllerRotationRoll = false;
 		bUseControllerRotationYaw = false;
@@ -202,8 +197,7 @@ void ACharacter_Movement::SetupPlayerInputComponent(UInputComponent* PlayerInput
 	PlayerInputComponent->BindAxis("Turn", this, &APawn::AddControllerYawInput);
 	PlayerInputComponent->BindAxis("LookUp", this, &APawn::AddControllerPitchInput);
 
-	//PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
-	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter_Movement::JonJump);
+	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter_Movement::Jumpglide);
 
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
@@ -488,13 +482,8 @@ void ACharacter_Movement::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
 		FRotator Rot = UKismetMathLibrary::MakeRotFromXZ(Forward, FVector::UpVector);
 		Cutsceneposition->SetRelativeRotation(Rot, true);*/
 
-		//FRotator PlayerRot = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation() + cutscenepositionofset, OtherActor->GetActorLocation());
-		//PlayerRot = PlayerRot + FRotator(0.f,0.f,0.f);
-
-		FRotator PlayerRot = cutscenerotationofset;
-		FVector PlayerPos = cutscenepositionofset;
-
-		Cutsceneposition->SetRelativeLocation(PlayerPos, true);
+		FRotator PlayerRot = UKismetMathLibrary::FindLookAtRotation(this->GetActorLocation() + cutscenepositionofset, OtherActor->GetActorLocation());
+		PlayerRot = PlayerRot + FRotator(0.f,0.f,0.f);
 		Cutsceneposition->SetRelativeRotation(PlayerRot, true);
 
 		cutscene = true;
@@ -504,13 +493,4 @@ void ACharacter_Movement::BeginOverlap(UPrimitiveComponent* OverlappedComponent,
 void ACharacter_Movement::damage()
 {
 	GetWorld()->GetTimerManager().ClearTimer(damage_tick);
-}
-
-void ACharacter_Movement::JonJump()
-{
-	if (!cutscene)
-	{
-		bPressedJump = true;
-		JumpKeyHoldTime = 0.0f;
-	}
 }
