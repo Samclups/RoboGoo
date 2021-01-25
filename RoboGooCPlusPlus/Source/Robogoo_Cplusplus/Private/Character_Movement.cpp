@@ -93,6 +93,9 @@ ACharacter_Movement::ACharacter_Movement()
 
 	Cutsceneposition = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Cutsceneposition"));
 	Cutsceneposition->SetupAttachment(RootComponent);
+
+	Aimcamposition = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("Aimcamposition"));
+	Aimcamposition->SetupAttachment(RootComponent);
 }
 
 // Called when the game starts or when spawned
@@ -127,6 +130,8 @@ void ACharacter_Movement::BeginPlay()
 	startposition = GetActorLocation();
 
 	Health = PlayerHealth;
+
+	camstartpos = CameraBoom->GetRelativeLocation();
 
 }
 
@@ -169,7 +174,7 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	if (aim)
 	{
 		CameraBoom->TargetArmLength = 100.0f;
-		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 30.f, 70.f), 0.5f));
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), Aimcamposition->GetRelativeLocation(), 0.5f));
 
 		bUseControllerRotationRoll = true;
 		bUseControllerRotationYaw = true;
@@ -177,7 +182,7 @@ void ACharacter_Movement::Tick(float DeltaTime)
 	else
 	{
 		CameraBoom->TargetArmLength = 300.0f;
-		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), FVector(0.f, 0.f, 0.f), 0.5f));
+		CameraBoom->SetRelativeLocation(FMath::Lerp(CameraBoom->GetRelativeLocation(), camstartpos, 0.5f));
 
 		bUseControllerRotationRoll = false;
 		bUseControllerRotationYaw = false;

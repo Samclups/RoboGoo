@@ -129,8 +129,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
 		UStaticMeshComponent* nonaimshootpoint;
 
-	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Disable)
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
 		UStaticMeshComponent* Cutsceneposition;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Camera)
+		UStaticMeshComponent* Aimcamposition;
 
 	UFUNCTION()
 		void smallmelee();
@@ -146,7 +149,7 @@ public:
 
 	FTimerHandle smeleetimer, commeleetimer, damage_tick;
 
-	FVector startposition;
+	FVector startposition, camstartpos;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool cutscene;
