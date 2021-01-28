@@ -14,8 +14,16 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define ROBOGOO_CPLUSPLUS_Test_NPC_generated_h
 
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_SPARSE_DATA
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_RPC_WRAPPERS
-#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execTime);
+
+
+#define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execTime);
+
+
 #define RoboGooCPlusPlus_Source_Robogoo_Cplusplus_Public_Test_NPC_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest_NPC(); \

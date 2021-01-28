@@ -44,5 +44,69 @@ void ATest_NPC::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	if (Triggered && TimedQuestModifier)
+	{
+		TimedQuestModifier = false;
+		GetWorld()->GetTimerManager().SetTimer(QuestTimer, this, &ATest_NPC::Time, TimedQuestTimerSeconds, false);
+	}
+
+
+	if (Triggered && BloodlockQuest)
+	{
+		for (size_t i = 0; i < BloodlockObjects.Num(); i++)
+		{
+			if (BloodlockObjects[i] == NULL)
+			{
+				deadnum++;
+			}
+
+			if (deadnum == BloodlockObjects.Num())
+			{
+				if (BlSolvedEnableDisable)
+				{
+					BloodlockSlovedSpawnObject->SetHidden(false);
+					BloodlockSlovedSpawnObject->SetActorHiddenInGame(false);
+					BloodlockSlovedSpawnObject->SetActorEnableCollision(true);
+					BloodlockSlovedSpawnObject->SetActorTickEnabled(true);
+				}
+				else
+				{
+					BloodlockSlovedSpawnObject->SetHidden(true);
+					BloodlockSlovedSpawnObject->SetActorHiddenInGame(true);
+					BloodlockSlovedSpawnObject->SetActorEnableCollision(false);
+					BloodlockSlovedSpawnObject->SetActorTickEnabled(false);
+				}
+
+				BloodlockQuest = false; // Quest done
+			}
+		}
+	}
+
+	if (Triggered && FetchQuest)
+	{
+		if (FetchQuestObjectNum == itemscollected)
+		{
+			FetchQuest = false;	// Quest done
+		}
+	}
+
+	if (Triggered && DeliverQuest)
+	{
+		if (Deliversend)
+		{
+			// Give player DeliverQuest id
+		}
+	}
+
+
+	if (DeliverQuest && Deliverrecieve) // && Deliverquestvalue == DeliverQuest id from player on collision
+	{
+		DeliverQuest = false;	// Quest done
+	}
 }
 
+void ATest_NPC::Time()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 10.f, FColor::Cyan, FString::Printf(TEXT("QuestTimeEnd")));		// End quest due to time
+	GetWorld()->GetTimerManager().ClearTimer(QuestTimer);
+}
