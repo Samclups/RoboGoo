@@ -24,10 +24,15 @@ public:
 		UStaticMeshComponent* trigger;
 
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// don't touch  - done via code
+		FString QuestName;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// don't touch  - done via code
+		int QuestID;
 
 	// Quest on/off  Variables
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// don't touch  - done via code
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// don't touch  - set via code
 		bool Triggered;
 
 
@@ -74,9 +79,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// object to gather
 		AActor* FetchQuestObjecttype;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// item id given for uses on multiple fetchquests -  TODO set to check when player pickup / already have
-		int FetchQuestObjectID;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// no of objects to gather
 		int FetchQuestObjectNum;
 
@@ -87,12 +89,10 @@ public:
 		bool Deliversend;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// Have to match between NPC's	TODO set to use
-		int Deliverquestvalue;
+		int DeliverquestRecieveID;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)		// recieving from other npc
 		bool Deliverrecieve;
-
-
 
 protected:
 	// Called when the game starts or when spawned

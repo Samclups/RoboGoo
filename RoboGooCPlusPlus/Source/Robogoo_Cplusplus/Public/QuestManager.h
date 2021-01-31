@@ -16,6 +16,14 @@ public:
 	AQuestManager();
 
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		TArray<FString> ActiveQuests;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+		TArray<int> ActiveQuestsID;
+
+
+
 	// For UI Quest system and logging active quests / quest id's
 
 

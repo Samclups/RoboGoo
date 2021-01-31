@@ -74,9 +74,9 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		static void NewProp_Deliverrecieve_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Deliverrecieve;
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Deliverquestvalue_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_DeliverquestRecieveID_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_Deliverquestvalue;
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_DeliverquestRecieveID;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Deliversend_MetaData[];
 #endif
@@ -86,10 +86,6 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FetchQuestObjectNum_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_FetchQuestObjectNum;
-#if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FetchQuestObjectID_MetaData[];
-#endif
-		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_FetchQuestObjectID;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_FetchQuestObjecttype_MetaData[];
 #endif
@@ -138,6 +134,14 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		static void NewProp_Triggered_SetBit(void* Obj);
 		static const UE4CodeGen_Private::FBoolPropertyParams NewProp_Triggered;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestID_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FUnsizedIntPropertyParams NewProp_QuestID;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_QuestName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FStrPropertyParams NewProp_QuestName;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_trigger_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_trigger;
@@ -176,14 +180,14 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverrecieve = { "Deliverrecieve", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATest_NPC), &Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverrecieve_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverrecieve_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverrecieve_MetaData)) };
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverquestvalue_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_DeliverquestRecieveID_MetaData[] = {
 		{ "Category", "Test_NPC" },
 		{ "Comment", "// Have to match between NPC's\x09TODO set to use\n" },
 		{ "ModuleRelativePath", "Public/Test_NPC.h" },
 		{ "ToolTip", "Have to match between NPC's    TODO set to use" },
 	};
 #endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverquestvalue = { "Deliverquestvalue", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, Deliverquestvalue), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverquestvalue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverquestvalue_MetaData)) };
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_DeliverquestRecieveID = { "DeliverquestRecieveID", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, DeliverquestRecieveID), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_DeliverquestRecieveID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_DeliverquestRecieveID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliversend_MetaData[] = {
 		{ "Category", "Test_NPC" },
@@ -206,15 +210,6 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 	};
 #endif
 	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectNum = { "FetchQuestObjectNum", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, FetchQuestObjectNum), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectNum_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectNum_MetaData)) };
-#if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectID_MetaData[] = {
-		{ "Category", "Test_NPC" },
-		{ "Comment", "// item id given for uses on multiple fetchquests -  TODO set to check when player pickup / already have\n" },
-		{ "ModuleRelativePath", "Public/Test_NPC.h" },
-		{ "ToolTip", "item id given for uses on multiple fetchquests -  TODO set to check when player pickup / already have" },
-	};
-#endif
-	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectID = { "FetchQuestObjectID", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, FetchQuestObjectID), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectID_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjecttype_MetaData[] = {
 		{ "Category", "Test_NPC" },
@@ -320,9 +315,9 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered_MetaData[] = {
 		{ "Category", "Test_NPC" },
-		{ "Comment", "// Quest on/off  Variables\n// don't touch  - done via code\n" },
+		{ "Comment", "// Quest on/off  Variables\n// don't touch  - set via code\n" },
 		{ "ModuleRelativePath", "Public/Test_NPC.h" },
-		{ "ToolTip", "Quest on/off  Variables\ndon't touch  - done via code" },
+		{ "ToolTip", "Quest on/off  Variables\ndon't touch  - set via code" },
 	};
 #endif
 	void Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered_SetBit(void* Obj)
@@ -330,6 +325,24 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		((ATest_NPC*)Obj)->Triggered = 1;
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered = { "Triggered", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(ATest_NPC), &Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered_SetBit, METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestID_MetaData[] = {
+		{ "Category", "Test_NPC" },
+		{ "Comment", "// don't touch  - done via code\n" },
+		{ "ModuleRelativePath", "Public/Test_NPC.h" },
+		{ "ToolTip", "don't touch  - done via code" },
+	};
+#endif
+	const UE4CodeGen_Private::FUnsizedIntPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestID = { "QuestID", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, QuestID), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestID_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestID_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestName_MetaData[] = {
+		{ "Category", "Test_NPC" },
+		{ "Comment", "// don't touch  - done via code\n" },
+		{ "ModuleRelativePath", "Public/Test_NPC.h" },
+		{ "ToolTip", "don't touch  - done via code" },
+	};
+#endif
+	const UE4CodeGen_Private::FStrPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestName = { "QuestName", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, QuestName), METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestName_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_NPC_Statics::NewProp_trigger_MetaData[] = {
 		{ "Category", "Sphere" },
@@ -348,10 +361,9 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest_NPC_Statics::NewProp_body = { "body", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_NPC, body), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest_NPC_Statics::NewProp_body_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_NPC_Statics::NewProp_body_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATest_NPC_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverrecieve,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliverquestvalue,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_DeliverquestRecieveID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_Deliversend,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectNum,
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjectID,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuestObjecttype,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_BloodlockSlovedSpawnObject,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_BlSolvedEnableDisable,
@@ -363,6 +375,8 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_FetchQuest,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_BloodlockQuest,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_Triggered,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestID,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_QuestName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_trigger,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_NPC_Statics::NewProp_body,
 	};
@@ -393,7 +407,7 @@ void EmptyLinkFunctionForGeneratedCodeTest_NPC() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest_NPC, 1357264139);
+	IMPLEMENT_CLASS(ATest_NPC, 900294526);
 	template<> ROBOGOO_CPLUSPLUS_API UClass* StaticClass<ATest_NPC>()
 	{
 		return ATest_NPC::StaticClass();

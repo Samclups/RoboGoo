@@ -47,9 +47,8 @@ void ATest_NPC::Tick(float DeltaTime)
 	if (Triggered && TimedQuestModifier)
 	{
 		TimedQuestModifier = false;
-		GetWorld()->GetTimerManager().SetTimer(QuestTimer, this, &ATest_NPC::Time, TimedQuestTimerSeconds, false);
+		GetWorld()->GetTimerManager().SetTimer(QuestTimer, this, &ATest_NPC::Time, TimedQuestTimerSeconds, false);		// Time restriction 
 	}
-
 
 	if (Triggered && BloodlockQuest)
 	{
@@ -57,7 +56,7 @@ void ATest_NPC::Tick(float DeltaTime)
 		{
 			if (BloodlockObjects[i] == NULL)
 			{
-				deadnum++;
+				deadnum++;		// missing object counter
 			}
 
 			if (deadnum == BloodlockObjects.Num())
@@ -66,20 +65,22 @@ void ATest_NPC::Tick(float DeltaTime)
 				{
 					BloodlockSlovedSpawnObject->SetHidden(false);
 					BloodlockSlovedSpawnObject->SetActorHiddenInGame(false);
-					BloodlockSlovedSpawnObject->SetActorEnableCollision(true);
+					BloodlockSlovedSpawnObject->SetActorEnableCollision(true);		//  activate object
 					BloodlockSlovedSpawnObject->SetActorTickEnabled(true);
 				}
 				else
 				{
 					BloodlockSlovedSpawnObject->SetHidden(true);
 					BloodlockSlovedSpawnObject->SetActorHiddenInGame(true);
-					BloodlockSlovedSpawnObject->SetActorEnableCollision(false);
+					BloodlockSlovedSpawnObject->SetActorEnableCollision(false);		//  deactivate object
 					BloodlockSlovedSpawnObject->SetActorTickEnabled(false);
 				}
 
 				BloodlockQuest = false; // Quest done
 			}
 		}
+
+		deadnum = 0;
 	}
 
 	if (Triggered && FetchQuest)
@@ -99,7 +100,7 @@ void ATest_NPC::Tick(float DeltaTime)
 	}
 
 
-	if (DeliverQuest && Deliverrecieve) // && Deliverquestvalue == DeliverQuest id from player on collision
+	if (DeliverQuest && Deliverrecieve && DeliverquestRecieveID == QuestID)
 	{
 		DeliverQuest = false;	// Quest done
 	}
