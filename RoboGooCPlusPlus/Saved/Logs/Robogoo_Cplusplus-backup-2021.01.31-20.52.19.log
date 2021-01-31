@@ -1,0 +1,1469 @@
+﻿Log file open, 01/31/21 19:46:18
+LogInit: Display: Running engine for game: Robogoo_Cplusplus
+LogPlatformFile: Not using cached read wrapper
+LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
+LogStats: Stats thread started at 0.442216
+LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
+LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +0:00, Platform Override: ''
+LogPluginManager: Mounting plugin Paper2D
+LogPluginManager: Mounting plugin AISupport
+LogPluginManager: Mounting plugin LightPropagationVolume
+LogPluginManager: Mounting plugin CameraShakePreviewer
+LogPluginManager: Mounting plugin ActorLayerUtilities
+LogPluginManager: Mounting plugin AnimationSharing
+LogPluginManager: Mounting plugin CLionSourceCodeAccess
+LogPluginManager: Mounting plugin CodeLiteSourceCodeAccess
+LogPluginManager: Mounting plugin GitSourceControl
+LogPluginManager: Mounting plugin KDevelopSourceCodeAccess
+LogPluginManager: Mounting plugin NullSourceCodeAccess
+LogPluginManager: Mounting plugin PerforceSourceControl
+LogPluginManager: Mounting plugin PlasticSourceControl
+LogPluginManager: Mounting plugin RiderSourceCodeAccess
+LogPluginManager: Mounting plugin SubversionSourceControl
+LogPluginManager: Mounting plugin UObjectPlugin
+LogPluginManager: Mounting plugin VisualStudioCodeSourceCodeAccess
+LogPluginManager: Mounting plugin VisualStudioSourceCodeAccess
+LogPluginManager: Mounting plugin XCodeSourceCodeAccess
+LogPluginManager: Mounting plugin AssetManagerEditor
+LogPluginManager: Mounting plugin CryptoKeys
+LogPluginManager: Mounting plugin CurveEditorTools
+LogPluginManager: Mounting plugin DataValidation
+LogPluginManager: Mounting plugin EditorScriptingUtilities
+LogPluginManager: Mounting plugin FacialAnimation
+LogPluginManager: Mounting plugin GameplayTagsEditor
+LogPluginManager: Mounting plugin GeometryMode
+LogPluginManager: Mounting plugin MacGraphicsSwitching
+LogPluginManager: Mounting plugin MaterialAnalyzer
+LogPluginManager: Mounting plugin MobileLauncherProfileWizard
+LogPluginManager: Mounting plugin PluginBrowser
+LogPluginManager: Mounting plugin SpeedTreeImporter
+LogPluginManager: Mounting plugin DatasmithContent
+LogPluginManager: Mounting plugin VariantManagerContent
+LogPluginManager: Mounting plugin AlembicImporter
+LogPluginManager: Mounting plugin AutomationUtils
+LogPluginManager: Mounting plugin BackChannel
+LogPluginManager: Mounting plugin ChaosCloth
+LogPluginManager: Mounting plugin ChaosClothEditor
+LogPluginManager: Mounting plugin ChaosEditor
+LogPluginManager: Mounting plugin ChaosNiagara
+LogPluginManager: Mounting plugin ChaosSolverPlugin
+LogPluginManager: Mounting plugin CharacterAI
+LogPluginManager: Mounting plugin GeometryCache
+LogPluginManager: Mounting plugin GeometryCollectionPlugin
+LogPluginManager: Mounting plugin GeometryProcessing
+LogPluginManager: Mounting plugin PlanarCut
+LogPluginManager: Mounting plugin PlatformCrypto
+LogPluginManager: Mounting plugin ProxyLODPlugin
+LogPluginManager: Mounting plugin SkeletalReduction
+LogPluginManager: Mounting plugin Niagara
+LogPluginManager: Mounting plugin MagicLeap
+LogPluginManager: Mounting plugin MagicLeapLightEstimation
+LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin MagicLeapPassableWorld
+LogPluginManager: Mounting plugin MLSDK
+LogPluginManager: Mounting plugin AndroidMedia
+LogPluginManager: Mounting plugin AvfMedia
+LogPluginManager: Mounting plugin ImgMedia
+LogPluginManager: Mounting plugin MediaCompositing
+LogPluginManager: Mounting plugin MediaPlayerEditor
+LogPluginManager: Mounting plugin WebMMedia
+LogPluginManager: Mounting plugin WmfMedia
+LogPluginManager: Mounting plugin MeshPainting
+LogPluginManager: Mounting plugin TcpMessaging
+LogPluginManager: Mounting plugin UdpMessaging
+LogPluginManager: Mounting plugin ActorSequence
+LogPluginManager: Mounting plugin LevelSequenceEditor
+LogPluginManager: Mounting plugin MatineeToLevelSequence
+LogPluginManager: Mounting plugin MovieRenderPipeline
+LogPluginManager: Mounting plugin TemplateSequence
+LogPluginManager: Mounting plugin NetcodeUnitTest
+LogPluginManager: Mounting plugin NUTUnrealEngine4
+LogPluginManager: Mounting plugin OnlineSubsystemGooglePlay
+LogPluginManager: Mounting plugin OnlineSubsystemIOS
+LogPluginManager: Mounting plugin OnlineSubsystem
+LogPluginManager: Mounting plugin OnlineSubsystemNull
+LogPluginManager: Mounting plugin OnlineSubsystemUtils
+LogPluginManager: Mounting plugin LauncherChunkInstaller
+LogPluginManager: Mounting plugin AndroidDeviceProfileSelector
+LogPluginManager: Mounting plugin AndroidMoviePlayer
+LogPluginManager: Mounting plugin AndroidPermission
+LogPluginManager: Mounting plugin ApexDestruction
+LogPluginManager: Mounting plugin AppleImageUtils
+LogPluginManager: Mounting plugin AppleMoviePlayer
+LogPluginManager: Mounting plugin ArchVisCharacter
+LogPluginManager: Mounting plugin AssetTags
+LogPluginManager: Mounting plugin AudioCapture
+LogPluginManager: Mounting plugin CableComponent
+LogPluginManager: Mounting plugin CustomMeshComponent
+LogPluginManager: Mounting plugin EditableMesh
+LogPluginManager: Mounting plugin ExampleDeviceProfileSelector
+LogPluginManager: Mounting plugin GoogleCloudMessaging
+LogPluginManager: Mounting plugin GooglePAD
+LogPluginManager: Mounting plugin IOSDeviceProfileSelector
+LogPluginManager: Mounting plugin LinuxDeviceProfileSelector
+LogPluginManager: Mounting plugin LocationServicesBPLibrary
+LogPluginManager: Mounting plugin MobilePatchingUtils
+LogPluginManager: Mounting plugin PhysXVehicles
+LogPluginManager: Mounting plugin PostSplashScreen
+LogPluginManager: Mounting plugin ProceduralMeshComponent
+LogPluginManager: Mounting plugin RuntimePhysXCooking
+LogPluginManager: Mounting plugin SignificanceManager
+LogPluginManager: Mounting plugin SoundFields
+LogPluginManager: Mounting plugin Synthesis
+LogPluginManager: Mounting plugin WebMMoviePlayer
+LogPluginManager: Mounting plugin WindowsMoviePlayer
+LogPluginManager: Mounting plugin ScreenshotTools
+LogInit: Warning: Incompatible or missing module: Robogoo_Cplusplus
+Running D:/Epic Games Software/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe Development Win64 -Project="D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Robogoo_Cplusplus.uproject" -TargetType=Editor -Progress -NoEngineChanges -NoHotReloadFromIDE
+Using 'git status' to determine working set for adaptive non-unity build (D:\UnrealProjects\RoboGoo).
+Creating makefile for Robogoo_CplusplusEditor (game project files are newer)
+@progress push 5%
+Parsing headers for Robogoo_CplusplusEditor
+  Running UnrealHeaderTool "D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Robogoo_Cplusplus.uproject" "D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\Robogoo_CplusplusEditor\Development\Robogoo_CplusplusEditor.uhtmanifest" -LogCmds="loginit warning, logexit warning, logdatabase error" -Unattended -WarningsAsErrors -abslog="C:\Users\Samje\AppData\Local\UnrealBuildTool\Log_UHT.txt" -installed
+Reflection code generated for Robogoo_CplusplusEditor in 9.4087011 seconds
+@progress pop
+Building Robogoo_CplusplusEditor...
+Using Visual Studio 2019 14.28.29335 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333) and Windows 10.0.19041.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+Building 24 actions with 8 processes...
+  @progress 'Compiling C++ source code...' 0%
+  @progress 'Compiling C++ source code...' 4%
+  [1/24] Default.rc2
+  @progress 'Compiling C++ source code...' 8%
+  [2/24] SharedPCH.Engine.ShadowErrors.cpp
+  @progress 'Compiling C++ source code...' 12%
+  [3/24] Robogoo_Cplusplus.cpp
+  @progress 'Compiling C++ source code...' 17%
+  [4/24] QuestManager.cpp
+  @progress 'Compiling C++ source code...' 21%
+  [5/24] Test_Enemy.cpp
+  @progress 'Compiling C++ source code...' 25%
+  [6/24] Test_NPC.cpp
+  @progress 'Compiling C++ source code...' 29%
+  [7/24] Bullet.cpp
+  @progress 'Compiling C++ source code...' 33%
+  [8/24] Robogoo_Cplusplus.init.gen.cpp
+  @progress 'Compiling C++ source code...' 38%
+  [9/24] QuestManager.gen.cpp
+  @progress 'Compiling C++ source code...' 42%
+  [10/24] ballmovement.gen.cpp
+  @progress 'Compiling C++ source code...' 46%
+  [11/24] Bullet.gen.cpp
+  @progress 'Compiling C++ source code...' 50%
+  [12/24] ballmovement.cpp
+  @progress 'Compiling C++ source code...' 54%
+  [13/24] Robogoo_CplusplusCharacter.gen.cpp
+  @progress 'Compiling C++ source code...' 58%
+  [14/24] Test_NPC.gen.cpp
+  @progress 'Compiling C++ source code...' 62%
+  [15/24] Robogoo_CplusplusCharacter.cpp
+  @progress 'Compiling C++ source code...' 67%
+  [16/24] Robogoo_CplusplusGameMode.gen.cpp
+  @progress 'Compiling C++ source code...' 71%
+  [17/24] Test_Enemy.gen.cpp
+  @progress 'Compiling C++ source code...' 75%
+  [18/24] test.cpp
+  @progress 'Compiling C++ source code...' 79%
+  [19/24] Robogoo_CplusplusGameMode.cpp
+  @progress 'Compiling C++ source code...' 83%
+  [20/24] Character_Movement.gen.cpp
+  @progress 'Compiling C++ source code...' 88%
+  [21/24] Character_Movement.cpp
+  @progress 'Compiling C++ source code...' 92%
+  [22/24] UE4Editor-Robogoo_Cplusplus.lib
+     Creating library D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus.lib and object D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus.exp
+  @progress 'Compiling C++ source code...' 96%
+  [23/24] UE4Editor-Robogoo_Cplusplus.dll
+     Creating library D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus.suppressed.lib and object D:\UnrealProjects\RoboGoo\RoboGooCPlusPlus\Intermediate\Build\Win64\UE4Editor\Development\Robogoo_Cplusplus\UE4Editor-Robogoo_Cplusplus.suppressed.exp
+  @progress 'Compiling C++ source code...' 100%
+  [24/24] Robogoo_CplusplusEditor.target
+Total time in Parallel executor: 214.00 seconds
+Total execution time: 278.63 seconds
+LogInit: Using libcurl 7.55.1-DEV
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.1.1
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - MaxHostConnections = 16  - Libcurl will limit the number of connections to a host
+LogInit:  - LocalHostAddr = Default
+LogInit:  - BufferSize = 65536
+LogOnline: OSS: Creating online subsystem instance for: NULL
+LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+LogInit: Build: ++UE4+Release-4.25-CL-14469661
+LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
+LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
+LogInit: Net CL: 13144385
+LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz, GPU: Intel(R) UHD Graphics 630
+LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
+LogInit: Compiled with Visual C++: 19.24.28315.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.25
+LogInit: Command Line: 
+LogInit: Base Directory: D:/Epic Games Software/UE_4.25/Engine/Binaries/Win64/
+LogInit: Allocator: TBB
+LogInit: Installed Engine Build: 1
+LogDevObjectVersion: Number of dev versions registered: 26
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 10
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 4
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 38
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 37
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 2
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 4
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 43
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 12
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 3
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 3
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 17
+LogDevObjectVersion:   Dev-Anim (AF43A65D-7FD3-4947-9873-3E8ED9C1BB05): 7
+LogDevObjectVersion:   Dev-ReflectionCapture (6B266CEC-1EC7-4B8F-A30B-E4D90942FC07): 1
+LogDevObjectVersion:   Dev-Automation (0DF73D61-A23F-47EA-B727-89E90C41499A): 1
+LogDevObjectVersion:   FortniteMain (601D1886-AC64-4F84-AA16-D3DE0DEAC7D6): 31
+LogDevObjectVersion:   Dev-Enterprise (9DFFBCD6-494F-0158-E221-12823C92A888): 10
+LogDevObjectVersion:   Dev-Niagara (F2AED0AC-9AFE-416F-8664-AA7FFA26D6FC): 1
+LogDevObjectVersion:   Dev-Destruction (174F1F0B-B4C6-45A5-B13F-2EE8D0FB917D): 10
+LogDevObjectVersion:   Dev-Physics-Ext (35F94A83-E258-406C-A318-09F59610247C): 37
+LogDevObjectVersion:   Dev-PhysicsMaterial-Chaos (B68FC16E-8B1B-42E2-B453-215C058844FE): 1
+LogDevObjectVersion:   Dev-CineCamera (B2E18506-4273-CFC2-A54E-F4BB758BBA07): 1
+LogInit: Presizing for max 25165824 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+LogInit: Object subsystem initialized
+LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
+LogConfig: Setting CVar [[r.setres:1280x720]]
+[2021.01.31-19.51.03:717][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.01.31-19.51.03:717][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.01.31-19.51.03:718][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:718][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:719][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.01.31-19.51.03:719][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:719][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:828][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.01.31-19.51.03:828][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.01.31-19.51.03:829][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.01.31-19.51.03:830][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.01.31-19.51.03:844][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.31-19.51.03:849][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.01.31-19.51.03:910][  0]LogHAL: Display: Platform has ~ 8 GB [8424902656 / 8589934592 / 8], which maps to Default [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.01.31-19.51.03:910][  0]LogInit: Going up to parent DeviceProfile []
+[2021.01.31-19.51.03:911][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.01.31-19.51.03:911][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:911][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Scalability.ini]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.01.31-19.51.03:912][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.01.31-19.51.03:940][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.01.31-19.51.03:940][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.01.31-19.51.03:940][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.01.31-19.51.03:940][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Config/Windows/Engine.ini]
+[2021.01.31-19.51.03:965][  0]LogInit: Computer: LAPTOP-V0NV1IS9
+[2021.01.31-19.51.03:965][  0]LogInit: User: Samje
+[2021.01.31-19.51.03:966][  0]LogInit: CPU Page size=4096, Cores=4
+[2021.01.31-19.51.03:966][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.01.31-19.51.03:966][  0]LogMemory: Memory total: Physical=7.8GB (8GB approx)
+[2021.01.31-19.51.03:968][  0]LogMemory: Platform Memory Stats for Windows
+[2021.01.31-19.51.03:968][  0]LogMemory: Process Physical Memory: 115.83 MB used, 115.83 MB peak
+[2021.01.31-19.51.03:968][  0]LogMemory: Process Virtual Memory: 96.18 MB used, 96.18 MB peak
+[2021.01.31-19.51.03:968][  0]LogMemory: Physical Memory: 5037.43 MB used,  2997.19 MB free, 8034.61 MB total
+[2021.01.31-19.51.03:968][  0]LogMemory: Virtual Memory: 5178.75 MB used,  134212552.00 MB free, 134217728.00 MB total
+[2021.01.31-19.51.04:004][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.01.31-19.51.04:906][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.01.31-19.51.05:001][  0]LogInit: Using OS detected language (en-GB).
+[2021.01.31-19.51.05:001][  0]LogInit: Using OS detected locale (en-GB).
+[2021.01.31-19.51.05:140][  0]LogTextLocalizationManager: No specific localization for 'en-GB' exists, so the 'en' localization will be used.
+[2021.01.31-19.51.05:786][  0]LogInit: Setting process to per monitor DPI aware
+[2021.01.31-19.51.06:654][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.01.31-19.51.06:654][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.01.31-19.51.07:543][  0]LogD3D11RHI: D3D11 min allowed feature level: 11_0
+[2021.01.31-19.51.07:543][  0]LogD3D11RHI: D3D11 max allowed feature level: 11_0
+[2021.01.31-19.51.07:543][  0]LogD3D11RHI: D3D11 adapters:
+[2021.01.31-19.51.07:662][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1650' (Feature Level 11_0)
+[2021.01.31-19.51.07:662][  0]LogD3D11RHI:       3962/0/4017 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2021.01.31-19.51.07:687][  0]LogD3D11RHI:    1. 'Intel(R) UHD Graphics 630' (Feature Level 11_0)
+[2021.01.31-19.51.07:687][  0]LogD3D11RHI:       128/0/4017 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x8086
+[2021.01.31-19.51.07:691][  0]LogD3D11RHI:    2. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2021.01.31-19.51.07:691][  0]LogD3D11RHI:       0/0/4017 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2021.01.31-19.51.07:691][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2021.01.31-19.51.07:761][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2021.01.31-19.51.07:761][  0]LogD3D11RHI:     GPU DeviceId: 0x1f91 (for the marketing name, search the web for "GPU Device Id")
+[2021.01.31-19.51.07:762][  0]LogWindows: EnumDisplayDevices:
+[2021.01.31-19.51.07:762][  0]LogWindows:    0. 'Intel(R) UHD Graphics 630' (P:1 D:1)
+[2021.01.31-19.51.07:763][  0]LogWindows:    1. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.01.31-19.51.07:764][  0]LogWindows:    2. 'Intel(R) UHD Graphics 630' (P:0 D:0)
+[2021.01.31-19.51.07:764][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1650' (P:0 D:0)
+[2021.01.31-19.51.07:764][  0]LogWindows: DebugString: PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter PrimaryIsNotTheChoosenAdapter 
+[2021.01.31-19.51.07:764][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1650
+[2021.01.31-19.51.07:765][  0]LogD3D11RHI:   Driver Version: 451.67 (internal:27.21.14.5167, unified:451.67)
+[2021.01.31-19.51.07:765][  0]LogD3D11RHI:      Driver Date: 7-5-2020
+[2021.01.31-19.51.07:767][  0]LogRHI: Texture pool is 2773 MB (70% of 3962 MB)
+[2021.01.31-19.51.07:826][  0]LogD3D11RHI: RHI has support for 64 bit atomics
+[2021.01.31-19.51.07:828][  0]LogD3D11RHI: Async texture creation enabled
+[2021.01.31-19.51.07:828][  0]LogD3D11RHI: Array index from any shader is supported
+[2021.01.31-19.51.08:392][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2021.01.31-19.51.08:874][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.01.31-19.51.08:991][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.01.31-19.51.09:063][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.01.31-19.51.09:063][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.01.31-19.51.09:092][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.01.31-19.51.09:118][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.01.31-19.51.09:147][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.01.31-19.51.09:157][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.01.31-19.51.09:328][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.01.31-19.51.09:345][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.01.31-19.51.09:357][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.01.31-19.51.09:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.01.31-19.51.09:399][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.01.31-19.51.09:423][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.01.31-19.51.09:423][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.01.31-19.51.09:478][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.01.31-19.51.09:550][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.01.31-19.51.09:569][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.01.31-19.51.09:591][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.01.31-19.51.09:591][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.01.31-19.51.09:742][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.01.31-19.51.10:615][  0]LogShaderCompilers: Guid format shader working directory is -8 characters bigger than the processId version (../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Intermediate/Shaders/WorkingDirectory/2732/).
+[2021.01.31-19.51.10:615][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Samje/AppData/Local/Temp/UnrealShaderWorkingDir/3B2ACE1348038329079BBC940EFD9EFE/'.
+[2021.01.31-19.51.10:670][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.01.31-19.51.10:671][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.01.31-19.51.10:671][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.01.31-19.51.13:598][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: Loaded boot cache 0.10s 76MB C:/Users/Samje/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Samje/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.01.31-19.51.13:699][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.01.31-19.51.13:830][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.01.31-19.51.13:830][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.01.31-19.51.13:830][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.01.31-19.51.13:831][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Samje/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.01.31-19.51.13:831][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.01.31-19.51.13:831][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.01.31-19.51.13:971][  0]LogSlate: Using FreeType 2.10.0
+[2021.01.31-19.51.14:070][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.01.31-19.51.14:848][  0]LogAssetRegistry: FAssetRegistry took 0.0103 seconds to start up
+[2021.01.31-19.51.24:333][  0]LogInit: Selected Device Profile: [Windows]
+[2021.01.31-19.51.26:044][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.01.31-19.51.26:045][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.01.31-19.51.26:045][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.01.31-19.51.26:045][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.01.31-19.51.26:045][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.01.31-19.51.26:473][  0]LogNetVersion: Robogoo_Cplusplus 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1371892769)
+[2021.01.31-19.51.35:339][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000017156D81140), frame # 0
+[2021.01.31-19.51.35:339][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000017157BC2840), frame # 0
+[2021.01.31-19.51.35:382][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000017157BBF800), frame # 0
+[2021.01.31-19.51.36:042][  0]LogPackageLocalizationCache: Processed 17 localized package path(s) for 1 prioritized culture(s) in 0.163623 seconds
+[2021.01.31-19.51.36:059][  0]LogUObjectArray: 15756 objects as part of root set at end of initial load.
+[2021.01.31-19.51.36:059][  0]LogUObjectAllocator: 3925280 out of 0 bytes used by permanent object pool.
+[2021.01.31-19.51.36:059][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.01.31-19.51.43:128][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.01.31-19.51.43:170][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.01.31-19.51.44:766][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter': Can't find file.
+[2021.01.31-19.51.44:851][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter': Can't find file.
+[2021.01.31-19.51.44:851][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C'
+[2021.01.31-19.51.44:851][  0]Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+[2021.01.31-19.51.44:861][  0]LogUObjectBase: Warning: -------------- Default Property warnings and errors:
+[2021.01.31-19.51.44:861][  0]LogUObjectBase: Warning: Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+[2021.01.31-19.51.49:323][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.01.31-19.51.49:325][  0]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
+[2021.01.31-19.51.49:326][  0]Message dialog closed, result: Ok, title: Message, text: Default Property warnings and errors:
+Error: CDO Constructor (Robogoo_CplusplusGameMode): Failed to find /Game/ThirdPersonCPP/Blueprints/ThirdPersonCharacter.ThirdPersonCharacter_C
+
+
+[2021.01.31-19.51.50:045][  0]SourceControl: Source control is disabled
+[2021.01.31-19.51.50:062][  0]SourceControl: Source control is disabled
+[2021.01.31-19.51.50:194][  0]SourceControl: Source control is disabled
+[2021.01.31-19.51.50:221][  0]SourceControl: Source control is disabled
+[2021.01.31-19.51.50:256][  0]SourceControl: Source control is disabled
+[2021.01.31-19.51.54:195][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.01.31-19.51.54:473][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.01.31-19.51.54:473][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.01.31-19.51.56:789][  0]LogEngine: Initializing Engine...
+[2021.01.31-19.51.56:813][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.01.31-19.51.56:888][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.050 s
+[2021.01.31-19.51.57:072][  0]LogLinker: Warning: Failed to load '/Game/Jon/GlobalSingletons': Can't find file.
+[2021.01.31-19.51.57:073][  0]LogLinker: Warning: Failed to load '/Game/Jon/GlobalSingletons': Can't find file.
+[2021.01.31-19.51.57:073][  0]LogUObjectGlobals: Warning: Failed to find object 'Class /Game/Jon/GlobalSingletons.GlobalSingletons_C'
+[2021.01.31-19.51.57:073][  0]LogEngine: Error: Engine config value GameSingletonClassName '/Game/Jon/GlobalSingletons.GlobalSingletons_C' is not a valid class name.
+[2021.01.31-19.51.57:087][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.01.31-19.51.57:744][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.01.31-19.51.57:744][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001715BE7DA00), frame # 0
+[2021.01.31-19.51.57:745][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001715BE5BB00), frame # 0
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-19.51.57:906][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-19.51.57:906][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-19.51.57:937][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-19.51.57:938][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-19.51.58:106][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-19.51.58:106][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-19.51.58:206][  0]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-19.51.58:220][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-19.51.58:222][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-19.51.58:230][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-19.51.58:231][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-19.51.58:233][  0]LogInit: FAudioDevice initialized.
+[2021.01.31-19.51.58:264][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.01.31-19.51.58:353][  0]LogDerivedDataCache: Saved boot cache 0.09s 76MB C:/Users/Samje/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.01.31-19.51.58:361][  0]LogInit: Texture streaming: Enabled
+[2021.01.31-19.51.58:657][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.01.31-19.51.58:657][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.01.31-19.51.58:710][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.01.31-19.51.59:062][  0]LogInit: Transaction tracking system initialized
+[2021.01.31-19.51.59:408][  0]BlueprintLog: New page: Editor Load
+[2021.01.31-19.52.00:765][  0]LocalizationService: Localization service is disabled
+[2021.01.31-19.52.03:114][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/' took 0.03s
+[2021.01.31-19.52.03:114][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.01.31-19.52.03:114][  0]LogCook: Display: Mobile HDR setting 1
+[2021.01.31-19.52.05:918][  0]SourceControl: Source control is disabled
+[2021.01.31-19.52.05:930][  0]LogUnrealEdMisc: Loading editor; pre map load, took 350.880
+[2021.01.31-19.52.05:939][  0]Cmd: MAP LOAD FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2021.01.31-19.52.05:958][  0]LightingResults: New page: Lighting Build
+[2021.01.31-19.52.06:123][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-19.52.06:155][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-19.52.06:178][  0]MapCheck: New page: Map Check
+[2021.01.31-19.52.06:178][  0]LightingResults: New page: Lighting Build
+[2021.01.31-19.52.06:503][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001715BE7DA00), frame # 0
+[2021.01.31-19.52.06:503][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001715BE5BB00), frame # 0
+[2021.01.31-19.52.06:505][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2021.01.31-19.52.07:900][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:900][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:910][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:910][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:911][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:911][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:911][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.07:911][  0]LogLinker: Warning: Failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.08:499][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.08:499][  0]LoadErrors: Failed to load /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData Referenced by PersistentLevel
+[2021.01.31-19.52.08:499][  0]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Maps/ThirdPersonExampleMap.umap' failed to load '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData': Can't find file.
+[2021.01.31-19.52.08:500][  0]LoadErrors: Failed to load /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_BuiltData.ThirdPersonExampleMap_BuiltData Referenced by PersistentLevel
+[2021.01.31-19.52.09:411][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-19.52.09:411][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001714CC33E00), frame # 0
+[2021.01.31-19.52.09:411][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001714CCD1940), frame # 0
+[2021.01.31-19.52.09:775][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.01.31-19.52.09:970][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.75ms
+[2021.01.31-19.52.09:977][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.01.31-19.52.09:977][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.577ms to complete.
+[2021.01.31-19.52.09:978][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 4.047
+[2021.01.31-19.52.11:094][  0]LogUnrealEdMisc: Total Editor Startup Time, took 356.044
+[2021.01.31-19.52.11:783][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-19.52.11:816][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-19.52.11:828][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-19.52.11:837][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-19.52.11:956][  0]LogCollectionManager: Loaded 0 collections in 0.001746 seconds
+[2021.01.31-19.52.12:221][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Collections/' took 0.00s
+[2021.01.31-19.52.12:221][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Developers/Samje/Collections/' took 0.00s
+[2021.01.31-19.52.12:221][  0]LogFileCache: Scanning file cache for directory 'D:/UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Collections/' took 0.00s
+[2021.01.31-19.52.12:221][  0]LogContentBrowser: Native class hierarchy populated in 0.0624 seconds. Added 3424 classes and 813 folders.
+[2021.01.31-19.52.12:304][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0010 seconds. Added 0 classes and 0 folders.
+[2021.01.31-19.52.14:583][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2021.01.31-19.52.14:744][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0014 seconds. Added 2 classes and 0 folders.
+[2021.01.31-19.52.15:462][  0]LogSlate: Took 0.011336 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.01.31-19.52.15:493][  0]LogSlate: Took 0.017331 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.01.31-19.52.15:536][  0]LogSlate: Took 0.017714 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.01.31-19.52.15:887][  0]LogRenderer: Reallocating scene render targets to support 1000x388 Format 10 NumSamples 1 (Frame:1).
+[2021.01.31-19.52.16:595][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0164 seconds. Added 0 classes and 0 folders.
+[2021.01.31-19.52.16:595][  0]LogLoad: (Engine Initialization) Total time: 361.55 seconds
+[2021.01.31-19.52.16:595][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.01.31-19.52.16:769][  0]LogAssetRegistry: Asset discovery search completed in 61.9245 seconds
+[2021.01.31-19.52.16:772][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000002 seconds (updated 0 objects)
+[2021.01.31-19.52.16:855][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.01.31-19.52.17:030][  0]LogSlate: Took 0.022420 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.01.31-19.52.17:094][  0]LogSlate: Took 0.043429 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.01.31-19.53.32:929][532]LogSlate: Window 'Message Log' being destroyed
+[2021.01.31-19.53.32:932][532]LogSlate: Window 'Message Log' being destroyed
+[2021.01.31-19.59.09:844][676]LogRenderer: Reallocating scene render targets to support 1000x392 Format 10 NumSamples 1 (Frame:24681).
+[2021.01.31-19.59.09:900][677]LogRenderer: Reallocating scene render targets to support 1000x416 Format 10 NumSamples 1 (Frame:24683).
+[2021.01.31-19.59.09:931][678]LogRenderer: Reallocating scene render targets to support 1000x424 Format 10 NumSamples 1 (Frame:24685).
+[2021.01.31-19.59.09:961][679]LogRenderer: Reallocating scene render targets to support 1000x432 Format 10 NumSamples 1 (Frame:24687).
+[2021.01.31-19.59.09:990][680]LogRenderer: Reallocating scene render targets to support 1000x440 Format 10 NumSamples 1 (Frame:24689).
+[2021.01.31-19.59.10:021][681]LogRenderer: Reallocating scene render targets to support 1000x448 Format 10 NumSamples 1 (Frame:24691).
+[2021.01.31-19.59.10:050][682]LogRenderer: Reallocating scene render targets to support 1000x456 Format 10 NumSamples 1 (Frame:24693).
+[2021.01.31-19.59.10:078][683]LogRenderer: Reallocating scene render targets to support 1000x464 Format 10 NumSamples 1 (Frame:24695).
+[2021.01.31-19.59.10:101][684]LogRenderer: Reallocating scene render targets to support 1000x472 Format 10 NumSamples 1 (Frame:24697).
+[2021.01.31-19.59.10:126][685]LogRenderer: Reallocating scene render targets to support 1000x476 Format 10 NumSamples 1 (Frame:24699).
+[2021.01.31-19.59.10:148][686]LogRenderer: Reallocating scene render targets to support 1000x488 Format 10 NumSamples 1 (Frame:24701).
+[2021.01.31-19.59.10:171][687]LogRenderer: Reallocating scene render targets to support 1000x492 Format 10 NumSamples 1 (Frame:24703).
+[2021.01.31-19.59.10:316][696]LogRenderer: Reallocating scene render targets to support 1000x496 Format 10 NumSamples 1 (Frame:24707).
+[2021.01.31-19.59.10:339][697]LogRenderer: Reallocating scene render targets to support 1000x500 Format 10 NumSamples 1 (Frame:24709).
+[2021.01.31-19.59.10:364][698]LogRenderer: Reallocating scene render targets to support 1000x504 Format 10 NumSamples 1 (Frame:24711).
+[2021.01.31-19.59.13:651][890]LogRenderer: Reallocating scene render targets to support 1004x504 Format 10 NumSamples 1 (Frame:24878).
+[2021.01.31-19.59.13:676][891]LogRenderer: Reallocating scene render targets to support 1008x504 Format 10 NumSamples 1 (Frame:24880).
+[2021.01.31-19.59.13:717][893]LogRenderer: Reallocating scene render targets to support 1012x504 Format 10 NumSamples 1 (Frame:24884).
+[2021.01.31-19.59.13:964][908]LogRenderer: Reallocating scene render targets to support 1016x504 Format 10 NumSamples 1 (Frame:24888).
+[2021.01.31-19.59.24:588][513]LogActorFactory: Actor Factory created CP_Mesh
+[2021.01.31-19.59.25:740][568]LogActorFactory: Actor Factory created CP_Mesh
+[2021.01.31-19.59.26:911][569]LogEditorViewport: Clicking on Actor (context menu): StaticMeshActor (Floor)
+[2021.01.31-19.59.28:167][611]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Floor)
+[2021.01.31-19.59.42:453][422]Cmd: DELETE
+[2021.01.31-19.59.42:453][422]Cmd: ACTOR DELETE
+[2021.01.31-19.59.42:848][422]LogEditorActor: Deleted Actor: SkeletalMeshActor
+[2021.01.31-19.59.42:899][422]LogUObjectHash: Compacting FUObjectHashTables data took   0.68ms
+[2021.01.31-19.59.42:902][422]LogEditorActor: Deleted 1 Actors (0.158 secs)
+[2021.01.31-19.59.43:840][479]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (CP_Mesh)
+[2021.01.31-19.59.44:684][528]Cmd: DELETE
+[2021.01.31-19.59.44:684][528]Cmd: ACTOR DELETE
+[2021.01.31-19.59.44:685][528]LogEditorActor: Deleted Actor: StaticMeshActor
+[2021.01.31-19.59.44:721][528]LogUObjectHash: Compacting FUObjectHashTables data took   0.20ms
+[2021.01.31-19.59.44:723][528]LogEditorActor: Deleted 1 Actors (0.037 secs)
+[2021.01.31-19.59.55:748][184]LogStaticMesh: Building static mesh Sphere...
+[2021.01.31-19.59.55:760][184]LogSlate: Took 0.000112 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.01.31-19.59.55:873][184]LogStaticMesh: Built static mesh [0.13s] /Engine/BasicShapes/Sphere.Sphere
+[2021.01.31-19.59.56:049][187]LogStaticMesh: Building static mesh Cube...
+[2021.01.31-19.59.56:084][187]LogStaticMesh: Built static mesh [0.04s] /Engine/BasicShapes/Cube.Cube
+[2021.01.31-19.59.58:865][313]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Jon/CharactermovementBp.CharactermovementBp
+[2021.01.31-19.59.59:405][313]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 125 classes and 0 folders.
+[2021.01.31-20.00.01:281][313]LogSlate: Took 0.011079 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.01.31-20.00.01:740][314]LogSlate: Took 0.009624 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.01.31-20.00.03:893][423]LogSlate: Window 'CharactermovementBp' being destroyed
+[2021.01.31-20.00.06:174][555]LogRenderer: Reallocating scene render targets to support 1016x516 Format 10 NumSamples 1 (Frame:1).
+[2021.01.31-20.00.23:562][566]LogAnimation: Warning: AnimBP ThirdPerson_AnimBP_C is incompatible with skeleton CP_Rig, removing AnimBP from actor.
+[2021.01.31-20.00.23:562][566]LogAnimation: Warning: AnimBP ThirdPerson_AnimBP_C is incompatible with skeleton CP_Rig, removing AnimBP from actor.
+[2021.01.31-20.00.23:562][566]LogAnimation: Warning: AnimBP ThirdPerson_AnimBP_C is incompatible with skeleton CP_Rig, removing AnimBP from actor.
+[2021.01.31-20.00.48:006][ 24]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.00.48:441][ 24]LogUObjectHash: Compacting FUObjectHashTables data took   1.60ms
+[2021.01.31-20.00.52:243][240]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.00.52:427][240]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.00.52:495][240]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:00:52)
+[2021.01.31-20.00.52:582][240]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.01.31-20.00.52:610][240]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.01.31-20.00.52:634][240]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.00.52:799][240]LogPlayLevel: PIE: StaticDuplicateObject took: (0.163227s)
+[2021.01.31-20.00.52:818][240]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.00.52:818][240]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000017178B11A00), frame # 30240
+[2021.01.31-20.00.52:818][240]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000171871891C0), frame # 30240
+[2021.01.31-20.00.52:818][240]LogPlayLevel: PIE: World Init took: (0.019878s)
+[2021.01.31-20.00.52:858][240]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.222458s)
+[2021.01.31-20.00.52:875][240]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.00.52:878][240]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.00.52:878][240]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.00.52:879][240]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.00.52:879][240]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.00.52:880][240]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.00.52:881][240]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.00.52:895][240]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.00.52:895][240]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.00.52:895][240]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.00.52:895][240]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.00.52:895][240]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.00.52:907][240]LogInit: FAudioDevice initialized.
+[2021.01.31-20.00.52:977][240]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.00.53:413][240]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.00.53
+[2021.01.31-20.00.53:432][240]LogWorld: Bringing up level for play took: 0.173975
+[2021.01.31-20.00.53:441][240]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.01.31-20.00.53:642][240]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0010 seconds. Added 20 classes and 0 folders.
+[2021.01.31-20.00.53:642][240]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.00.53:642][240]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.00.53:642][240]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.00.53:800][240]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.00.53:803][240]PIE: Server logged in
+[2021.01.31-20.00.53:834][240]PIE: Play in editor total start time 1.569 seconds.
+[2021.01.31-20.01.07:234][  1]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.01.07:235][  1]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.01.07:329][  1]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.01.07:329][  1]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.01.07:383][  1]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.01.07:390][  1]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.01.07:512][  1]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.01.07:518][  1]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000171871891C0), frame # 31001
+[2021.01.31-20.01.07:518][  1]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000017178B11A00), frame # 31001
+[2021.01.31-20.01.07:595][  1]LogUObjectHash: Compacting FUObjectHashTables data took   2.89ms
+[2021.01.31-20.01.07:633][  2]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.01.31-20.01.21:656][190]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.01.21:677][190]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.01.21:677][190]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:01:21)
+[2021.01.31-20.01.21:703][190]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.01.21:810][190]LogPlayLevel: PIE: StaticDuplicateObject took: (0.107342s)
+[2021.01.31-20.01.21:811][190]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.01.21:811][190]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171BD603E00), frame # 31190
+[2021.01.31-20.01.21:823][190]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000171CC914A40), frame # 31190
+[2021.01.31-20.01.21:824][190]LogPlayLevel: PIE: World Init took: (0.013736s)
+[2021.01.31-20.01.21:824][190]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.121293s)
+[2021.01.31-20.01.21:848][190]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.01.21:849][190]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.01.21:849][190]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.01.21:850][190]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.01.21:850][190]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.01.21:851][190]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.01.21:851][190]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.01.21:916][190]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.01.21:916][190]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.01.21:916][190]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.01.21:916][190]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.01.21:917][190]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.01.21:929][190]LogInit: FAudioDevice initialized.
+[2021.01.31-20.01.21:935][190]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.01.21:937][190]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.01.21
+[2021.01.31-20.01.21:937][190]LogWorld: Bringing up level for play took: 0.001113
+[2021.01.31-20.01.21:937][190]LogOnline: OSS: Creating online subsystem instance for: :Context_12
+[2021.01.31-20.01.21:939][190]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.01.21:939][190]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.01.21:939][190]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.01.21:993][190]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.01.21:993][190]PIE: Server logged in
+[2021.01.31-20.01.21:994][190]PIE: Play in editor total start time 0.317 seconds.
+[2021.01.31-20.02.24:432][891]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.02.24:432][891]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.02.24:432][891]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.02.24:433][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.02.24:440][891]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.02.24:444][891]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.02.24:479][891]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.02.24:480][891]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000171CC914A40), frame # 34891
+[2021.01.31-20.02.24:480][891]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171BD603E00), frame # 34891
+[2021.01.31-20.02.24:482][891]LogUObjectHash: Compacting FUObjectHashTables data took   2.03ms
+[2021.01.31-20.02.24:509][892]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2021.01.31-20.02.51:378][491]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.02.51:685][491]LogUObjectHash: Compacting FUObjectHashTables data took   2.26ms
+[2021.01.31-20.02.53:141][574]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.02.53:159][574]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.02.53:159][574]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:02:53)
+[2021.01.31-20.02.53:159][574]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.02.53:260][574]LogPlayLevel: PIE: StaticDuplicateObject took: (0.100561s)
+[2021.01.31-20.02.53:261][574]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.02.53:262][574]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171C4575600), frame # 36574
+[2021.01.31-20.02.53:262][574]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001715C3839C0), frame # 36574
+[2021.01.31-20.02.53:262][574]LogPlayLevel: PIE: World Init took: (0.001463s)
+[2021.01.31-20.02.53:262][574]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.102160s)
+[2021.01.31-20.02.53:286][574]LogUObjectHash: Compacting FUObjectHashTables data took   2.40ms
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.02.53:288][574]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.02.53:288][574]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.02.53:288][574]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.02.53:290][574]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.02.53:290][574]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.02.53:302][574]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.02.53:302][574]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.02.53:302][574]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.02.53:302][574]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.02.53:303][574]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.02.53:317][574]LogInit: FAudioDevice initialized.
+[2021.01.31-20.02.53:328][574]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.02.53:331][574]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.02.53
+[2021.01.31-20.02.53:331][574]LogWorld: Bringing up level for play took: 0.001167
+[2021.01.31-20.02.53:331][574]LogOnline: OSS: Creating online subsystem instance for: :Context_13
+[2021.01.31-20.02.53:347][574]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.02.53:347][574]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.02.53:347][574]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.02.53:404][574]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.02.53:404][574]PIE: Server logged in
+[2021.01.31-20.02.53:406][574]PIE: Play in editor total start time 0.247 seconds.
+[2021.01.31-20.02.58:693][889]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.02.58:693][889]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.02.58:693][889]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.02.58:694][889]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.02.58:698][889]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.02.58:701][889]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.02.58:735][889]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.02.58:736][889]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001715C3839C0), frame # 36889
+[2021.01.31-20.02.58:736][889]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171C4575600), frame # 36889
+[2021.01.31-20.02.58:740][889]LogUObjectHash: Compacting FUObjectHashTables data took   3.31ms
+[2021.01.31-20.02.58:770][890]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2021.01.31-20.03.24:294][416]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.03.24:598][416]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2021.01.31-20.03.32:390][875]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.03.32:437][875]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.03.32:437][875]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:03:32)
+[2021.01.31-20.03.32:437][875]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.03.32:537][875]LogPlayLevel: PIE: StaticDuplicateObject took: (0.099501s)
+[2021.01.31-20.03.32:538][875]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.03.32:539][875]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171BABFA800), frame # 38875
+[2021.01.31-20.03.32:539][875]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000171CC94EFC0), frame # 38875
+[2021.01.31-20.03.32:539][875]LogPlayLevel: PIE: World Init took: (0.002551s)
+[2021.01.31-20.03.32:540][875]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.102257s)
+[2021.01.31-20.03.32:564][875]LogUObjectHash: Compacting FUObjectHashTables data took   2.36ms
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.03.32:566][875]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.03.32:566][875]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.03.32:567][875]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.03.32:567][875]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.03.32:568][875]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.03.32:568][875]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.03.32:581][875]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.03.32:581][875]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.03.32:581][875]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.03.32:582][875]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.03.32:582][875]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.03.32:593][875]LogInit: FAudioDevice initialized.
+[2021.01.31-20.03.32:602][875]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.03.32:604][875]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.03.32
+[2021.01.31-20.03.32:604][875]LogWorld: Bringing up level for play took: 0.001248
+[2021.01.31-20.03.32:604][875]LogOnline: OSS: Creating online subsystem instance for: :Context_14
+[2021.01.31-20.03.32:607][875]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.03.32:607][875]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.03.32:607][875]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.03.32:663][875]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.03.32:663][875]PIE: Server logged in
+[2021.01.31-20.03.32:663][875]PIE: Play in editor total start time 0.227 seconds.
+[2021.01.31-20.03.44:312][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.03.44:312][571]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.03.44:312][571]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.03.44:312][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.03.44:317][571]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.03.44:321][571]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.03.44:341][571]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.03.44:356][571]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000171CC94EFC0), frame # 39571
+[2021.01.31-20.03.44:356][571]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171BABFA800), frame # 39571
+[2021.01.31-20.03.44:358][571]LogUObjectHash: Compacting FUObjectHashTables data took   1.88ms
+[2021.01.31-20.03.44:404][573]LogPlayLevel: Display: Destroying online subsystem :Context_14
+[2021.01.31-20.04.02:172][624]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.04.02:468][624]LogUObjectHash: Compacting FUObjectHashTables data took   2.06ms
+[2021.01.31-20.04.04:124][717]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.04.04:145][717]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.04.04:145][717]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:04:04)
+[2021.01.31-20.04.04:181][717]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.04.04:284][717]LogPlayLevel: PIE: StaticDuplicateObject took: (0.102711s)
+[2021.01.31-20.04.04:286][717]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.04.04:286][717]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171C07E7800), frame # 40717
+[2021.01.31-20.04.04:286][717]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000171B8932700), frame # 40717
+[2021.01.31-20.04.04:286][717]LogPlayLevel: PIE: World Init took: (0.001485s)
+[2021.01.31-20.04.04:286][717]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.104408s)
+[2021.01.31-20.04.04:312][717]LogUObjectHash: Compacting FUObjectHashTables data took   2.34ms
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.04.04:314][717]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.04.04:314][717]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.04.04:315][717]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.04.04:315][717]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.04.04:316][717]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.04.04:316][717]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.04.04:328][717]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.04.04:328][717]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.04.04:328][717]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.04.04:328][717]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.04.04:328][717]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.04.04:341][717]LogInit: FAudioDevice initialized.
+[2021.01.31-20.04.04:351][717]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.04.04:353][717]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.04.04
+[2021.01.31-20.04.04:353][717]LogWorld: Bringing up level for play took: 0.001206
+[2021.01.31-20.04.04:353][717]LogOnline: OSS: Creating online subsystem instance for: :Context_15
+[2021.01.31-20.04.04:355][717]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.04.04:355][717]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.04.04:355][717]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.04.04:410][717]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.04.04:411][717]PIE: Server logged in
+[2021.01.31-20.04.04:411][717]PIE: Play in editor total start time 0.266 seconds.
+[2021.01.31-20.04.18:442][544]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.04.18:442][544]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.04.18:442][544]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.04.18:442][544]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.04.18:453][544]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.04.18:457][544]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.04.18:495][544]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.04.18:496][544]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000171B8932700), frame # 41544
+[2021.01.31-20.04.18:496][544]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171C07E7800), frame # 41544
+[2021.01.31-20.04.18:498][544]LogUObjectHash: Compacting FUObjectHashTables data took   2.08ms
+[2021.01.31-20.04.18:529][545]LogPlayLevel: Display: Destroying online subsystem :Context_15
+[2021.01.31-20.05.05:028][192]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.05.05:323][192]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
+[2021.01.31-20.05.06:713][268]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.05.06:731][268]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.05.06:731][268]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:05:06)
+[2021.01.31-20.05.06:731][268]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.05.06:829][268]LogPlayLevel: PIE: StaticDuplicateObject took: (0.098039s)
+[2021.01.31-20.05.06:830][268]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.05.06:830][268]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171BD472C00), frame # 44268
+[2021.01.31-20.05.06:830][268]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000017199ACC400), frame # 44268
+[2021.01.31-20.05.06:830][268]LogPlayLevel: PIE: World Init took: (0.001229s)
+[2021.01.31-20.05.06:830][268]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.099410s)
+[2021.01.31-20.05.06:857][268]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.05.06:858][268]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.05.06:858][268]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.05.06:858][268]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.05.06:859][268]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.05.06:859][268]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.05.06:890][268]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.05.06:890][268]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.05.06:890][268]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.05.06:890][268]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.05.06:890][268]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.05.06:902][268]LogInit: FAudioDevice initialized.
+[2021.01.31-20.05.06:909][268]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.05.06:912][268]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.05.06
+[2021.01.31-20.05.06:912][268]LogWorld: Bringing up level for play took: 0.001535
+[2021.01.31-20.05.06:912][268]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2021.01.31-20.05.06:913][268]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.05.06:913][268]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.05.06:913][268]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.05.06:968][268]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.05.06:968][268]PIE: Server logged in
+[2021.01.31-20.05.06:969][268]PIE: Play in editor total start time 0.239 seconds.
+[2021.01.31-20.05.14:782][728]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.05.14:782][728]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.05.14:782][728]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.05.14:782][728]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.05.14:788][728]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.05.14:792][728]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.05.14:829][728]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.05.14:830][728]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000017199ACC400), frame # 44728
+[2021.01.31-20.05.14:830][728]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171BD472C00), frame # 44728
+[2021.01.31-20.05.14:833][728]LogUObjectHash: Compacting FUObjectHashTables data took   2.12ms
+[2021.01.31-20.05.14:865][729]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2021.01.31-20.05.24:335][280]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.05.24:631][280]LogUObjectHash: Compacting FUObjectHashTables data took   2.01ms
+[2021.01.31-20.05.26:001][353]LogTemp: Repeating last play command: Selected Viewport
+[2021.01.31-20.05.26:019][353]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.01.31-20.05.26:019][353]PIE: New page: PIE session: ThirdPersonExampleMap (31 Jan 2021, 20:05:26)
+[2021.01.31-20.05.26:019][353]LogPlayLevel: Creating play world package: /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.05.26:119][353]LogPlayLevel: PIE: StaticDuplicateObject took: (0.100144s)
+[2021.01.31-20.05.26:120][353]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2021.01.31-20.05.26:120][353]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000171C56A1C00), frame # 45353
+[2021.01.31-20.05.26:120][353]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000171BDD6A840), frame # 45353
+[2021.01.31-20.05.26:120][353]LogPlayLevel: PIE: World Init took: (0.001308s)
+[2021.01.31-20.05.26:120][353]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.101571s)
+[2021.01.31-20.05.26:145][353]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.01.31-20.05.26:147][353]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.01.31-20.05.26:147][353]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.01.31-20.05.26:148][353]LogAudio: Display: Using built-in audio occlusion.
+[2021.01.31-20.05.26:148][353]LogAudioMixer: Display: Initializing audio mixer.
+[2021.01.31-20.05.26:149][353]LogAudioMixer: Display: 0: FrontLeft
+[2021.01.31-20.05.26:149][353]LogAudioMixer: Display: 1: FrontRight
+[2021.01.31-20.05.26:160][353]LogAudioMixer: Display: Using Audio Device Speakers (Realtek(R) Audio)
+[2021.01.31-20.05.26:160][353]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.01.31-20.05.26:160][353]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.01.31-20.05.26:160][353]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.01.31-20.05.26:161][353]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.01.31-20.05.26:174][353]LogInit: FAudioDevice initialized.
+[2021.01.31-20.05.26:184][353]LogLoad: Game class is 'New_Gamemode_C'
+[2021.01.31-20.05.26:186][353]LogWorld: Bringing World /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 60) at 2021.01.31-20.05.26
+[2021.01.31-20.05.26:186][353]LogWorld: Bringing up level for play took: 0.001159
+[2021.01.31-20.05.26:186][353]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2021.01.31-20.05.26:188][353]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.05.26:188][353]LogGameState: Match State Changed from EnteringMap to WaitingToStart
+[2021.01.31-20.05.26:188][353]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.05.26:243][353]LogGameState: Match State Changed from WaitingToStart to InProgress
+[2021.01.31-20.05.26:243][353]PIE: Server logged in
+[2021.01.31-20.05.26:244][353]PIE: Play in editor total start time 0.226 seconds.
+[2021.01.31-20.05.33:903][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.05.33:903][800]LogWorld: BeginTearingDown for /Game/ThirdPersonCPP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2021.01.31-20.05.33:903][800]LogWorld: UWorld::CleanupWorld for ThirdPersonExampleMap, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.05.33:903][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.05.33:914][800]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.01.31-20.05.33:918][800]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.05.33:963][800]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.01.31-20.05.33:964][800]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000171BDD6A840), frame # 45800
+[2021.01.31-20.05.33:964][800]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000171C56A1C00), frame # 45800
+[2021.01.31-20.05.33:968][800]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
+[2021.01.31-20.05.34:016][801]LogPlayLevel: Display: Destroying online subsystem :Context_17
+[2021.01.31-20.05.42:125][287]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.05.42:413][287]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
+[2021.01.31-20.06.32:666][195]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Mannequin/Animations/ThirdPersonJump_End.ThirdPersonJump_End
+[2021.01.31-20.06.32:698][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:699][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:699][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:699][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:757][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:757][195]LoadErrors: Failed to load /Game/Geometry/Materials/CubeMaterial.CubeMaterial Referenced by ProjectInst
+[2021.01.31-20.06.32:757][195]LogLinker: Warning: While loading '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Geometry/Materials/ProjectInst.uasset' failed to load '/Game/Geometry/Materials/CubeMaterial': Can't find file.
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP:AnimGraph.AnimGraphNode_StateMachine_1.Default.AnimStateTransitionNode_4.Transition.AnimGraphNode_TransitionResult_26' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP:AnimGraph.AnimGraphNode_StateMachine_1.Default.AnimStateTransitionNode_6.Transition.AnimGraphNode_TransitionResult_37' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP:AnimGraph.AnimGraphNode_StateMachine_1.Default.AnimStateTransitionNode_2.Transition.AnimGraphNode_TransitionResult_15' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP:AnimGraph.AnimGraphNode_StateMachine_1.Default.AnimStateTransitionNode_8.Transition.AnimGraphNode_TransitionResult_48' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.SKEL_ThirdPerson_AnimBP_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.SKEL_ThirdPerson_AnimBP_C:AnimGraph' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.SKEL_ThirdPerson_AnimBP_C' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:BlueprintUpdateAnimation' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.32:914][195]LogMetaData: Removing '/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP_C:AnimGraph' ref from Metadata '/Game/Mannequin/Animations/ThirdPerson_AnimBP.PackageMetaData'
+[2021.01.31-20.06.33:456][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/UE4_Mannequin_SkeletonF39635B940AF542A123987A1F147C65B.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Mesh/UE4_Mannequin_Skeleton.uasset'
+[2021.01.31-20.06.33:577][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPerson_Jump005BD7D241CEBF9DC68A6685EC5D4363.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPerson_Jump.uasset'
+[2021.01.31-20.06.33:609][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonJump_Loop905A549B4E8FC383B1ABB2B7679E3C69.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonJump_Loop.uasset'
+[2021.01.31-20.06.33:636][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonJump_Start7E530F6C40FFCA94ECE470A782FC4A8E.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonJump_Start.uasset'
+[2021.01.31-20.06.33:659][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonIdleEADEF600489EE67FE088238DD59E43CD.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonIdle.uasset'
+[2021.01.31-20.06.33:686][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonRun54F2DFF4494B3D7525E01AB789FC0253.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonRun.uasset'
+[2021.01.31-20.06.33:710][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonWalkAE83DCAE454D0D96657BFC96C9BB4308.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonWalk.uasset'
+[2021.01.31-20.06.33:730][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPerson_IdleRun_2D6A95046840668B1636101087737AD3BA.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPerson_IdleRun_2D.uasset'
+[2021.01.31-20.06.33:953][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPerson_AnimBPD9A1A7B24E4F018A71F03EAC52127025.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.uasset'
+[2021.01.31-20.06.33:992][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/T_ML_Rubber_Blue_01_DE9359FB34AD0FAC70EF9CF9FB1E49C9B.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.uasset'
+[2021.01.31-20.06.34:011][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/T_ML_Rubber_Blue_01_N31F1FD594F93872F79CA5DB346610EB7.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.uasset'
+[2021.01.31-20.06.34:038][195]LogMaterial: Display: Missing cached shader map for material Material_0, compiling. 
+[2021.01.31-20.06.34:248][195]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 34
+[2021.01.31-20.06.34:248][195]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 25
+[2021.01.31-20.06.34:248][195]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 16
+[2021.01.31-20.06.34:248][195]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 7
+[2021.01.31-20.06.34:275][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ML_GlossyBlack_Latex_UE4FE0EB7C945B9337BF97ABF9C15425505.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.uasset'
+[2021.01.31-20.06.34:279][195]LogMaterial: Display: Missing cached shader map for material Material_1, compiling. 
+[2021.01.31-20.06.34:319][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ML_Plastic_Shiny_Beige4D5E0EA04472992ECBF8D58A029AFD3C.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.uasset'
+[2021.01.31-20.06.34:336][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/UE4_LOGO_CARD171802E241F1B5414699E39D010ADC14.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Textures/UE4_LOGO_CARD.uasset'
+[2021.01.31-20.06.34:339][195]LogMaterial: Display: Missing cached shader map for material Material_2, compiling. 
+[2021.01.31-20.06.34:403][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ML_Plastic_Shiny_Beige_LOGOAC7C4200446E4C1B5003B796D5AC17F4.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.uasset'
+[2021.01.31-20.06.34:423][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/T_ML_Aluminum01120A61534C7058655D197F8DD2C34B65.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Aluminum01.uasset'
+[2021.01.31-20.06.34:442][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/T_ML_Aluminum01_N3C0E753641C1781EA46BEF89D7D61F6C.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Aluminum01_N.uasset'
+[2021.01.31-20.06.34:446][195]LogMaterial: Display: Missing cached shader map for material Material_3, compiling. 
+[2021.01.31-20.06.34:489][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ML_SoftMetal_UE4584E20BA4955E6392D9403B61F13677E.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_SoftMetal_UE4.uasset'
+[2021.01.31-20.06.34:559][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/UE4_Mannequin__normals42967087411B51987871ED9D4EFFFF99.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Textures/UE4_Mannequin__normals.uasset'
+[2021.01.31-20.06.34:579][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/UE4_Mannequin_MAT_MASKA732D776844BF1AE586F64BA458490369.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Textures/UE4_Mannequin_MAT_MASKA.uasset'
+[2021.01.31-20.06.34:660][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/M_UE4Man_Body90702E484ED145A61AFA4D9008153FE4.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/M_UE4Man_Body.uasset'
+[2021.01.31-20.06.34:690][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/UE4Man_Logo_N5409D4AC450E703304EE2E816565607B.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Textures/UE4Man_Logo_N.uasset'
+[2021.01.31-20.06.34:718][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/M_UE4Man_ChestLogo9FFF32B0405D7400C78B6C88C0407320.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Materials/M_UE4Man_ChestLogo.uasset'
+[2021.01.31-20.06.34:757][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/SK_Mannequin_PhysicsAsset631D1D7D400B5124EEEA728D61683AB6.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Mesh/SK_Mannequin_PhysicsAsset.uasset'
+[2021.01.31-20.06.34:922][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/SK_Mannequin080B584A4F19DB23CB9D12AC1AD9A1AE.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Character/Mesh/SK_Mannequin.uasset'
+[2021.01.31-20.06.34:995][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonJump_End673434DF4B5E4EDBDBDC24884F34878E.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/UE4MannequinArtassets/Animations/ThirdPersonJump_End.uasset'
+[2021.01.31-20.06.39:190][195]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 102
+[2021.01.31-20.06.39:371][195]LogUObjectHash: Compacting FUObjectHashTables data took   5.22ms
+[2021.01.31-20.06.39:411][195]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
+[2021.01.31-20.06.39:442][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2021.01.31-20.06.39:470][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2021.01.31-20.06.39:502][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2021.01.31-20.06.39:537][195]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 92
+[2021.01.31-20.06.39:537][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.01.31-20.06.39:576][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.80ms
+[2021.01.31-20.06.39:607][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2021.01.31-20.06.39:636][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.94ms
+[2021.01.31-20.06.39:669][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.93ms
+[2021.01.31-20.06.39:702][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.04ms
+[2021.01.31-20.06.39:734][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2021.01.31-20.06.39:766][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.81ms
+[2021.01.31-20.06.39:799][195]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 82
+[2021.01.31-20.06.39:799][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.92ms
+[2021.01.31-20.06.39:834][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.72ms
+[2021.01.31-20.06.39:866][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.87ms
+[2021.01.31-20.06.39:901][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
+[2021.01.31-20.06.39:928][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2021.01.31-20.06.39:960][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.82ms
+[2021.01.31-20.06.39:989][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
+[2021.01.31-20.06.40:021][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2021.01.31-20.06.40:054][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2021.01.31-20.06.40:085][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.90ms
+[2021.01.31-20.06.40:116][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2021.01.31-20.06.40:148][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.24ms
+[2021.01.31-20.06.40:182][195]LogUObjectHash: Compacting FUObjectHashTables data took   1.06ms
+[2021.01.31-20.06.40:227][195]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 72
+[2021.01.31-20.06.40:227][195]LogUObjectHash: Compacting FUObjectHashTables data took   2.15ms
+[2021.01.31-20.06.40:262][195]LogUObjectHash: Compacting FUObjectHashTables data took   0.98ms
+[2021.01.31-20.06.40:647][195]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Jon/CharactermovementBp" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Jon/CharactermovementBp.uasset" SILENT=true
+[2021.01.31-20.06.40:954][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/CharactermovementBp69F721A04F6968CDEC973B8063ECB46B.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Jon/CharactermovementBp.uasset'
+[2021.01.31-20.06.41:108][195]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/SamJThirdPersonCharacterD071971B482E03E0D73D62A07BBD1258.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/ThirdPersonCPP/Blueprints/SamJThirdPersonCharacter.uasset'
+[2021.01.31-20.06.41:589][195]AssetCheck: New page: Asset Save: multiple assets
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating Skeleton /Game/UE4MannequinArtassets/Character/Mesh/UE4_Mannequin_Skeleton.UE4_Mannequin_Skeleton
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPerson_Jump.ThirdPerson_Jump
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonJump_Loop.ThirdPersonJump_Loop
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonJump_Start.ThirdPersonJump_Start
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonIdle.ThirdPersonIdle
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonRun.ThirdPersonRun
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonWalk.ThirdPersonWalk
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating BlendSpace1D /Game/UE4MannequinArtassets/Animations/ThirdPerson_IdleRun_2D.ThirdPerson_IdleRun_2D
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating AnimBlueprint /Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_D.T_ML_Rubber_Blue_01_D
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Rubber_Blue_01_N.T_ML_Rubber_Blue_01_N
+[2021.01.31-20.06.41:589][195]LogContentValidation: Display: Validating MaterialFunction /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_GlossyBlack_Latex_UE4.ML_GlossyBlack_Latex_UE4
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating MaterialFunction /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige.ML_Plastic_Shiny_Beige
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Textures/UE4_LOGO_CARD.UE4_LOGO_CARD
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating MaterialFunction /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_Plastic_Shiny_Beige_LOGO.ML_Plastic_Shiny_Beige_LOGO
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Aluminum01.T_ML_Aluminum01
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/T_ML_Aluminum01_N.T_ML_Aluminum01_N
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating MaterialFunction /Game/UE4MannequinArtassets/Character/Materials/MaterialLayers/ML_SoftMetal_UE4.ML_SoftMetal_UE4
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Textures/UE4_Mannequin__normals.UE4_Mannequin__normals
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Textures/UE4_Mannequin_MAT_MASKA.UE4_Mannequin_MAT_MASKA
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Material /Game/UE4MannequinArtassets/Character/Materials/M_UE4Man_Body.M_UE4Man_Body
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Texture2D /Game/UE4MannequinArtassets/Character/Textures/UE4Man_Logo_N.UE4Man_Logo_N
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating MaterialInstanceConstant /Game/UE4MannequinArtassets/Character/Materials/M_UE4Man_ChestLogo.M_UE4Man_ChestLogo
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating PhysicsAsset /Game/UE4MannequinArtassets/Character/Mesh/SK_Mannequin_PhysicsAsset.SK_Mannequin_PhysicsAsset
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating SkeletalMesh /Game/UE4MannequinArtassets/Character/Mesh/SK_Mannequin.SK_Mannequin
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating AnimSequence /Game/UE4MannequinArtassets/Animations/ThirdPersonJump_End.ThirdPersonJump_End
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Blueprint /Game/Jon/CharactermovementBp.CharactermovementBp
+[2021.01.31-20.06.41:590][195]LogContentValidation: Display: Validating Blueprint /Game/ThirdPersonCPP/Blueprints/SamJThirdPersonCharacter.SamJThirdPersonCharacter
+[2021.01.31-20.06.42:578][223]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 62
+[2021.01.31-20.06.43:915][282]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 52
+[2021.01.31-20.06.44:433][313]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 42
+[2021.01.31-20.06.44:433][313]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 32
+[2021.01.31-20.06.48:961][538]LogShaderCompilers: Display: Worker (4/5): shaders left to compile 22
+[2021.01.31-20.06.49:794][587]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 16
+[2021.01.31-20.06.50:475][613]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 11
+[2021.01.31-20.06.50:914][640]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 8
+[2021.01.31-20.06.52:626][738]LogShaderCompilers: Display: Worker (3/5): shaders left to compile 5
+[2021.01.31-20.06.52:782][747]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 3
+[2021.01.31-20.06.53:061][761]LogShaderCompilers: Display: Worker (2/5): shaders left to compile 2
+[2021.01.31-20.06.53:557][789]LogShaderCompilers: Display: Worker (1/5): shaders left to compile 1
+[2021.01.31-20.07.18:782][228]LogContentBrowser: Verbose: The majority of assets in the view are of type: Skeleton
+[2021.01.31-20.07.26:829][228]LogSlate: Window 'Create Animation Blueprint' being destroyed
+[2021.01.31-20.07.32:762][573]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/Animations/CP_Anim.CP_Anim
+[2021.01.31-20.07.33:051][573]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2021.01.31-20.07.33:664][573]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_17:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.01.31-20.07.33:766][573]LogContentBrowser: Native class hierarchy updated for 'PinnedCommandList' in 0.0004 seconds. Added 1 classes and 0 folders.
+[2021.01.31-20.07.34:337][573]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_17:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.01.31-20.07.40:497][884]BlueprintLog: New page: Compile CharactermovementBp
+[2021.01.31-20.07.40:818][884]LogUObjectHash: Compacting FUObjectHashTables data took   3.79ms
+[2021.01.31-20.08.29:594][ 70]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
+[2021.01.31-20.08.29:807][ 70]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_Auto1AF2A287240DC8544668F7C833D25398F.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2021.01.31-20.08.29:812][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.248
+[2021.01.31-20.08.29:812][ 70]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.248
+[2021.01.31-20.08.29:812][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Engine/BasicShapes/Sphere] ([1] browsable assets)...
+[2021.01.31-20.08.29:832][ 70]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Engine/BasicShapes/Sphere.Sphere]
+[2021.01.31-20.08.29:832][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Engine/BasicShapes/Sphere]
+[2021.01.31-20.08.29:832][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/BasicShapes/Sphere" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Engine/BasicShapes/Sphere_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2021.01.31-20.08.29:900][ 70]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Sphere_Auto139AE58F94A67AC8A11F8FBA0EB086299.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Engine/BasicShapes/Sphere_Auto1.uasset'
+[2021.01.31-20.08.29:926][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Engine/BasicShapes/Cube] ([1] browsable assets)...
+[2021.01.31-20.08.29:943][ 70]OBJ SavePackage:     Rendered thumbnail for [StaticMesh /Engine/BasicShapes/Cube.Cube]
+[2021.01.31-20.08.29:943][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Engine/BasicShapes/Cube]
+[2021.01.31-20.08.29:943][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Engine/BasicShapes/Cube" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Engine/BasicShapes/Cube_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2021.01.31-20.08.29:961][ 70]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Cube_Auto11058619C45B999DB1A12F595F5B5C711.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Engine/BasicShapes/Cube_Auto1.uasset'
+[2021.01.31-20.08.29:963][ 70]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/CP_Anim] ([1] browsable assets)...
+[2021.01.31-20.08.29:980][ 70]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Animations/CP_Anim.CP_Anim]
+[2021.01.31-20.08.29:980][ 70]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/CP_Anim]
+[2021.01.31-20.08.29:980][ 70]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/CP_Anim" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/Animations/CP_Anim_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2021.01.31-20.08.30:018][ 70]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/CP_Anim_Auto121B3E32D4E1C16730F119DAB11977AF6.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/Animations/CP_Anim_Auto1.uasset'
+[2021.01.31-20.08.30:019][ 70]LogFileHelpers: Auto-saving content packages took 0.207
+[2021.01.31-20.28.22:979][550]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\Samje\OneDrive\Desktop\Aim.fbx)
+[2021.01.31-20.28.23:274][550]LogFbx: Loading FBX Scene from C:\Users\Samje\OneDrive\Desktop\Aim.fbx
+[2021.01.31-20.28.23:360][550]LogFbx: FBX Scene Loaded Succesfully
+[2021.01.31-20.29.06:561][550]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.01.31-20.29.06:762][550]FBXImport: Warning: This does not contain any valid animation takes. 
+[2021.01.31-20.29.06:762][550]FBXImport: Error: Import failed. 
+[2021.01.31-20.29.11:522][550]LogSlate: Window 'Message' being destroyed
+[2021.01.31-20.29.11:527][550]Message dialog closed, result: Ok, title: Message, text: Failed to import 'C:\Users\Samje\OneDrive\Desktop\Aim.fbx'. Failed to create asset '/Game/Animations/Aim'.
+Please see Output Log for details.
+[2021.01.31-20.29.11:527][550]LogAssetTools: Warning: Failed to import 'C:\Users\Samje\OneDrive\Desktop\Aim.fbx'. Failed to create asset '/Game/Animations/Aim'.
+Please see Output Log for details.
+[2021.01.31-20.29.19:290][ 15]LogSlate: Window 'Message Log' being destroyed
+[2021.01.31-20.36.44:126][557]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 C:\Users\Samje\OneDrive\Desktop\Aim.fbx)
+[2021.01.31-20.36.44:136][557]LogFbx: Loading FBX Scene from C:\Users\Samje\OneDrive\Desktop\Aim.fbx
+[2021.01.31-20.36.44:181][557]LogFbx: FBX Scene Loaded Succesfully
+[2021.01.31-20.36.53:399][557]LogSlate: Window 'FBX Import Options' being destroyed
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(0) Armature_001
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(1) Bone
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(2) Bone_001
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(3) Bone_002
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(4) Bone_003
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(5) Bone_004
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(6) Bone_005
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(7) Bone_006
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(8) Bone_006_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(9) Bone_006_end_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(10) Bone_010
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(11) Bone_011
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(12) Bone_011_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(13) Bone_011_end_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(14) Bone_007
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(15) Bone_008
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(16) Bone_009
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(17) Bone_009_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(18) Bone_009_end_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(19) Bone_012
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(20) Bone_013
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(21) Bone_014
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(22) Bone_014_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(23) Bone_014_end_end
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(24) Bone_015
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(25) Bone_016
+[2021.01.31-20.36.53:446][557]LogFbx: SortedLinks :(26) Bone_017
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(27) Bone_018
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(28) Bone_019
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(29) Bone_020
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(30) Bone_020_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(31) Bone_020_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(32) Bone_021
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(33) Bone_022
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(34) Bone_022_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(35) Bone_022_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(36) Bone_023
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(37) Bone_024
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(38) Bone_025
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(39) Bone_025_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(40) Bone_025_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(41) Bone_026
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(42) Bone_027
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(43) Bone_028
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(44) Bone_028_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(45) Bone_028_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(46) Bone_029
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(47) Bone_029_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(48) Bone_029_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(49) Bone_030
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(50) Bone_031
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(51) Bone_032
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(52) Bone_032_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(53) Bone_032_end_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(54) Bone_033
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(55) Bone_034
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(56) Bone_034_end
+[2021.01.31-20.36.53:447][557]LogFbx: SortedLinks :(57) Bone_034_end_end
+[2021.01.31-20.36.53:547][557]LogFbx: Parsing AnimStack Armature.001|Aim
+[2021.01.31-20.36.53:708][557]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Animations/Aim.Aim
+[2021.01.31-20.36.53:708][557]FBXImport: Warning: The following bones exist in the imported animation, but not in the Skeleton asset CP_Rig.  Any animation on these bones will not be imported: 
+
+ Bone_006_end_end  
+Bone_011_end_end  
+Bone_009_end_end  
+Bone_014_end_end  
+Bone_020_end_end  
+Bone_022_end_end  
+Bone_025_end_end  
+Bone_028_end_end  
+Bone_029_end_end  
+Bone_032_end_end  
+Bone_034_end_end  
+ 
+[2021.01.31-20.36.53:796][557]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/Animations/Aim.Aim
+[2021.01.31-20.36.59:942][886]LogSlate: Window 'Message Log' being destroyed
+[2021.01.31-20.36.59:948][886]LogSlate: Window 'Message Log' being destroyed
+[2021.01.31-20.37.02:507][988]LogAssetEditorSubsystem: Opening Asset editor for AnimSequence /Game/Animations/Aim.Aim
+[2021.01.31-20.37.02:707][988]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_19:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.01.31-20.37.02:826][988]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_19:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.01.31-20.37.03:895][988]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.01.31-20.37.15:978][707]LogWorld: UWorld::CleanupWorld for World_19, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.37.15:978][707]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.37.16:161][707]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.37.16:161][707]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.37.16:465][707]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2021.01.31-20.37.16:465][707]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.CP_Anim:AnimGraph.AnimGraphNode_Root_0' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.SKEL_CP_Anim_C:AnimGraph' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.SKEL_CP_Anim_C' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.CP_Anim_C:AnimGraph' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.CP_Anim_C' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.CP_Anim:EventGraph.K2Node_Event_0' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:507][394]LogMetaData: Removing '/Game/Animations/CP/CP_Anim.CP_Anim:EventGraph.K2Node_CallFunction_0' ref from Metadata '/Game/Animations/CP_Anim.PackageMetaData'
+[2021.01.31-20.37.28:556][394]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/CP/Aim" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Animations/CP/Aim.uasset" SILENT=true
+[2021.01.31-20.37.28:568][394]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Aim5FF441DA4AB948421D78288D202765F4.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Animations/CP/Aim.uasset'
+[2021.01.31-20.37.28:578][394]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Animations/CP/CP_Anim" FILE="../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Animations/CP/CP_Anim.uasset" SILENT=true
+[2021.01.31-20.37.28:593][394]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/CP_Anim0287ECBF446C9777DE7E119F2CBA24AD.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Content/Animations/CP/CP_Anim.uasset'
+[2021.01.31-20.37.29:175][394]LogUObjectHash: Compacting FUObjectHashTables data took   4.77ms
+[2021.01.31-20.37.29:291][394]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
+[2021.01.31-20.37.29:352][394]LogUObjectHash: Compacting FUObjectHashTables data took   2.30ms
+[2021.01.31-20.37.29:379][394]LogUObjectHash: Compacting FUObjectHashTables data took   0.56ms
+[2021.01.31-20.37.29:461][394]AssetCheck: New page: Asset Save: multiple assets
+[2021.01.31-20.37.29:461][394]LogContentValidation: Display: Validating AnimSequence /Game/Animations/CP/Aim.Aim
+[2021.01.31-20.37.29:461][394]LogContentValidation: Display: Validating AnimBlueprint /Game/Animations/CP/CP_Anim.CP_Anim
+[2021.01.31-20.38.48:387][103]BlueprintLog: New page: Compile CP_Anim
+[2021.01.31-20.38.48:527][103]LogUObjectHash: Compacting FUObjectHashTables data took   3.52ms
+[2021.01.31-20.39.11:832][481]LogAssetEditorSubsystem: Opening Asset editor for AnimBlueprint /Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP.ThirdPerson_AnimBP
+[2021.01.31-20.39.11:839][481]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_23:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2021.01.31-20.39.12:244][481]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_23:PersistentLevel.AnimationEditorPreviewActor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2021.01.31-20.40.13:261][ 53]BlueprintLog: New page: Compile CP_Anim
+[2021.01.31-20.40.13:263][ 53]LogBlueprint: Warning: [Compiler CP_Anim] Entry node  Default  is not connected to state
+[2021.01.31-20.40.13:264][ 53]LogBlueprint: Warning: [Compiler CP_Anim] There was no entry state connection in  Default
+[2021.01.31-20.40.13:311][ 53]LogUObjectHash: Compacting FUObjectHashTables data took   3.82ms
+[2021.01.31-20.41.07:880][288]LogContentBrowser: Verbose: The majority of assets in the view are of type: AnimSequence
+[2021.01.31-20.42.18:011][325]LogUObjectHash: Compacting FUObjectHashTables data took   3.63ms
+[2021.01.31-20.42.18:053][325]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPersonExampleMap_Auto25FAF6D4945B9CDD0A9658E975CB10516.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap_Auto2.umap'
+[2021.01.31-20.42.18:094][325]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.117
+[2021.01.31-20.42.18:094][325]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.117
+[2021.01.31-20.42.18:095][325]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP] ([1] browsable assets)...
+[2021.01.31-20.42.18:095][325]OBJ SavePackage: Finished generating thumbnails for package [/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP]
+[2021.01.31-20.42.18:217][325]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/ThirdPerson_AnimBP_Auto2FEA44C84481CFDBE1F17B3BBE7E37202.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/UE4MannequinArtassets/Animations/ThirdPerson_AnimBP_Auto2.uasset'
+[2021.01.31-20.42.18:218][325]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/CP/CP_Anim] ([1] browsable assets)...
+[2021.01.31-20.42.18:229][325]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Animations/CP/CP_Anim.CP_Anim]
+[2021.01.31-20.42.18:229][325]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/CP/CP_Anim]
+[2021.01.31-20.42.18:250][325]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/CP_Anim_Auto273F442FA4A1A086EB422D59CADF530B2.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/Animations/CP/CP_Anim_Auto2.uasset'
+[2021.01.31-20.42.18:250][325]LogFileHelpers: Auto-saving content packages took 0.156
+[2021.01.31-20.44.24:524][806]BlueprintLog: New page: Compile CP_Anim
+[2021.01.31-20.44.24:565][806]LogBlueprint: Warning: [Compiler CP_Anim] Entry node  Default  is not connected to state
+[2021.01.31-20.44.24:565][806]LogBlueprint: Warning: [Compiler CP_Anim] There was no entry state connection in  Default
+[2021.01.31-20.44.24:614][806]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
+[2021.01.31-20.52.18:842][406]LogUObjectHash: Compacting FUObjectHashTables data took   4.16ms
+[2021.01.31-20.52.18:860][406]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonCPP/Maps/ThirdPersonExampleMap' took 0.282
+[2021.01.31-20.52.18:899][406]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Animations/CP/CP_Anim] ([1] browsable assets)...
+[2021.01.31-20.52.19:149][406]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Animations/CP/CP_Anim.CP_Anim]
+[2021.01.31-20.52.19:149][406]OBJ SavePackage: Finished generating thumbnails for package [/Game/Animations/CP/CP_Anim]
+[2021.01.31-20.52.19:891][406]LogSavePackage: Moving '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/CP_Anim_Auto38A7F06774CB1F485318E7880DC4EA3D2.tmp' to '../../../../../UnrealProjects/RoboGoo/RoboGooCPlusPlus/Saved/Autosaves/Game/Animations/CP/CP_Anim_Auto3.uasset'
+[2021.01.31-20.52.19:892][406]LogFileHelpers: Auto-saving content packages took 1.032
